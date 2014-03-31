@@ -101,6 +101,69 @@
   <ItemGroup>
     <Content Include="Areas\Management\bin\Leon.Modules.Management.dll" />
     <Content Include="Areas\Management\Themes\Default\Order.txt" />
+    <Content Include="Bin\CookComputing.XmlRpcV2.dll" />
+    <Content Include="Bin\Couchbase.dll" />
+    <Content Include="Bin\dotless.Core.dll" />
+    <Content Include="Bin\DotNetOpenAuth.AspNet.dll" />
+    <Content Include="Bin\DotNetOpenAuth.Core.dll" />
+    <Content Include="Bin\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="Bin\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="Bin\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="Bin\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="Bin\EntityFramework.dll" />
+    <Content Include="Bin\EntityFramework.SqlServer.dll" />
+    <Content Include="Bin\Enyim.Caching.dll" />
+    <Content Include="Bin\ephtmltopdf.dll" />
+    <Content Include="Bin\HtmlAgilityPack.dll" />
+    <Content Include="Bin\Ionic.Zip.Reduced.dll" />
+    <Content Include="Bin\Kooboo.CMS.Account.dll" />
+    <Content Include="Bin\Kooboo.CMS.Caching.dll" />
+    <Content Include="Bin\Kooboo.CMS.Common.dll" />
+    <Content Include="Bin\Kooboo.CMS.Common.Runtime.Dependency.Ninject.dll" />
+    <Content Include="Bin\Kooboo.CMS.Content.dll" />
+    <Content Include="Bin\Kooboo.CMS.Content.Persistence.SQLServer.dll" />
+    <Content Include="Bin\Kooboo.CMS.Form.dll" />
+    <Content Include="Bin\Kooboo.CMS.MediaSyncWrapper.dll" />
+    <Content Include="Bin\Kooboo.CMS.Membership.dll" />
+    <Content Include="Bin\Kooboo.CMS.SchemaSyncWrapper.dll" />
+    <Content Include="Bin\Kooboo.CMS.Search.dll" />
+    <Content Include="Bin\Kooboo.CMS.Sites.dll" />
+    <Content Include="Bin\Kooboo.CMS.Sites.Persistence.EntityFramework.dll" />
+    <Content Include="Bin\Kooboo.CMS.Sites.TemplateEngines.Razor.dll" />
+    <Content Include="Bin\Kooboo.CMS.Toolkit.Controls.dll" />
+    <Content Include="Bin\Kooboo.CMS.Toolkit.dll" />
+    <Content Include="Bin\Kooboo.CMS.Toolkit.pdb" />
+    <Content Include="Bin\Kooboo.CMS.Toolkit.SyncFolder.dll" />
+    <Content Include="Bin\Kooboo.CMS.Web.dll" />
+    <Content Include="Bin\Kooboo.dll" />
+    <Content Include="Bin\Leon.Business.dll" />
+    <Content Include="Bin\Leon.Business.pdb" />
+    <Content Include="Bin\Leon.KB.Extensions.dll" />
+    <Content Include="Bin\Leon.KB.Extensions.pdb" />
+    <Content Include="Bin\Leon.Modules.Management.dll" />
+    <Content Include="Bin\Leon.Modules.Management.pdb" />
+    <Content Include="Bin\Leon.Plugins.Business.dll" />
+    <Content Include="Bin\Leon.Plugins.dll" />
+    <Content Include="Bin\Leon.Plugins.pdb" />
+    <Content Include="Bin\Leon.Web.dll" />
+    <Content Include="Bin\Leon.Web.pdb" />
+    <Content Include="Bin\log4net.dll" />
+    <Content Include="Bin\Lucene.Net.Contrib.Highlighter.dll" />
+    <Content Include="Bin\Lucene.Net.dll" />
+    <Content Include="Bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="Bin\Mono.Math.dll" />
+    <Content Include="Bin\Newtonsoft.Json.dll" />
+    <Content Include="Bin\Ninject.dll" />
+    <Content Include="Bin\NuGet.Core.dll" />
+    <Content Include="Bin\Org.Mentalis.Security.Cryptography.dll" />
+    <Content Include="Bin\System.Net.Http.dll" />
+    <Content Include="Bin\System.Web.Helpers.dll" />
+    <Content Include="Bin\System.Web.Mvc.dll" />
+    <Content Include="Bin\System.Web.Razor.dll" />
+    <Content Include="Bin\System.Web.WebPages.Administration.dll" />
+    <Content Include="Bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="Bin\System.Web.WebPages.dll" />
+    <Content Include="Bin\System.Web.WebPages.Razor.dll" />
     <Content Include="Cms_Data\META\DllReferences.txt" />
     <Content Include="Cms_Data\Sites\Leon\Assemblies\Leon.Plugins.Business.dll" />
     <Content Include="Cms_Data\SiteTemplates\SampleSite.png" />
@@ -201,6 +264,11 @@
   <ItemGroup>
     <Content Include="Cms_Data\Sites\Leon\Templates\Views\SearchResult\setting.config" />
     <Content Include="Cms_Data\Sites\Leon\Templates\Views\SearchResult\template.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bin\Kooboo.CMS.Sites.Persistence.EntityFramework.config" />
+    <None Include="Bin\Leon.Web.dll.config" />
+    <Content Include="Bin\SqlServer.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
