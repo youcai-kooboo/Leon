@@ -1,0 +1,155 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{ var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var parentUUID = ViewContext.RequestContext.AllRouteValues()["parentUUID"];
+    var parentFolder=ViewContext.RequestContext.AllRouteValues()["parentFolder"];
+}
+@using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()
+    , FormMethod.Post
+    , new RouteValueDictionary(new { enctype = "application/x-www-form-urlencoded" })))
+{
+    <table><input class='long' id="Site" name="Site" type="hidden" value="@(Model.Site ?? "")"  data-val-required="The Site field is required." data-val="true"/><tr>
+            <th>
+            <label for="Size">Size</label>
+            </th>
+            <td>
+            @{ var dropDownDefault_Size =  @"";}
+                <select name="Size" class="long">
+                        <option value="@(@"0")" @((Model.Size != null && Model.Size.ToString().ToLower() == @"0".ToLower()) || (Model.Size == null && dropDownDefault_Size.ToLower() == @"0".ToLower()) ? "selected" : "")>120x600</option>
+                        <option value="@(@"1")" @((Model.Size != null && Model.Size.ToString().ToLower() == @"1".ToLower()) || (Model.Size == null && dropDownDefault_Size.ToLower() == @"1".ToLower()) ? "selected" : "")>160x600</option>
+                        <option value="@(@"2")" @((Model.Size != null && Model.Size.ToString().ToLower() == @"2".ToLower()) || (Model.Size == null && dropDownDefault_Size.ToLower() == @"2".ToLower()) ? "selected" : "")>250x250</option>
+                        <option value="@(@"3")" @((Model.Size != null && Model.Size.ToString().ToLower() == @"3".ToLower()) || (Model.Size == null && dropDownDefault_Size.ToLower() == @"3".ToLower()) ? "selected" : "")>300x250</option>
+                        <option value="@(@"4")" @((Model.Size != null && Model.Size.ToString().ToLower() == @"4".ToLower()) || (Model.Size == null && dropDownDefault_Size.ToLower() == @"4".ToLower()) ? "selected" : "")>336x280</option>
+                        <option value="@(@"5")" @((Model.Size != null && Model.Size.ToString().ToLower() == @"5".ToLower()) || (Model.Size == null && dropDownDefault_Size.ToLower() == @"5".ToLower()) ? "selected" : "")>500x500</option>
+                        <option value="@(@"6")" @((Model.Size != null && Model.Size.ToString().ToLower() == @"6".ToLower()) || (Model.Size == null && dropDownDefault_Size.ToLower() == @"6".ToLower()) ? "selected" : "")>728x90</option></select>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Size"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Logo">Logo</label>
+            </th>
+            <td>
+            <div id='Logo_Container' class='mediafile'><input id="Logo" name="Logo" type="hidden" value="@(Model.Logo ?? "")" data-bind="value: fieldValue"/>
+            <ul class="clearfix" data-bind="foreach: data">
+                <!-- ko if: isImage -->
+                <li class="img">
+                    <span class="preview"></span>
+                    <a class="action" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                    <img data-bind="attr:{src:Url}" height="100" width="100">
+                </li>
+                <!-- /ko -->
+                <!-- ko ifnot: isImage -->
+                <li>
+                    <span class="left" data-bind="{text:FileName}"></span>
+                    <a class="action right" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                </li>
+                <!-- /ko -->
+            </ul>
+                <script src="@Kooboo.CMS.Toolkit.Controls.ControlsScript.GetWebResourceUrl()" type="text/javascript" ></script>
+                <a id='addMedia_Logo' columnName='Logo' href='@Url.Action("Selection", ViewContext.RequestContext.AllRouteValues().Merge("Controller", "MediaContent").Merge("FolderName", null).Merge("SingleChoice", "true"))"' class='action add'>@Html.IconImage("plus small")</a>
+                <script type='text/javascript'>
+                    $('#Logo_Container').mediaControl({
+                allowMultipleFiles: false,
+                validation: /.jpg$|.png$|.gif$|.bmp$|.jpeg$/i,
+                validationErrorMessage: 'Please select a valid image',
+                value: '@(Model.Logo)'
+                });
+                </script>
+            </div>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Logo"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Image">Image</label>
+            </th>
+            <td>
+            <div id='Image_Container' class='mediafile'><input id="Image" name="Image" type="hidden" value="@(Model.Image ?? "")" data-bind="value: fieldValue"/>
+            <ul class="clearfix" data-bind="foreach: data">
+                <!-- ko if: isImage -->
+                <li class="img">
+                    <span class="preview"></span>
+                    <a class="action" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                    <img data-bind="attr:{src:Url}" height="100" width="100">
+                </li>
+                <!-- /ko -->
+                <!-- ko ifnot: isImage -->
+                <li>
+                    <span class="left" data-bind="{text:FileName}"></span>
+                    <a class="action right" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                </li>
+                <!-- /ko -->
+            </ul>
+                <script src="@Kooboo.CMS.Toolkit.Controls.ControlsScript.GetWebResourceUrl()" type="text/javascript" ></script>
+                <a id='addMedia_Image' columnName='Image' href='@Url.Action("Selection", ViewContext.RequestContext.AllRouteValues().Merge("Controller", "MediaContent").Merge("FolderName", null).Merge("SingleChoice", "true"))"' class='action add'>@Html.IconImage("plus small")</a>
+                <script type='text/javascript'>
+                    $('#Image_Container').mediaControl({
+                allowMultipleFiles: false,
+                validation: /.jpg$|.png$|.gif$|.bmp$|.jpeg$/i,
+                validationErrorMessage: 'Please select a valid image',
+                value: '@(Model.Image)'
+                });
+                </script>
+            </div>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Image"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Slogan">Slogan</label>
+            </th>
+            <td>
+            <div id='Slogan_Container' class='mediafile'><input id="Slogan" name="Slogan" type="hidden" value="@(Model.Slogan ?? "")" data-bind="value: fieldValue"/>
+            <ul class="clearfix" data-bind="foreach: data">
+                <!-- ko if: isImage -->
+                <li class="img">
+                    <span class="preview"></span>
+                    <a class="action" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                    <img data-bind="attr:{src:Url}" height="100" width="100">
+                </li>
+                <!-- /ko -->
+                <!-- ko ifnot: isImage -->
+                <li>
+                    <span class="left" data-bind="{text:FileName}"></span>
+                    <a class="action right" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                </li>
+                <!-- /ko -->
+            </ul>
+                <script src="@Kooboo.CMS.Toolkit.Controls.ControlsScript.GetWebResourceUrl()" type="text/javascript" ></script>
+                <a id='addMedia_Slogan' columnName='Slogan' href='@Url.Action("Selection", ViewContext.RequestContext.AllRouteValues().Merge("Controller", "MediaContent").Merge("FolderName", null).Merge("SingleChoice", "true"))"' class='action add'>@Html.IconImage("plus small")</a>
+                <script type='text/javascript'>
+                    $('#Slogan_Container').mediaControl({
+                allowMultipleFiles: false,
+                validation: /.jpg$|.png$|.gif$|.bmp$|.jpeg$/i,
+                validationErrorMessage: 'Please select a valid image',
+                value: '@(Model.Slogan)'
+                });
+                </script>
+            </div>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Slogan"], null)
+            
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    
+    </table>
+}

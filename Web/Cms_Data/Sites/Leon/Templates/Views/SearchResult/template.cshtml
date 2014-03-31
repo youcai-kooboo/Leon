@@ -1,0 +1,64 @@
+﻿@using Kooboo.CMS.Search;
+@using Leon.Business.Jobs
+@using Leon.KB.Extensions.Pages
+ 
+@{
+    var rootSite = SiteHelper.Parse("Leon");
+    var currentSite = SiteHelper.Parse("Leon~EN");
+    var cnSite = SiteHelper.Parse("Leon~CN");
+
+    var key = Page_Context.Current.PageRequestContext.AllQueryString["key"];
+    var strPageIndex = Page_Context.Current.PageRequestContext.AllQueryString["pIndex"];
+    var pageIndex = 1;
+    var pageSize = 10;
+    if (!string.IsNullOrEmpty(strPageIndex))
+    {
+        int.TryParse(strPageIndex, out pageIndex);
+    }
+
+    var searchMaxium = int.MaxValue;
+
+    var results1 = Repository.Current.Search(key, 1, searchMaxium);
+
+    //Site.Current = rootSite;
+    //PageConverter.CurrentSite = currentSite;
+    //Repository.Current = new Repository("Leon");
+    //var results2 = Repository.Current.Search(key, 1, searchMaxium).Distinct();
+
+    //Site.Current = cnSite;
+    //PageConverter.CurrentSite = cnSite;
+    //Repository.Current = new Repository("LeonCN");
+    //var results3 = Repository.Current.Search(key, 1, searchMaxium);
+
+    //PageConverter.CurrentSite = null;
+    //Repository.Current = new Repository("LeonEN");
+
+    var results = results1.ToPagedList(pageIndex, pageSize);
+    
+}
+ 
+<div class="intro">you are searching “@key”:</div>
+<ul class="list search-result-list">
+    @foreach (var item in results)
+    {
+        var title = item.HighlightedTitle;
+        var body = item.HighlightedBody;
+        if (String.IsNullOrEmpty(title))
+        {
+            title = "No title";
+        }
+
+        <li>
+            <h2>
+                <a href="@item.Url" class="search-result-title" style="color: #970f0e">
+                    @title
+                </a>
+            </h2>
+            <p class="intro-text">
+                @Html.Raw(body)
+            </p>
+        </li>
+    }
+</ul>
+Total Pages:@results.TotalPageCount,Total Records:@results.TotalItemCount,PageSize @results.PageSize,Current Page @results.CurrentPageIndex <br/>
+ 

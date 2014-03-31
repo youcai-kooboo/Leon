@@ -1,0 +1,89 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{ var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var parentUUID = ViewContext.RequestContext.AllRouteValues()["parentUUID"];
+    var parentFolder=ViewContext.RequestContext.AllRouteValues()["parentFolder"];
+}
+@using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()
+    , FormMethod.Post
+    , new RouteValueDictionary(new { enctype = "application/x-www-form-urlencoded" })))
+{
+    <table><input class='long' id="Site" name="Site" type="hidden" value="@(Site.Current.FullName)"  data-val-required="The Site field is required." data-val="true"/><tr>
+            <th>
+            <label for="Layout">Layout</label>
+            </th>
+            <td>
+             @{ 
+                            var layouts = ServiceFactory.LayoutManager.All(Site.Current, String.Empty);
+                        }
+                        <select name="Layout">
+                            <option value="">Please select a layout</option>
+                            @foreach(var each in layouts)
+                            { 
+                                <option value="@each.Name">@each.Name</option>
+                            }
+                        </select>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Layout"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Folder">Folder</label>
+            </th>
+            <td>
+                @{ 
+                            string repositoryName = Site.Current.Repository;
+                            var repository = new Repository(repositoryName);
+                            var folders = Kooboo.CMS.Content.Services.ServiceFactory.TextFolderManager.All(repository, String.Empty);
+                }
+                <select name="Folder">
+                    <option value="">Please select a folder</option>
+                    @foreach (var each in folders)
+                    { 
+                        <option value="@each.FullName">@each.FriendlyText</option>
+                            }
+                </select>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Folder"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Title">Title</label>
+            </th>
+            <td>
+            <input class='long' id="Title" name="Title" type="text" value="@(Model.Title ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Title"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Description">Description</label>
+            </th>
+            <td>
+            <input class='long' id="Description" name="Description" type="text" value="@(Model.Description ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Description"], null)
+            
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    
+    </table>
+}

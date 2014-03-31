@@ -1,0 +1,13 @@
+﻿[
+  {
+    "ModuleName": "Management",
+    "User": "admin",
+    "UtcDatetime": "2014-03-14T09:21:25.5140534Z",
+    "VersionRange": {
+      "SourceVersion": null,
+      "TargetVersion": "4.3.0.0",
+      "InstallationType": 0
+    },
+    "InstallationFileName": "4.3.0.0-20140314172125.zip"
+  }
+]

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE2BE1EF-847C-45A6-A03A-424B0F2CB556}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leon.Business.T4</RootNamespace>
+    <AssemblyName>Leon.Business.T4</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kooboo">
+      <HintPath>..\..\Lib\Kooboo.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Common">
+      <HintPath>..\..\Lib\Kooboo.CMS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Content">
+      <HintPath>..\..\Lib\Kooboo.CMS.Content.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Category.cs">
+      <DependentUpon>AutoModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryService.cs">
+      <DependentUpon>AutoServices.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Comment.cs">
+      <DependentUpon>AutoModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CommentService.cs">
+      <DependentUpon>AutoServices.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MultiOutput.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiOutput.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>AutoModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductService.cs">
+      <DependentUpon>AutoServices.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AutoModels.log">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoModels.tt</DependentUpon>
+    </None>
+    <None Include="AutoModels.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>AutoModels.log</LastGenOutput>
+    </None>
+    <None Include="AutoServices.log">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoServices.tt</DependentUpon>
+    </None>
+    <None Include="AutoServices.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>AutoServices.log</LastGenOutput>
+    </None>
+    <None Include="MultiOutput.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MultiOutput.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Extensions\Kooboo.CMS.Toolkit\Kooboo.CMS.Toolkit.csproj">
+      <Project>{3bae0f65-bedf-4057-baa8-cd479fd637a7}</Project>
+      <Name>Kooboo.CMS.Toolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Leon.Business\Leon.Business.csproj">
+      <Project>{603be49c-b909-40eb-8c9a-2d87629546e0}</Project>
+      <Name>Leon.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

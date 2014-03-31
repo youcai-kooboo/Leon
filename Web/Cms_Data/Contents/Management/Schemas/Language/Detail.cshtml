@@ -1,0 +1,11 @@
+﻿@if (Model != null)
+{ 
+<div>
+	<h3 class="title" @ViewHelper.Edit(Model,"LanguageName")>@Html.Raw(Model.LanguageName ?? "")</h3>
+	<div class="content">
+		<div @ViewHelper.Edit(Model,"Site")>@Html.Raw(Model.Site ?? "")</div>
+		<div @ViewHelper.Edit(Model,"LanguageSite")>@Html.Raw(Model.LanguageSite ?? "")</div>
+		<div @ViewHelper.Edit(Model,"LanguageFlag")>@Html.Raw(Model.LanguageFlag ?? "")</div>
+	</div>
+</div>
+}

@@ -1,0 +1,14 @@
+﻿@if (Model != null)
+{ 
+<div>
+	<h3 class="title" @ViewHelper.Edit(Model,"Layout")>@Html.Raw(Model.Layout ?? "")</h3>
+	<div class="content">
+		<div @ViewHelper.Edit(Model,"Site")>@Html.Raw(Model.Site ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Description")>@Html.Raw(Model.Description ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Code")>@Html.Raw(Model.Code ?? "")</div>
+		<div @ViewHelper.Edit(Model,"StartDate")>@Html.Raw(Model.StartDate ?? "")</div>
+		<div @ViewHelper.Edit(Model,"StopDate")>@Html.Raw(Model.StopDate ?? "")</div>
+		<div @ViewHelper.Edit(Model,"DisplayPosition")>@Html.Raw(Model.DisplayPosition ?? "")</div>
+	</div>
+</div>
+}

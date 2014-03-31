@@ -1,0 +1,61 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Kooboo.CMS.Search;
+using Kooboo.CMS.Sites.Models;
+using Kooboo.CMS.Sites.Services;
+using Leon.KB.Extensions;
+
+namespace Leon.Business.Jobs
+{
+    public class PageSearchJob : CustomJobBase
+    {
+        public override void Execute(object executionState)
+        {
+            var rootSites = ServiceFactory.SiteManager.AllRootSites();
+            foreach (var rootSite in rootSites)
+            {
+                ScanSite(rootSite);
+            }
+
+            this.Stop();
+        }
+
+        private void ScanSite(Site site)
+        {
+            var pages = ServiceFactory.PageManager.All(site, String.Empty);
+            foreach (var page in pages)
+            {
+                ScanChildrenPages(page, site);
+            }
+
+            var childSites = ServiceFactory.SiteManager.ChildSites(site);
+            if (childSites.Any())
+            {
+                foreach (var childSite in childSites)
+                {
+                    ScanSite(childSite);
+                }
+            }
+        }
+
+        private  void ScanChildrenPages(Page page, Site site)
+        {
+            if (page.Searchable)
+            {
+                SearchHelper.OpenService(site.GetRepository()).Add(page);
+                SearchHelper.OpenService(site.GetRepository()).Update(page);
+            }
+            var subPages = ServiceFactory.PageManager.ChildPages(site, page.FullName, "");
+            if (subPages.Any())
+            {
+                foreach (var item in subPages)
+                {
+                    ScanChildrenPages(item, site);
+                }
+            }
+        }
+
+    }
+}

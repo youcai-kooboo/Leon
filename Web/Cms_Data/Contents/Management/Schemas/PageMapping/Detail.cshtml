@@ -1,0 +1,12 @@
+﻿@if (Model != null)
+{ 
+<div>
+	<h3 class="title" @ViewHelper.Edit(Model,"FromSite")>@Html.Raw(Model.FromSite ?? "")</h3>
+	<div class="content">
+		<div @ViewHelper.Edit(Model,"RootSite")>@Html.Raw(Model.RootSite ?? "")</div>
+		<div @ViewHelper.Edit(Model,"FromPageUrl")>@Html.Raw(Model.FromPageUrl ?? "")</div>
+		<div @ViewHelper.Edit(Model,"ToSite")>@Html.Raw(Model.ToSite ?? "")</div>
+		<div @ViewHelper.Edit(Model,"ToPageUrl")>@Html.Raw(Model.ToPageUrl ?? "")</div>
+	</div>
+</div>
+}

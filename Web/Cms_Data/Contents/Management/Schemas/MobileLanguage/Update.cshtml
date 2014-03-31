@@ -1,0 +1,96 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{
+    var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var workflowItem  = Model._WorkflowItem_;
+    var hasWorkflowItem = workflowItem!=null;
+    var availableEdit = hasWorkflowItem || (!hasWorkflowItem && allowedEdit);
+}
+    @using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()
+            , FormMethod.Post, new RouteValueDictionary(new { enctype = "application/x-www-form-urlencoded" })))
+{
+    <table><input class='long' id="Site" name="Site" type="hidden" value="@(Model.Site ?? "")"  data-val-required="The Site field is required." data-val="true"/><tr>
+            <th>
+            <label for="LanguageSite">LanguageSite</label>
+            </th>
+            <td>
+            @{ var dropDownDefault_LanguageSite =  @"";}
+                <select name="LanguageSite" class="long"></select>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["LanguageSite"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="LanguageName">LanguageName</label>
+            </th>
+            <td>
+            <input class='long' id="LanguageName" name="LanguageName" type="text" value="@(Model.LanguageName ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["LanguageName"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="LanguageCountryCode">LanguageCountryCode</label>
+            </th>
+            <td>
+            <input class='long' id="LanguageCountryCode" name="LanguageCountryCode" type="text" value="@(Model.LanguageCountryCode ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["LanguageCountryCode"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="LanguageFlag">LanguageFlag</label>
+            </th>
+            <td>
+            <div id='LanguageFlag_Container' class='mediafile'><input id="LanguageFlag" name="LanguageFlag" type="hidden" value="@(Model.LanguageFlag ?? "")" data-bind="value: fieldValue"/>
+            <ul class="clearfix" data-bind="foreach: data">
+                <!-- ko if: isImage -->
+                <li class="img">
+                    <span class="preview"></span>
+                    <a class="action" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                    <img data-bind="attr:{src:Url}" height="100" width="100">
+                </li>
+                <!-- /ko -->
+                <!-- ko ifnot: isImage -->
+                <li>
+                    <span class="left" data-bind="{text:FileName}"></span>
+                    <a class="action right" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                </li>
+                <!-- /ko -->
+            </ul>
+                <script src="@Kooboo.CMS.Toolkit.Controls.ControlsScript.GetWebResourceUrl()" type="text/javascript" ></script>
+                <a id='addMedia_LanguageFlag' columnName='LanguageFlag' href='@Url.Action("Selection", ViewContext.RequestContext.AllRouteValues().Merge("Controller", "MediaContent").Merge("FolderName", null).Merge("SingleChoice", "true"))"' class='action add'>@Html.IconImage("plus small")</a>
+                <script type='text/javascript'>
+                    $('#LanguageFlag_Container').mediaControl({
+                allowMultipleFiles: false,
+                validation: /.jpg$|.png$|.gif$|.bmp$|.jpeg$/i,
+                validationErrorMessage: 'Please select a valid image',
+                value: '@(Model.LanguageFlag)'
+                });
+                </script>
+            </div>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["LanguageFlag"], null)
+            
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    </table>   
+}

@@ -1,0 +1,62 @@
+﻿@using Kooboo.CMS.Toolkit
+@using Leon.Business
+@using Leon.Business.Models
+@using Leon.KB.Extensions
+
+
+@ViewBag.Pluign
+
+@Url.FrontUrlInLowercase(new Site("Leon~CN")).PageUrl("Introduction")
+@Url.FrontUrl(new Site("Leon~CN")).PageUrl("Introduction")
+@Page_Context.Current.FrontUrl.PageUrl("Introduction")
+
+
+ @Leon.Business.Jobs.LeonJob.Time
+
+
+ 
+    Fruit Category<br/>
+
+    @{
+        var categoryService = LeonContext.Current.CategoryService;
+        var productService = LeonContext.Current.ProductService;
+        var commentService = LeonContext.Current.CommentService;
+
+        var categories = categoryService.GetAll();
+
+        foreach (var category in categories)
+        {
+            var products = productService.GetContentsByCategory(FolderNames.Category, category.UUID);
+
+            <p><strong>@category.Name</strong>
+ 
+            @foreach (var product in products)
+            {
+                @product.Name
+                <p>
+                    Comment<br />
+                    ========
+                    @{
+                var commentItems = commentService.GetEmbeddedContents(FolderNames.Product, product.UUID);
+                //var commentItems = commentService.GetPagedList(1, 10, null, "Sequence", OrderDirection.Ascending);
+                        foreach (var comment in commentItems)
+                        {
+                            <br/>
+                            @(comment.MapTo<Comment>().Title)
+                        }
+                    }
+                </p>
+        }
+         </p>
+        }
+    }
+
+
+@{
+    var list = commentService.SearchSql("select Title,Remark from [Kooboo].[dbo].[LeonCN.Comment]");
+    foreach (var item in list)
+    {
+        <br>
+        @(item.Title) <p/> @item.Remark
+    }
+}

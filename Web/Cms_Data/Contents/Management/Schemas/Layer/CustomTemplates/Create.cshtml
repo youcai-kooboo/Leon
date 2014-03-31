@@ -1,0 +1,158 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{ var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var parentUUID = ViewContext.RequestContext.AllRouteValues()["parentUUID"];
+    var parentFolder=ViewContext.RequestContext.AllRouteValues()["parentFolder"];
+}
+@using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()
+    , FormMethod.Post
+    , new RouteValueDictionary(new { enctype = "application/x-www-form-urlencoded" })))
+{
+    <table><input class='long' id="Site" name="Site" type="hidden" value="@(Site.Current.FullName)"  data-val-required="The Site field is required." data-val="true"/><tr>
+            <th>
+            <label for="Title">Title</label>
+            </th>
+            <td>
+            <input class='long' id="Title" name="Title" type="text" value="@(Model.Title ?? "")"  data-val-required="The Title field is required." data-val="true"/>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Title"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Content">Content</label>
+            </th>
+            <td>
+            <textarea name="Content" id="Content" class="Content tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Content ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Content"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="AttachOption">Attach option</label>
+            </th>
+            <td>
+            @{ var dropDownDefault_AttachOption =  @"";}
+                <select name="AttachOption" class="long">
+                        <option value="@(@"0")" @((Model.AttachOption != null && Model.AttachOption.ToString().ToLower() == @"0".ToLower()) || (Model.AttachOption == null && dropDownDefault_AttachOption.ToLower() == @"0".ToLower()) ? "selected" : "")>None</option>
+                        <option value="@(@"1")" @((Model.AttachOption != null && Model.AttachOption.ToString().ToLower() == @"1".ToLower()) || (Model.AttachOption == null && dropDownDefault_AttachOption.ToLower() == @"1".ToLower()) ? "selected" : "")>Attach the layer to a single page</option>
+                        <option value="@(@"2")" @((Model.AttachOption != null && Model.AttachOption.ToString().ToLower() == @"2".ToLower()) || (Model.AttachOption == null && dropDownDefault_AttachOption.ToLower() == @"2".ToLower()) ? "selected" : "")>Attach the layer to a template</option>
+                        <option value="@(@"3")" @((Model.AttachOption != null && Model.AttachOption.ToString().ToLower() == @"3".ToLower()) || (Model.AttachOption == null && dropDownDefault_AttachOption.ToLower() == @"3".ToLower()) ? "selected" : "")>Attach the layer to all pages except the homepage</option>
+                        <option value="@(@"4")" @((Model.AttachOption != null && Model.AttachOption.ToString().ToLower() == @"4".ToLower()) || (Model.AttachOption == null && dropDownDefault_AttachOption.ToLower() == @"4".ToLower()) ? "selected" : "")>Attach the layer to all pages</option></select>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["AttachOption"], null)
+            
+            </td>          
+            </tr><tr>
+            <th class="popPageUrl" style="display:none;">
+            <label for="PageUrl">PageUrl</label>
+            </th>
+            <td>
+            <input class='long' id="PageUrl" name="PageUrl" type="text" value="@(Model.PageUrl ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["PageUrl"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Layout">Layout</label>
+            </th>
+            <td>
+             @{ 
+                            var layouts = ServiceFactory.LayoutManager.All(Site.Current, String.Empty);
+             }
+            <select name="Layout">
+                <option value="">Please select a layout</option>
+                @foreach (var each in layouts)
+                { 
+                    <option value="@each.Name">@each.Name</option>
+                }
+            </select>
+
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Layout"], null)
+            
+            </td>
+            </tr><tr>
+            <th>
+            <label for="StartDate">StartDate</label>
+            </th>
+            <td>
+            <input id="StartDate" name="StartDate" type="text" value="@(Model.StartDate ==null ? "" : Model.StartDate.ToLocalTime().ToString())" />
+                <script src="@Kooboo.CMS.Toolkit.Controls.ControlsScript.GetWebResourceUrl()" type="text/javascript" ></script>
+                <script type='text/javascript'>
+                    $(function() {
+                        $('input[name="StartDate"]').datetimepicker({
+                            showSecond: true,
+                            timeFormat: 'hh:mm:ss'
+                        });
+                    });
+                </script>
+                        
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["StartDate"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="StopDate">StopDate</label>
+            </th>
+            <td>
+            <input id="StopDate" name="StopDate" type="text" value="@(Model.StopDate ==null ? "" : Model.StopDate.ToLocalTime().ToString())" />
+                <script src="@Kooboo.CMS.Toolkit.Controls.ControlsScript.GetWebResourceUrl()" type="text/javascript" ></script>
+                <script type='text/javascript'>
+                    $(function() {
+                        $('input[name="StopDate"]').datetimepicker({
+                            showSecond: true,
+                            timeFormat: 'hh:mm:ss'
+                        });
+                    });
+                </script>
+                        
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["StopDate"], null)
+            
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    
+    </table>
+}
+ <script type="text/javascript">
+     $(function () {
+         var $layout = $("select[name='Layout']");
+         var $pageUrl = $("input[name='PageUrl']");
+
+         $("select[name=''AttachOption]").change(function () {
+             var value = $(this).find("option:selected").val();
+             if (value == 1) {
+                 $(".popPageUrl").show();
+                 $(".popLayout").hide();
+                 $layout.val("");
+             }
+             else if (value == 2) {
+                 $(".popLayout").show();
+                 $(".popPageUrl").hide();
+                 $pageUrl.val("");
+             }
+             else {
+                 $(".popLayout").hide();
+                 $(".popPageUrl").hide();
+                 $layout.val("");
+                 $pageUrl.val("");
+             }
+         });
+     })
+    </script>

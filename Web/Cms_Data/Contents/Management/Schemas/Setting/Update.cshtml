@@ -1,0 +1,51 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{
+    var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var workflowItem  = Model._WorkflowItem_;
+    var hasWorkflowItem = workflowItem!=null;
+    var availableEdit = hasWorkflowItem || (!hasWorkflowItem && allowedEdit);
+}
+    @using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()
+            , FormMethod.Post, new RouteValueDictionary(new { enctype = "application/x-www-form-urlencoded" })))
+{
+    <table><input class='long' id="Site" name="Site" type="hidden" value="@(Model.Site ?? "")"  data-val-required="The Site field is required." data-val="true"/><tr>
+            <th>
+            <label for="Key">Key</label>
+            </th>
+            <td>
+            <input class='long' id="Key" name="Key" type="text" value="@(Model.Key ?? "")"  data-val-required="The Key field is required." data-val="true"/>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Key"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Value">Value</label>
+            </th>
+            <td>
+            <textarea class="extra-large" name="Value" >@(Model.Value ?? "")</textarea>             
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Value"], null)
+            
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    </table>   
+}

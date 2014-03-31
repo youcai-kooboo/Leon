@@ -1,0 +1,10 @@
+﻿@if (Model != null)
+{ 
+<div>
+	<h3 class="title" @ViewHelper.Edit(Model,"Key")>@Html.Raw(Model.Key ?? "")</h3>
+	<div class="content">
+		<div @ViewHelper.Edit(Model,"Site")>@Html.Raw(Model.Site ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Value")>@Html.Raw(Model.Value ?? "")</div>
+	</div>
+</div>
+}

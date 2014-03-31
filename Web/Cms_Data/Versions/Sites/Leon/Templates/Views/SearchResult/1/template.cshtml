@@ -1,0 +1,91 @@
+﻿ @using Kooboo.CMS.Search;
+@using YardenKB4.Extensions
+@{
+    var currentSite = SiteHelper.Parse(YardenHelper.YardenContentSitePath);
+    var unwvSite = SiteHelper.Parse(YardenHelper.YardenUNWVSitePath);
+    var insuranceSite = SiteHelper.Parse(YardenHelper.YardenInsuranceSitePath);
+
+    var key = Page_Context.Current.PageRequestContext.AllQueryString["searchTerms"];
+    var strPageIndex = Page_Context.Current.PageRequestContext.AllQueryString["pIndex"];
+    var pageIndex = 1;
+    var pageSize = 10;
+    if (!string.IsNullOrEmpty(strPageIndex))
+    {
+        int.TryParse(strPageIndex, out pageIndex);
+    }
+
+    var searchMaxium = int.MaxValue;
+
+    var results1 = Repository.Current.Search(key, 1, searchMaxium);
+
+    Site.Current = insuranceSite;
+    PageConverter.CurrentSite = insuranceSite;
+    Repository.Current = new Repository("YardenInsurance");
+    var results2 = Repository.Current.Search(key, 1, searchMaxium);
+
+    Site.Current = unwvSite;
+    PageConverter.CurrentSite = unwvSite;
+    Repository.Current = new Repository("UNWV");
+    var results3 = Repository.Current.Search(key, 1, searchMaxium);
+
+    Site.Current = currentSite;
+    PageConverter.CurrentSite = null;
+    Repository.Current = new Repository("YardenContent");
+
+    var results = results1.Union(results2).Union(results3).ToPagedList(pageIndex, pageSize);
+
+
+    //var results = Repository.Current.Search(key, pageIndex, pageSize);
+
+    int pageCount = results.TotalItemCount;
+    string searchPageUrl = Url.FrontUrl().PageUrl("zoekresultaat", new { pIndex = "##", searchTerms = key }).ToHtmlString();
+    var pagerHtml = Html.KPageContainer(pageCount, pageIndex, pageSize, searchPageUrl);
+}
+
+<script type="text/javascript">
+    $(function () {
+        $('ul.search-result-list li').click(function () {
+            document.location = $(this).find('a.search-result-title').attr('href');
+        });
+    });
+</script>
+<style type="text/css">
+    .intro-text {
+        max-height: 84px;
+        overflow: hidden;
+    }
+</style>
+
+<div class="fliter">
+    <form method="get" name="searchForm" id="searchForm" action="/zoekresultaat">
+        <input type="text" name="searchTerms">
+        <a href="javascript:void(0);" onclick="$('#searchForm').submit();" class="btn button-gh20"><span class="button-gh20-in">@("vind".Label("SearchResult.vind", "SearchResult"))</span> </a>
+    </form>
+</div>
+<div class="intro">@("Zoekresultaten voor ".Label("SearchResult.For", "SearchResult"))“@key”:</div>
+@pagerHtml
+<div class="clear"></div>
+<ul class="list search-result-list">
+    @foreach (var item in results)
+    {
+        var body = System.StringExtensions.StripHtml(item.HighlightedBody).StripStyle();
+        var title = item.HighlightedTitle;
+        if (title.IsNullOrEmpty())
+        {
+            title = body.SummaryCompletelyWords(20);
+        }
+
+        <li>
+            <h2>
+                <a href="@item.Url" title="@Html.Raw(item.HighlightedTitle)" class="search-result-title" style="color: #970f0e">
+                    @Html.Raw(title)
+                </a>
+            </h2>
+            <p class="intro-text">
+                @Html.Raw(item.HighlightedBody.Replace(".block1-middle {", "").Replace("OVERFLOW: visible...;", ""))...
+            </p>
+        </li>
+    }
+</ul>
+@pagerHtml
+<div class="clear"></div>

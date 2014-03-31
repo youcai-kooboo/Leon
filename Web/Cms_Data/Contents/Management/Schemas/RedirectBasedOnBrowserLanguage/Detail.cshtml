@@ -1,0 +1,11 @@
+﻿@if (Model != null)
+{ 
+<div>
+	<h3 class="title" @ViewHelper.Edit(Model,"BrowserLanguage")>@Html.Raw(Model.BrowserLanguage ?? "")</h3>
+	<div class="content">
+		<div @ViewHelper.Edit(Model,"Site")>@Html.Raw(Model.Site ?? "")</div>
+		<div @ViewHelper.Edit(Model,"SubSite")>@Html.Raw(Model.SubSite ?? "")</div>
+		<div @ViewHelper.Edit(Model,"IsDefault")>@Html.Raw(Model.IsDefault ?? "")</div>
+	</div>
+</div>
+}

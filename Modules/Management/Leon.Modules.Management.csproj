@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5878D2D-E856-41E5-9B51-32499DE72931}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leon.Modules.Management</RootNamespace>
+    <AssemblyName>Leon.Modules.Management</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kooboo">
+      <HintPath>..\..\Lib\Kooboo.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Common">
+      <HintPath>..\..\Lib\Kooboo.CMS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Content, Version=4.3.8.218, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Kooboo.CMS.Content.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Form, Version=4.3.8.218, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Kooboo.CMS.Form.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Sites">
+      <HintPath>..\..\Lib\Kooboo.CMS.Sites.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Toolkit">
+      <HintPath>..\..\Lib\Kooboo.CMS.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Web">
+      <HintPath>..\..\Lib\Kooboo.CMS.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\PageController.cs" />
+    <Compile Include="Controllers\TextContentController.cs" />
+    <Compile Include="FolderNames.cs" />
+    <Compile Include="ManagementContext.cs" />
+    <Compile Include="ManagementInitializer.cs" />
+    <Compile Include="ManagementStartup.cs" />
+    <Compile Include="Menus\PageMappingMenuItemInitializer.cs" />
+    <Compile Include="Models\DisplayPosition.cs" />
+    <Compile Include="Models\HtmlBanner.cs" />
+    <Compile Include="Models\Layer.cs" />
+    <Compile Include="Models\MetaSetting.cs" />
+    <Compile Include="Models\MobileLanguage.cs" />
+    <Compile Include="Models\PageMapping.cs" />
+    <Compile Include="Models\PixelPerLayout.cs" />
+    <Compile Include="Models\PixelPerPage.cs" />
+    <Compile Include="Models\RedirectBasedOnBrowserLanguage.cs" />
+    <Compile Include="Models\Setting.cs" />
+    <Compile Include="Models\TopBanner.cs" />
+    <Compile Include="ModuleAreaRegistration.cs" />
+    <Compile Include="ModuleEvents.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchemaNames.cs" />
+    <Compile Include="Services\ApiSettingService.cs" />
+    <Compile Include="Services\SiteScriptSettingService.cs" />
+    <Compile Include="Services\CheckoutApiSettingService.cs" />
+    <Compile Include="Services\CheckoutSiteSettingService.cs" />
+    <Compile Include="Services\CommonSettingService.cs" />
+    <Compile Include="Services\GameOmnitureSettingService.cs" />
+    <Compile Include="Services\GoogleAnalyticsSettingService.cs" />
+    <Compile Include="Services\HermitTermsService.cs" />
+    <Compile Include="Services\HtmlBannerService.cs" />
+    <Compile Include="Services\IPadRedirectSettingService.cs" />
+    <Compile Include="Services\LayerService.cs" />
+    <Compile Include="Services\MetaSettingService.cs" />
+    <Compile Include="Services\MobileApiSettingService.cs" />
+    <Compile Include="Services\MobileLanguageService.cs" />
+    <Compile Include="Services\MobileRedirectSettingService.cs" />
+    <Compile Include="Services\MobileSiteSettingService.cs" />
+    <Compile Include="Services\OmnitureSettingService.cs" />
+    <Compile Include="Services\PageMappingService.cs" />
+    <Compile Include="Services\PixelPerLayoutService.cs" />
+    <Compile Include="Services\PixelPerPageService.cs" />
+    <Compile Include="Services\RedirectBasedOnBrowserLanguageService.cs" />
+    <Compile Include="Services\SearchSettingService.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
+    <Compile Include="Services\SettingService.cs" />
+    <Compile Include="Services\SocialRibbonSettingService.cs" />
+    <Compile Include="Services\SynchronizeContentService.cs" />
+    <Compile Include="Services\TagPlacementService.cs" />
+    <Compile Include="Services\TopBannerService.cs" />
+    <Compile Include="Subscribers\ClearCacheSubscriber.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

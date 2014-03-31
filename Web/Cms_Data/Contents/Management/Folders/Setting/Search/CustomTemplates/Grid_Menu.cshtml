@@ -1,0 +1,27 @@
+﻿@using Kooboo.CMS.Toolkit
+@{
+    var clearSearchCache = ViewContext.RequestContext.AllRouteValues()["ClearSearchCache"].AsBool();
+    if (clearSearchCache)
+    {
+        Travix.TravixContext.Current.SearchBoxService.ClearSearchBoxCache();
+    }
+
+    var routes = ViewContext.RequestContext.AllRouteValues();   
+}
+<ul class="panel">
+    <li>
+        <a href="@(new HtmlString(Url.Action("Create", ViewContext.RequestContext.AllRouteValues().Merge("return", ViewContext.HttpContext.Request.RawUrl))))">@Html.IconImage("add")@("Add content".Localize())</a></li>
+    <li><a href="@Url.Action("Delete", ViewContext.RequestContext.AllRouteValues().Merge("return", ViewContext.HttpContext.Request.RawUrl))" data-show-on-check="Any" data-command-type="AjaxPost" data-confirm="@("Are you sure you want to delete these items?".Localize())">
+        @Html.IconImage("delete") @("Delete".Localize())</a></li>
+    @if (ViewBag.AllowedEdit)
+    {
+        <li><a href="@Url.Action("BatchPublish", ViewContext.RequestContext.AllRouteValues().Merge("return", ViewContext.HttpContext.Request.RawUrl))" data-show-on-check="Any" data-show-on-selector=".localized.unpublished"  data-command-type="AjaxPost" data-confirm="@("Are you sure you want to publish these items?".Localize())">
+            @Html.IconImage("publish") @("Publish".Localize())</a></li>
+
+        <li><a href="@Url.Action("BatchUnpublish", ViewContext.RequestContext.AllRouteValues().Merge("return", ViewContext.HttpContext.Request.RawUrl))" data-show-on-check="Any" data-show-on-selector=".localized.published" data-command-type="AjaxPost" data-confirm="@("Are you sure you want to unpublish these items?".Localize())">
+            @Html.IconImage("unpublish") @("Unpublish".Localize())</a></li>
+    }
+    <li>
+        @Html.ActionLink("Clear search cache".Localize(), "Index", "TextContent", ViewContext.RequestContext.AllRouteValues().Merge("FolderName", routes["FolderName"]).Merge("ClearSearchCache", "true"), new RouteValueDictionary(new { title = "Clear Search Cache".Localize(), onclick = "return confirm('Are you sure to clear search cache?')" }))
+    </li>
+</ul>

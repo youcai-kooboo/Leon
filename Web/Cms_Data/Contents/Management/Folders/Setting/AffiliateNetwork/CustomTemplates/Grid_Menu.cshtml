@@ -1,0 +1,24 @@
+﻿@using Kooboo.CMS.Toolkit
+@{
+    if (string.Equals(Request["clearCache"], "true"))
+    {
+        Kooboo.Modules.Management.ManagementContext.Current.AffiliateNetworkSettingService.ClearAffiliateNetworkCache();
+    }
+}
+<ul class="panel">
+    <li>
+        <a href="@(new HtmlString(Url.Action("Create", ViewContext.RequestContext.AllRouteValues().Merge("return", ViewContext.HttpContext.Request.RawUrl))))">@Html.IconImage("add")@("Add content".Localize())</a></li>
+    <li><a href="@Url.Action("Delete", ViewContext.RequestContext.AllRouteValues().Merge("return", ViewContext.HttpContext.Request.RawUrl))" data-show-on-check="Any" data-command-type="AjaxPost" data-confirm="@("Are you sure you want to delete these items?".Localize())">
+        @Html.IconImage("delete") @("Delete".Localize())</a></li>
+    @if (ViewBag.AllowedEdit)
+    {
+        <li><a href="@Url.Action("BatchPublish", ViewContext.RequestContext.AllRouteValues().Merge("return", ViewContext.HttpContext.Request.RawUrl))" data-show-on-check="Any" data-show-on-selector=".localized.unpublished"  data-command-type="AjaxPost" data-confirm="@("Are you sure you want to publish these items?".Localize())">
+            @Html.IconImage("publish") @("Publish".Localize())</a></li>
+
+        <li><a href="@Url.Action("BatchUnpublish", ViewContext.RequestContext.AllRouteValues().Merge("return", ViewContext.HttpContext.Request.RawUrl))" data-show-on-check="Any" data-show-on-selector=".localized.published" data-command-type="AjaxPost" data-confirm="@("Are you sure you want to unpublish these items?".Localize())">
+            @Html.IconImage("unpublish") @("Unpublish".Localize())</a></li>
+    }
+    <li>
+        @Html.ActionLink("Clear cache".Localize(), "Index", ViewContext.RequestContext.AllRouteValues().Merge("ClearCache", "true"), new RouteValueDictionary(new { @class = "clearcache", onclick = "return confirm('" + "Are you sure you want to clear the caches?".Localize() + "')" }))
+    </li>
+</ul>

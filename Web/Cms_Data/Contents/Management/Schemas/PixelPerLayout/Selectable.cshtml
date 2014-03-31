@@ -1,0 +1,183 @@
+﻿
+@model Kooboo.CMS.Web.Areas.Contents.Models.SelectableViewModel
+@using Kooboo.CMS.Content.Query
+@using Kooboo.CMS.Content.Models
+@using Kooboo.CMS.Web.Areas.Contents.Controllers
+@{
+    var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var folder = (Kooboo.CMS.Content.Models.TextFolder)ViewData["Folder"];
+    var routes = ViewContext.RequestContext.AllRouteValues();
+
+    var parentUUID = routes["parentUUID"] ?? "";
+
+    var parent = folder.Parent;
+
+    var nameList = new List<string>() { folder.FriendlyText };
+
+    while (parent != null)
+    {
+        parent = Kooboo.CMS.Content.Models.IPersistableExtensions.AsActual(parent);
+        if (parent != null)
+        {
+            nameList.Add(parent.FriendlyText);
+            parent = parent.Parent;
+        }
+        
+    }
+
+    nameList.Reverse();   
+
+   var childFolders = Model.ChildFolders==null? new TextFolder[0]:Model.ChildFolders.ToArray();
+}
+
+<div class="common-table fixed">
+ <div class="thead">
+    <table>
+        <thead>
+            <tr>
+                <th class="checkbox">
+                    <input type="checkbox" class="select-all" />
+                </th>
+                		<th class="Layout @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Layout",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Layout", "Layout", -1)</th>
+		<th class="Description @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Description",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Description", "Description", -1)</th>
+		<th class="StartDate @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "StartDate",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "StartDate", "StartDate", -1)</th>
+		<th class="StopDate @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "StopDate",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "StopDate", "StopDate", -1)</th>
+		<th class="DisplayPosition @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "DisplayPosition",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "DisplayPosition", "DisplayPosition", -1)</th>
+		<th class="UtcCreationDate @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "UtcCreationDate",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Creation date", "UtcCreationDate", -1)</th>
+		<th class="Published @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Published",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Published", "Published", -1)</th>
+
+            </tr>
+        </thead>
+    </table>
+</div>
+<div class="tbody">
+    <table>
+        <thead>
+            <tr>
+                <th class="checkbox">
+                    <input type="checkbox" class="select-all" />
+                </th>
+                		<th class="Layout @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Layout",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Layout", "Layout", -1)</th>
+		<th class="Description @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Description",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Description", "Description", -1)</th>
+		<th class="StartDate @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "StartDate",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "StartDate", "StartDate", -1)</th>
+		<th class="StopDate @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "StopDate",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "StopDate", "StopDate", -1)</th>
+		<th class="DisplayPosition @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "DisplayPosition",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "DisplayPosition", "DisplayPosition", -1)</th>
+		<th class="UtcCreationDate @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "UtcCreationDate",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Creation date", "UtcCreationDate", -1)</th>
+		<th class="Published @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Published",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Published", "Published", -1)</th>
+
+            </tr>
+        </thead>
+        <tbody>
+        @if (childFolders.Length == 0 && Model.Contents.TotalItemCount == 0)
+        {
+            <tr class="empty">
+                <td colspan="100">
+                    @("Empty".Localize())
+                </td>
+            </tr>
+        }
+        else{
+            if(folder.Parent != null && ((TextFolder)folder.Parent).AsActual().SchemaName.EqualsOrNullEmpty(folder.SchemaName,StringComparison.OrdinalIgnoreCase)){
+                    <tr class="folderTr">
+                        <td></td>
+                        <td>
+                            <a class="f-icon folder" href="@this.Url.Action("SelectCategories", ViewContext.RequestContext.AllRouteValues().Merge("FolderName", (object)(folder.Parent.FullName)).Merge("FullName", (object)(folder.Parent.FullName)))">...</a>
+                        </td>
+                        <td colspan="6"></td>
+                    </tr>
+             }
+             foreach (dynamic item in childFolders)
+                {
+                    <tr class="folderTr">
+                        <td>                            
+                        </td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(item.SchemaName))
+                            {
+                                <a href="@this.Url.Action("SelectCategories", ViewContext.RequestContext.AllRouteValues().Merge("FolderName", (object)(item.FullName)).Merge("FullName", (object)(item.FullName)))" >
+                                   @Html.IconImage("folder") @Kooboo.CMS.Content.Models.IPersistableExtensions.AsActual(item).FriendlyText</a>
+                            }
+                            else
+                            {
+                                <a href="@this.Url.Action("SelectCategories", ViewContext.RequestContext.AllRouteValues().Merge("controller", "TextFolder").Merge("FolderName", (object)(item.FullName)).Merge("FullName", (object)(item.FullName)))" >
+                                   @Html.IconImage("folder") @Kooboo.CMS.Content.Models.IPersistableExtensions.AsActual(item).FriendlyText</a>
+                            }
+                        </td>
+                        <td colspan="6">
+                        </td>                      
+                    </tr>
+                } 
+        }
+           @AddTreeItems(Model.Contents, schema, folder, true)
+        </tbody>
+    </table>
+</div>
+</div>
+@helper AddTreeItems(IEnumerable<TextContent> items, Schema schema, TextFolder folder, bool isRoot)
+    {
+        var DisplayPosition_data = schema["DisplayPosition"].SelectionItems;    
+        if (items.Count() > 0)
+        {
+            foreach (dynamic item in items)
+            {
+    <tr id="@item.UUID" class= "doctr  @((item.IsLocalized != null && item.IsLocalized == false) ? "unlocalized" : "localized") @((item.Published == null || item.Published == false) ? "unpublished" : "published")">
+        <td class='checkbox'>
+            @if (Model.SingleChoice)
+            {
+                <input type="radio" value='@item["UUID"]' name="select" class="select doc"/> 
+            }
+            else
+            {
+                <input type="checkbox" value='@item["UUID"]' name="select" class="select docs"/>
+            }
+        </td>
+        		<td>@if(Model.ShowTreeStyle){
+		<span class="expander">@Html.IconImage("arrow")</span>}
+ @Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.Layout)</td>
+		<td>@Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.Description)</td>
+		<td class="date">@(item["StartDate"] == null?"":((DateTime)item["StartDate"]).ToLocalTime().ToShortDateString())</td>
+		<td class="date">@(item["StopDate"] == null?"":((DateTime)item["StopDate"]).ToLocalTime().ToShortDateString())</td>
+		<td>@{
+                        string DisplayPosition_rawValue = (item.DisplayPosition ?? "").ToString();
+                        string[] DisplayPosition_value = DisplayPosition_rawValue.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                      
+                        var DisplayPosition_values = DisplayPosition_data.Where(it =>
+                            DisplayPosition_value.Any(s =>
+                                s.EqualsOrNullEmpty(it.Value, StringComparison.OrdinalIgnoreCase))).ToArray();}
+                        @if (DisplayPosition_values.Length > 0)
+                        {
+                            @(string.Join(",", DisplayPosition_values.Select(it => it.Text)))
+                        }
+                        else
+                        {
+                            @Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.DisplayPosition)
+                        }</td>
+		<td class="date">@(DateTime.Parse(item["UtcCreationDate"].ToString()).ToLocalTime().ToShortDateString())</td>
+		<td>@Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.Published)</td>
+    </tr>     
+            }
+        }
+}
+
+<table id="treeNode-template" style="display: none" data-model="JsonModel">
+    <tbody data-bind="foreach:{data:Model,as:'item'}">  
+           
+      <tr data-bind="attr:{id:item.UUID,parentChain:item._ParentChain_}">
+        <td class='checkbox'>
+            @if (Model.SingleChoice)
+            {
+                <input type="radio" name="select" data-bind="attr:{value:item.UUID}" class="select doc"/> 
+            }
+            else
+            {                
+               <input type="checkbox" name="select" class="select docs" data-bind="attr:{value:item.UUID}"/>
+            }
+        </td>
+		<td class="treeStyle">
+		<span class="expander">@Html.IconImage("arrow")</span>
+		@Html.IconImage("file document")<span data-bind="html:item.Layout"></span></td>		<td data-bind="html:item.Description"></td>		<td data-bind="html:item.DisplayPosition"></td>
+        <td class="date" data-bind="html:item._LocalCreationDate_"></td>
+        <td><span data-bind="text : (item.Published == true?'YES': '-')"></span></td>
+    </tr>     
+    </tbody>
+</table>

@@ -1,0 +1,92 @@
+﻿@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{ var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+   var allowedEdit = (bool)ViewData["AllowedEdit"];
+   var allowedView = (bool)ViewData["AllowedView"];
+   var parentUUID = ViewContext.RequestContext.AllRouteValues()["parentUUID"];
+   var parentFolder = ViewContext.RequestContext.AllRouteValues()["parentFolder"];
+}
+@using (Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()
+    , FormMethod.Post
+    , new RouteValueDictionary(new { enctype = "application/x-www-form-urlencoded" })))
+{
+    @helper RenderSites(IEnumerable<Site> sites, string selectedSite, string prefix = "")
+{ 
+    foreach (var site in sites)
+    {
+        <option value="@site.FullName" @(site.FullName.Equals(selectedSite, StringComparison.OrdinalIgnoreCase) ? "selected" : "")>
+            @Html.Raw(prefix)
+            @site.Name
+        </option>
+    
+        var childSites = ServiceFactory.SiteManager.ChildSites(site);
+        @RenderSites(childSites, selectedSite, prefix + "&nbsp;&nbsp;&nbsp;&nbsp;")
+    }    
+    }
+    
+    <table>
+        <input class='long' id="RootSite" name="RootSite" type="hidden" value="@(Site.Current.FullName)" 
+             data-val-required="The RootSite field is required." data-val="true"/><tr>
+                 <th>
+                     <label for="FromSite">From site</label>
+                 </th>
+                 <td>
+                     <select name="FromSite">
+                         <option value="">Please select a from site</option>
+                         @RenderSites(ServiceFactory.SiteManager.ChildSites(Site.Current), String.Empty)
+                     </select>
+                     @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["FromSite"], null)
+
+                 </td>
+             </tr>
+        <tr>
+            <th>
+                <label for="FromPageUrl">From page url</label>
+            </th>
+            <td>
+                <input class='long' id="FromPageUrl" name="FromPageUrl" type="text" value="@(Model.FromPageUrl ?? "")"  data-val-required="The FromPageUrl field is required." data-val="true"/>
+                @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["FromPageUrl"], null)
+
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="ToSite">To site</label>
+            </th>
+            <td>
+                <select name="ToSite">
+                    <option value="">Please select a to site</option>
+                    @RenderSites(ServiceFactory.SiteManager.ChildSites(Site.Current), String.Empty)
+                </select>
+                @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ToSite"], null)
+
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="ToPageUrl">To page url</label>
+            </th>
+            <td>
+                <input class='long' id="ToPageUrl" name="ToPageUrl" type="text" value="@(Model.ToPageUrl ?? "")"  data-val-required="The ToPageUrl field is required." data-val="true"/>
+                @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ToPageUrl"], null)
+
+            </td>
+        </tr>
+        @if (allowedEdit)
+        {
+            <tr>
+                <th></th>
+                <td>
+                    <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published) ? "checked" : "") value="true"/>
+                    <input type="hidden" value="false" name="Published" />
+                    <label class="inline" for="Published">Published</label>
+                    @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+                </td>
+            </tr>
+        }
+        @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+
+    </table>
+}

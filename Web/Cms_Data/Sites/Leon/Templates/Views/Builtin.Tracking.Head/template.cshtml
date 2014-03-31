@@ -1,0 +1,18 @@
+﻿@using Leon.Modules.Management
+@using Leon.Modules.Management.Models
+ 
+@Html.Raw(ManagementContext.Current.BannerScriptSettingService.GetBannerHeadScript())
+@{
+    var currentPagePixels = ManagementContext.Current.PixelPerPageService.GetPixels();
+    foreach (PixelPerPage pixel in currentPagePixels.Where(m => m.DisplayPosition == ((int)DisplayPosition.Head).ToString()))
+    {
+        @Html.Raw(pixel.Code)
+    }
+
+    // Current layout pixels
+    var currentLayoutPixels = ManagementContext.Current.PixelPerLayoutService.GetPixels();
+    foreach (PixelPerLayout pixel in currentLayoutPixels.Where(m => m.DisplayPosition == ((int)DisplayPosition.Head).ToString()))
+    {
+        @Html.Raw(pixel.Code)
+    }
+}

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F95DE9C-DBD1-4133-BB9B-401C69A4D92B}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leon.Web</RootNamespace>
+    <AssemblyName>Leon.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CookComputing.XmlRpcV2">
+      <HintPath>..\Lib\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="dotless.Core">
+      <HintPath>..\Lib\dotless.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Management\bin\Leon.Modules.Management.dll" />
+    <Content Include="Areas\Management\Themes\Default\Order.txt" />
+    <Content Include="Cms_Data\META\DllReferences.txt" />
+    <Content Include="Cms_Data\Sites\Leon\Assemblies\Leon.Plugins.Business.dll" />
+    <Content Include="Cms_Data\SiteTemplates\SampleSite.png" />
+    <Content Include="Cms_Data\SiteTemplates\SmallBusiness.png" />
+    <Content Include="Cms_Data\SiteTemplates\WorkCenter.PNG" />
+    <Content Include="Cms_Data\SiteTemplates\WwHopeCenter.png" />
+    <Content Include="Cms_Data\Views\ABRuleTemplates\README.txt" />
+    <Content Include="Cms_Data\Views\Shared\README.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cms_Data\Account\Roles\Content manager.config" />
+    <Content Include="Cms_Data\Account\Roles\Developer.config" />
+    <Content Include="Cms_Data\Account\Users\admin.config" />
+    <Content Include="Cms_Data\ContentType_Templates\Controls\ImageCrop.cshtml" />
+    <Content Include="Cms_Data\Memberships\SampleSite\MembershipConnects.config" />
+    <Content Include="Cms_Data\Memberships\SampleSite\MembershipUsers.config" />
+    <Content Include="Cms_Data\Memberships\SampleSite\setting.config" />
+    <Content Include="Cms_Data\SiteTemplates\Empty.zip" />
+    <Content Include="Cms_Data\SiteTemplates\SampleSite.zip" />
+    <Content Include="Cms_Data\SiteTemplates\SmallBusiness.zip" />
+    <Content Include="Cms_Data\SiteTemplates\WorkCenter.zip" />
+    <Content Include="Cms_Data\SiteTemplates\WwHopeCenter.zip" />
+    <Content Include="Cms_Data\Views\ControlTypes\ImageCrop.cshtml" />
+    <Content Include="Cms_Data\Views\ControlTypes\MediaFiles.cshtml" />
+    <Content Include="Cms_Data\Views\ControlTypes\MultiFiles.cshtml" />
+    <Content Include="Cms_Data\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Management\Menu.config" />
+    <Content Include="Areas\Management\module.config" />
+    <Content Include="Areas\Management\routes.config" />
+    <Content Include="Areas\Management\Themes\Default\Theme.rule" />
+    <Content Include="Areas\Management\Views\Admin\Index.cshtml" />
+    <Content Include="Areas\Management\Views\Home\HelloWorld.cshtml" />
+    <Content Include="Areas\Management\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Management\Views\Shared\Front.cshtml" />
+    <Content Include="Areas\Management\Views\Shared\_OnInstalling.cshtml" />
+    <Content Include="Areas\Management\Views\Shared\_OnReinstalling.cshtml" />
+    <Content Include="Areas\Management\Views\Shared\_OnUninstalling.cshtml" />
+    <Content Include="Areas\Management\Views\Web.config" />
+    <Content Include="Areas\Management\WebResources.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Leon.Business\Leon.Business.csproj">
+      <Project>{603be49c-b909-40eb-8c9a-2d87629546e0}</Project>
+      <Name>Leon.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extensions\Kooboo.CMS.Toolkit\Kooboo.CMS.Toolkit.csproj">
+      <Project>{3bae0f65-bedf-4057-baa8-cd479fd637a7}</Project>
+      <Name>Kooboo.CMS.Toolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extensions\Leon.KB.Extensions\Leon.KB.Extensions.csproj">
+      <Project>{dfec4b63-e156-444c-982e-b52a27dbe15f}</Project>
+      <Name>Leon.KB.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules\Management\Leon.Modules.Management.csproj">
+      <Project>{c5878d2d-e856-41e5-9b51-32499de72931}</Project>
+      <Name>Leon.Modules.Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugins\Leon.Plugins.csproj">
+      <Project>{790d8eb0-19b5-42b6-a51d-ff2e763daf86}</Project>
+      <Name>Leon.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cms_Data\Sites\Leon\Membership.zip" />
+    <Content Include="Cms_Data\Sites\Leon\setting.config" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Layouts\Home\setting.config" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Layouts\Home\template.cshtml" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\Builtin.Tracking.BodyStart\setting.config" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\Builtin.Tracking.BodyStart\template.cshtml" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\Builtin.Tracking.BodyEnd\setting.config" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\Builtin.Tracking.BodyEnd\template.cshtml" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\Builtin.Tracking.Head\setting.config" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\Builtin.Tracking.Head\template.cshtml" />
+    <Content Include="Cms_Data\Sites\Leon\WebEvents\2014-03-14.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\Builtin.Footer\setting.config" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\Builtin.Footer\template.cshtml" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\Builtin.Header\setting.config" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\Builtin.Header\template.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cms_Data\Contents\Management\Schemas\PixelPerLayout\CustomTemplates\Grid.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\SearchResult\setting.config" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Views\SearchResult\template.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>15582</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://www.leon.com</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
