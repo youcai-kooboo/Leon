@@ -1885,4 +1885,22 @@
   <data name="Destination name" xml:space="preserve">
     <value>Destination name</value>
   </data>
+  <data name="Export the site" xml:space="preserve">
+    <value>Export the site</value>
+  </data>
+  <data name="The Export type field is required." xml:space="preserve">
+    <value>The Export type field is required.</value>
+  </data>
+  <data name="Export type" xml:space="preserve">
+    <value>Export type</value>
+  </data>
+  <data name="The Include sub sites field is required." xml:space="preserve">
+    <value>The Include sub sites field is required.</value>
+  </data>
+  <data name="Include sub sites" xml:space="preserve">
+    <value>Include sub sites</value>
+  </data>
+  <data name="The repository is offline, please remove this file to take it online." xml:space="preserve">
+    <value>The repository is offline, please remove this file to take it online.</value>
+  </data>
 </root>
