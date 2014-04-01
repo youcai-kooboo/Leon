@@ -480,6 +480,7 @@
     <Content Include="Areas\Sites\Styles\sites.css" />
     <Content Include="Bin\CookComputing.XmlRpcV2.dll" />
     <Content Include="Bin\Couchbase.dll" />
+    <Content Include="Bin\DiffPlex.dll" />
     <Content Include="Bin\dotless.Core.dll" />
     <Content Include="Bin\DotNetOpenAuth.AspNet.dll" />
     <Content Include="Bin\DotNetOpenAuth.Core.dll" />
@@ -533,6 +534,7 @@
     <Content Include="Bin\Ninject.dll" />
     <Content Include="Bin\NuGet.Core.dll" />
     <Content Include="Bin\Org.Mentalis.Security.Cryptography.dll" />
+    <Content Include="Bin\SqlServer.config" />
     <Content Include="Bin\System.Net.Http.dll" />
     <Content Include="Bin\System.Web.Helpers.dll" />
     <Content Include="Bin\System.Web.Mvc.dll" />
@@ -1613,7 +1615,9 @@
     <Content Include="Cms_Data\Sites\Leon\Templates\Views\SearchResult\template.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bin\Kooboo.CMS.Sites.Persistence.EntityFramework.config" />
+    <Content Include="Bin\Kooboo.CMS.Sites.Persistence.EntityFramework.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Areas\Account\Menu.config" />
     <Content Include="Areas\Account\Views\LogOn\ForgotPassword.cshtml" />
     <Content Include="Areas\Account\Views\LogOn\Index.cshtml" />
@@ -1911,7 +1915,6 @@
     <Content Include="Areas\Sites\Views\Web.config" />
     <Content Include="Areas\Sites\WebResources.config" />
     <None Include="Bin\Leon.Web.dll.config" />
-    <Content Include="Bin\SqlServer.config" />
     <Content Include="Menu.config" />
     <None Include="Properties\PublishProfiles\Leon-Local.pubxml" />
     <Content Include="routes.config" />
