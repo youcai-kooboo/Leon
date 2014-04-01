@@ -32,33 +32,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Kooboo, Version=4.2.1.1126, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Kooboo.dll</HintPath>
+    <Reference Include="Kooboo">
+      <HintPath>M:\Lab\kooboo\Lib\Kooboo.dll</HintPath>
     </Reference>
-    <Reference Include="Kooboo.CMS.Caching, Version=4.2.1.1126, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Kooboo.CMS.Caching.dll</HintPath>
+    <Reference Include="Kooboo.CMS.Caching">
+      <HintPath>M:\Lab\kooboo\Lib\Kooboo.CMS.Caching.dll</HintPath>
     </Reference>
-    <Reference Include="Kooboo.CMS.Common, Version=4.2.1.1126, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Kooboo.CMS.Common.dll</HintPath>
+    <Reference Include="Kooboo.CMS.Common">
+      <HintPath>M:\Lab\kooboo\Lib\Kooboo.CMS.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Kooboo.CMS.Content, Version=4.2.1.1126, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Kooboo.CMS.Content.dll</HintPath>
+    <Reference Include="Kooboo.CMS.Content">
+      <HintPath>M:\Lab\kooboo\Lib\Kooboo.CMS.Content.dll</HintPath>
     </Reference>
-    <Reference Include="Kooboo.CMS.Form, Version=4.2.1.1126, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Kooboo.CMS.Form.dll</HintPath>
+    <Reference Include="Kooboo.CMS.Form">
+      <HintPath>M:\Lab\kooboo\Lib\Kooboo.CMS.Form.dll</HintPath>
     </Reference>
-    <Reference Include="Kooboo.CMS.Sites, Version=4.2.1.1202, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Kooboo.CMS.Sites.dll</HintPath>
+    <Reference Include="Kooboo.CMS.Sites">
+      <HintPath>M:\Lab\kooboo\Lib\Kooboo.CMS.Sites.dll</HintPath>
     </Reference>
-    <Reference Include="Kooboo.CMS.Web, Version=4.2.1.1202, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Kooboo.CMS.Web.dll</HintPath>
+    <Reference Include="Kooboo.CMS.Web">
+      <HintPath>M:\Lab\kooboo\Lib\Kooboo.CMS.Web.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

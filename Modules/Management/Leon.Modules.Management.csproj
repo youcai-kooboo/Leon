@@ -47,9 +47,6 @@
     <Reference Include="Kooboo.CMS.Sites">
       <HintPath>..\..\Lib\Kooboo.CMS.Sites.dll</HintPath>
     </Reference>
-    <Reference Include="Kooboo.CMS.Toolkit">
-      <HintPath>..\..\Lib\Kooboo.CMS.Toolkit.dll</HintPath>
-    </Reference>
     <Reference Include="Kooboo.CMS.Web">
       <HintPath>..\..\Lib\Kooboo.CMS.Web.dll</HintPath>
     </Reference>
@@ -121,7 +118,12 @@
     <Compile Include="Services\TopBannerService.cs" />
     <Compile Include="Subscribers\ClearCacheSubscriber.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Extensions\Kooboo.CMS.Toolkit\Kooboo.CMS.Toolkit.csproj">
+      <Project>{3bae0f65-bedf-4057-baa8-cd479fd637a7}</Project>
+      <Name>Kooboo.CMS.Toolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
