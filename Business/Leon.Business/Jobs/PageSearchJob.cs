@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Kooboo.CMS.Common.Persistence.Non_Relational;
+using Kooboo.CMS.Content.Models;
 using Kooboo.CMS.Search;
 using Kooboo.CMS.Sites.Models;
 using Kooboo.CMS.Sites.Services;
@@ -44,8 +46,9 @@ namespace Leon.Business.Jobs
         {
             if (page.Searchable)
             {
-                SearchHelper.OpenService(site.GetRepository()).Add(page);
-                SearchHelper.OpenService(site.GetRepository()).Update(page);
+                var repository = new Repository(site.AsActual().Repository);
+                SearchHelper.OpenService(repository).Add(page);
+                SearchHelper.OpenService(repository).Update(page);
             }
             var subPages = ServiceFactory.PageManager.ChildPages(site, page.FullName, "");
             if (subPages.Any())
