@@ -1,0 +1,1773 @@
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/17 11:43:27
+Event time (UTC): 2014/3/17 3:43:27
+Event ID: fd3569a95d174620b43a039d70093e1e
+Event sequence: 184
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-18-130395011186494694
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /Sites/Module/Include?siteName=Leon~EN&return=%2FSites%2FModule%3FsiteName%3DLeon~EN
+    Request path: /Sites/Module/Include
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 20
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/ebebf629b8de4d48b695e58978914ed2' was not found.
+Event time: 2014/3/17 13:43:20
+Event time (UTC): 2014/3/17 5:43:20
+Event ID: 2aca332077e14011948430743b97497e
+Event sequence: 5
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-3-130395085868586265
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/ebebf629b8de4d48b695e58978914ed2' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/ebebf629b8de4d48b695e58978914ed2
+    Request path: /__browserLink/requestData/ebebf629b8de4d48b695e58978914ed2
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 22
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/3f05bbba78fe402b882136e4a1e4050b' was not found.
+Event time: 2014/3/17 13:55:41
+Event time (UTC): 2014/3/17 5:55:41
+Event ID: 023125c9e9a641a2b45df3b29092b554
+Event sequence: 5
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-9-130395093286520547
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/3f05bbba78fe402b882136e4a1e4050b' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/3f05bbba78fe402b882136e4a1e4050b
+    Request path: /__browserLink/requestData/3f05bbba78fe402b882136e4a1e4050b
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 52
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/27df8bce553f44289662ab54feadd7cd' was not found.
+Event time: 2014/3/17 14:01:57
+Event time (UTC): 2014/3/17 6:01:57
+Event ID: 7c60725db99d4a348839d591681f5d16
+Event sequence: 7
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-12-130395097036625041
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/27df8bce553f44289662ab54feadd7cd' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/27df8bce553f44289662ab54feadd7cd
+    Request path: /__browserLink/requestData/27df8bce553f44289662ab54feadd7cd
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 21
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/34271f015b6d4f7da3fadc4a6b8ee6d0' was not found.
+Event time: 2014/3/17 14:02:51
+Event time (UTC): 2014/3/17 6:02:51
+Event ID: ace2e26f60e24fb387200b0b21aa37b7
+Event sequence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130395097566765363
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/34271f015b6d4f7da3fadc4a6b8ee6d0' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/34271f015b6d4f7da3fadc4a6b8ee6d0
+    Request path: /__browserLink/requestData/34271f015b6d4f7da3fadc4a6b8ee6d0
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 30
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/82fc6ae4d4ca46f8a1f55ce5141bad78' was not found.
+Event time: 2014/3/17 14:31:39
+Event time (UTC): 2014/3/17 6:31:39
+Event ID: e310413d70e24b96bda1953b014aec82
+Event sequence: 6
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-19-130395114858264380
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/82fc6ae4d4ca46f8a1f55ce5141bad78' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/82fc6ae4d4ca46f8a1f55ce5141bad78
+    Request path: /__browserLink/requestData/82fc6ae4d4ca46f8a1f55ce5141bad78
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 80
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/106b6878bfc64803a395058c3fe693d4' was not found.
+Event time: 2014/3/17 14:33:35
+Event time (UTC): 2014/3/17 6:33:35
+Event ID: 583f6f4259db4126a1762ed408997581
+Event sequence: 5
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-21-130395116025281130
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/106b6878bfc64803a395058c3fe693d4' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/106b6878bfc64803a395058c3fe693d4
+    Request path: /__browserLink/requestData/106b6878bfc64803a395058c3fe693d4
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 69
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/9e9845e77afe490bb5aac479a1d2d258' was not found.
+Event time: 2014/3/17 14:34:15
+Event time (UTC): 2014/3/17 6:34:15
+Event ID: 4316d49a85ad4936bfb4221af2d9c69c
+Event sequence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-22-130395116443505051
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/9e9845e77afe490bb5aac479a1d2d258' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/9e9845e77afe490bb5aac479a1d2d258
+    Request path: /__browserLink/requestData/9e9845e77afe490bb5aac479a1d2d258
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 70
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/b76c8c24e2b542239c78d0fbc52b8bf6' was not found.
+Event time: 2014/3/17 14:34:50
+Event time (UTC): 2014/3/17 6:34:50
+Event ID: af301e290d304167944ee0272a2e396d
+Event sequence: 3
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-23-130395116823246771
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/b76c8c24e2b542239c78d0fbc52b8bf6' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/b76c8c24e2b542239c78d0fbc52b8bf6
+    Request path: /__browserLink/requestData/b76c8c24e2b542239c78d0fbc52b8bf6
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 75
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/0a472d22a4a040c090eb53b1eccdebd7' was not found.
+Event time: 2014/3/17 14:35:15
+Event time (UTC): 2014/3/17 6:35:15
+Event ID: 1b2258b23e7b456cb69e3dbd54eceb6d
+Event sequence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-24-130395117068460796
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/0a472d22a4a040c090eb53b1eccdebd7' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/0a472d22a4a040c090eb53b1eccdebd7
+    Request path: /__browserLink/requestData/0a472d22a4a040c090eb53b1eccdebd7
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 70
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/3aabcd5a78d24f5fb2f6fcefd85f43af' was not found.
+Event time: 2014/3/17 14:35:35
+Event time (UTC): 2014/3/17 6:35:35
+Event ID: adcab7fa5ddf4a118e719b697bd71d9e
+Event sequence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-25-130395117270792369
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/3aabcd5a78d24f5fb2f6fcefd85f43af' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/3aabcd5a78d24f5fb2f6fcefd85f43af
+    Request path: /__browserLink/requestData/3aabcd5a78d24f5fb2f6fcefd85f43af
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 10
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/2fd2f35387bf43f9b35d3b8d6970398e' was not found.
+Event time: 2014/3/17 14:43:04
+Event time (UTC): 2014/3/17 6:43:04
+Event ID: 8475da5df157444aa70599264d7a44b5
+Event sequence: 17
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-28-130395121684534821
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/2fd2f35387bf43f9b35d3b8d6970398e' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/2fd2f35387bf43f9b35d3b8d6970398e
+    Request path: /__browserLink/requestData/2fd2f35387bf43f9b35d3b8d6970398e
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 33
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: The method or operation is not implemented.
+Event time: 2014/3/17 14:44:46
+Event time (UTC): 2014/3/17 6:44:46
+Event ID: 096e8294ab0840ee911dc273269d8797
+Event sequence: 27
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-29-130395122192993903
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.NotImplementedException
+    Exception message: The method or operation is not implemented.
+
+Request information:
+    Request URL: /
+    Request path: /
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 32
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Leon.Plugins.Business.HomePlugin.HttpGet(Page_Context context, PagePositionContext positionContext) in m:\Lab\kooboo\Plugins\Business\HomePlugin.cs:line 21
+   at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugin(String pluginType, PagePositionContext positionContext, String httpMethod)
+   at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins()
+   at Kooboo.CMS.Sites.Controllers.PageController.Entry()
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass13.<InvokeActionMethodWithFilters>b__10()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2014/3/17 14:44:46
+Event time (UTC): 2014/3/17 6:44:46
+Event ID: 2897084cb8cb44729c6c89a0726ee740
+Event sequence: 28
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-29-130395122192993903
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Process information:
+    Process ID: 7908
+    Process name: w3wp.exe
+    Account name: NT AUTHORITY\NETWORK SERVICE
+
+Exception information:
+    Exception type: System.NotImplementedException
+    Exception message: The method or operation is not implemented.
+
+Request information:
+    Request URL: http://www.leon.com/
+    Request path: /
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 32
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Leon.Plugins.Business.HomePlugin.HttpGet(Page_Context context, PagePositionContext positionContext) in m:\Lab\kooboo\Plugins\Business\HomePlugin.cs:line 21
+   at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugin(String pluginType, PagePositionContext positionContext, String httpMethod)
+   at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins()
+   at Kooboo.CMS.Sites.Controllers.PageController.Entry()
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass13.<InvokeActionMethodWithFilters>b__10()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/9c30335b533d4f04a66f8c8f020e6c9f' was not found.
+Event time: 2014/3/17 14:45:47
+Event time (UTC): 2014/3/17 6:45:47
+Event ID: 8dac336e3c2147f0ac9eacaed4290139
+Event sequence: 6
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-30-130395123327948818
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/9c30335b533d4f04a66f8c8f020e6c9f' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/9c30335b533d4f04a66f8c8f020e6c9f
+    Request path: /__browserLink/requestData/9c30335b533d4f04a66f8c8f020e6c9f
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 29
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/baa45cb9679846c5bd00d20fabfd3f45' was not found.
+Event time: 2014/3/17 14:50:48
+Event time (UTC): 2014/3/17 6:50:48
+Event ID: 2080af89f1874bb8a5059045654a6405
+Event sequence: 3
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-32-130395126417235516
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/baa45cb9679846c5bd00d20fabfd3f45' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/baa45cb9679846c5bd00d20fabfd3f45
+    Request path: /__browserLink/requestData/baa45cb9679846c5bd00d20fabfd3f45
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 27
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/0102508fae044980b6a14431f704ed96' was not found.
+Event time: 2014/3/17 14:51:14
+Event time (UTC): 2014/3/17 6:51:14
+Event ID: 22479e5021c043d6ad05381a7c1972ca
+Event sequence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-33-130395126669939969
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/0102508fae044980b6a14431f704ed96' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/0102508fae044980b6a14431f704ed96
+    Request path: /__browserLink/requestData/0102508fae044980b6a14431f704ed96
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 23
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/1ed569728b474e5e828f9782082ea7d7' was not found.
+Event time: 2014/3/17 14:52:15
+Event time (UTC): 2014/3/17 6:52:15
+Event ID: 81aa29adfa8f4a47ba04443a052cac04
+Event sequence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-34-130395127280934916
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/1ed569728b474e5e828f9782082ea7d7' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/1ed569728b474e5e828f9782082ea7d7
+    Request path: /__browserLink/requestData/1ed569728b474e5e828f9782082ea7d7
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 39
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/60ff57a3e8a14c9ab826cc6b744ec19a' was not found.
+Event time: 2014/3/17 14:52:31
+Event time (UTC): 2014/3/17 6:52:31
+Event ID: 22376bd74ceb42aba23d444ae48be445
+Event sequence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-35-130395127440164024
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/60ff57a3e8a14c9ab826cc6b744ec19a' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/60ff57a3e8a14c9ab826cc6b744ec19a
+    Request path: /__browserLink/requestData/60ff57a3e8a14c9ab826cc6b744ec19a
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 73
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/632c39d81ac04aa6badced18c5083b5a' was not found.
+Event time: 2014/3/17 14:52:42
+Event time (UTC): 2014/3/17 6:52:42
+Event ID: 92765d6ab2404b978d9652ea3bdc6019
+Event sequence: 4
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-36-130395127546890128
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/632c39d81ac04aa6badced18c5083b5a' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/632c39d81ac04aa6badced18c5083b5a
+    Request path: /__browserLink/requestData/632c39d81ac04aa6badced18c5083b5a
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 21
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: The method or operation is not implemented.
+Event time: 2014/3/17 14:55:27
+Event time (UTC): 2014/3/17 6:55:27
+Event ID: 770d6f2be4c9432eab9d38435b4cc6d7
+Event sequence: 25
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-37-130395128524256030
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.NotImplementedException
+    Exception message: The method or operation is not implemented.
+
+Request information:
+    Request URL: /
+    Request path: /
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 30
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Leon.Plugins.Business.HomePlugin.HttpGet(Page_Context context, PagePositionContext positionContext) in m:\Lab\kooboo\Plugins\Business\HomePlugin.cs:line 21
+   at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugin(String pluginType, PagePositionContext positionContext, String httpMethod)
+   at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins()
+   at Kooboo.CMS.Sites.Controllers.PageController.Entry()
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass13.<InvokeActionMethodWithFilters>b__10()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2014/3/17 14:55:27
+Event time (UTC): 2014/3/17 6:55:27
+Event ID: 844d17bf6a534c17a2164c51340372ec
+Event sequence: 26
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-37-130395128524256030
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Process information:
+    Process ID: 7908
+    Process name: w3wp.exe
+    Account name: NT AUTHORITY\NETWORK SERVICE
+
+Exception information:
+    Exception type: System.NotImplementedException
+    Exception message: The method or operation is not implemented.
+
+Request information:
+    Request URL: http://www.leon.com/
+    Request path: /
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 30
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Leon.Plugins.Business.HomePlugin.HttpGet(Page_Context context, PagePositionContext positionContext) in m:\Lab\kooboo\Plugins\Business\HomePlugin.cs:line 21
+   at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugin(String pluginType, PagePositionContext positionContext, String httpMethod)
+   at Kooboo.CMS.Sites.View.Page_Context.ExecutePlugins()
+   at Kooboo.CMS.Sites.Controllers.PageController.Entry()
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass13.<InvokeActionMethodWithFilters>b__10()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3007
+Event message: A compilation error has occurred.
+Event time: 2014/3/17 15:10:42
+Event time (UTC): 2014/3/17 7:10:42
+Event ID: 4077d1cb8d1c407691039cfc9c1a30e5
+Event sequence: 45
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-39-130395136315621671
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Process information:
+    Process ID: 7908
+    Process name: w3wp.exe
+    Account name: NT AUTHORITY\NETWORK SERVICE
+
+Exception information:
+    Exception type: System.Web.HttpCompileException
+    Exception message: m:\Lab\kooboo\Web\Cms_Data\Contents\Management\Schemas\PixelPerLayout\CustomTemplates\Grid.cshtml(216): error CS0103: The name 'DisplayPosition_data' does not exist in the current context
+
+Request information:
+    Request URL: http://www.leon.com/Contents/TextContent?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerLayout&siteName=Leon~EN
+    Request path: /Contents/TextContent
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 66
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.GetPathFromSpecificName(ControllerContext controllerContext, String name, String cacheKey, String[]& searchedLocations)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.HtmlHelper.FindPartialView(ViewContext viewContext, String partialViewName, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at ASP._Page_Areas_Contents_Views_TextContent_Index_cshtml.Execute() in m:\Lab\kooboo\Web\Areas\Contents\Views\TextContent\Index.cshtml:line 170
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Controllers.PageControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/7cfcc59d8e5b4a8f9d8996b11860bf72' was not found.
+Event time: 2014/3/17 15:24:01
+Event time (UTC): 2014/3/17 7:24:01
+Event ID: d4d90b0033a3403fa36b3e7d49f95630
+Event sequence: 6
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-41-130395146278911538
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/7cfcc59d8e5b4a8f9d8996b11860bf72' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/7cfcc59d8e5b4a8f9d8996b11860bf72
+    Request path: /__browserLink/requestData/7cfcc59d8e5b4a8f9d8996b11860bf72
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 21
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2014/3/17 17:06:36
+Event time (UTC): 2014/3/17 9:06:36
+Event ID: e4583ce081414f25b3cdb4c126c1a7a3
+Event sequence: 13
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-11-130395207780059203
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Process information:
+    Process ID: 13348
+    Process name: w3wp.exe
+    Account name: NT AUTHORITY\NETWORK SERVICE
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://www.leon.com/Contents/TextContent?repositoryName=LeonEN&FolderName=Product&siteName=Leon~EN
+    Request path: /Contents/TextContent
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 13
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Leon.Extensions.Kooboo4.ManagemnetToolbarProvider.GetGroups(RequestContext requestContext)
+   at System.Linq.Enumerable.<SelectManyIterator>d__14`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__0.MoveNext()
+   at System.Linq.Enumerable.<DistinctIterator>d__81`1.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Sites.Extension.UI.TopToolbar.ToolbarButtons.GetToolbarButtons(RequestContext requestContext)
+   at ASP._Page_Areas_Contents_Views_TextContent_Index_cshtml.<>c__DisplayClass10.<Execute>b__f() in m:\Lab\kooboo\Web\Areas\Contents\Views\TextContent\Index.cshtml:line 146
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClassb.<RenderSection>b__9(TextWriter tw)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at ASP._Page_Views_Shared_Site_cshtml.Execute() in m:\Lab\kooboo\Web\Views\Shared\Site.cshtml:line 29
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Controllers.PageControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2014/3/17 17:07:25
+Event time (UTC): 2014/3/17 9:07:25
+Event ID: 816372c550eb40e8951069acb38bf88d
+Event sequence: 13
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-12-130395208251536170
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Process information:
+    Process ID: 13348
+    Process name: w3wp.exe
+    Account name: NT AUTHORITY\NETWORK SERVICE
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://www.leon.com/Contents/TextContent?repositoryName=LeonEN&FolderName=Product&siteName=Leon~EN
+    Request path: /Contents/TextContent
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 7
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Leon.Extensions.Kooboo4.ManagemnetToolbarProvider.GetGroups(RequestContext requestContext)
+   at System.Linq.Enumerable.<SelectManyIterator>d__14`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__0.MoveNext()
+   at System.Linq.Enumerable.<DistinctIterator>d__81`1.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Sites.Extension.UI.TopToolbar.ToolbarButtons.GetToolbarButtons(RequestContext requestContext)
+   at ASP._Page_Areas_Contents_Views_TextContent_Index_cshtml.<>c__DisplayClass10.<Execute>b__f() in m:\Lab\kooboo\Web\Areas\Contents\Views\TextContent\Index.cshtml:line 146
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClassb.<RenderSection>b__9(TextWriter tw)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at ASP._Page_Views_Shared_Site_cshtml.Execute() in m:\Lab\kooboo\Web\Views\Shared\Site.cshtml:line 29
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Controllers.PageControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/b097904976a0406f99c8a169bab54832' was not found.
+Event time: 2014/3/17 17:11:08
+Event time (UTC): 2014/3/17 9:11:08
+Event ID: e2ce34e65bdd4eb8bb1ddf974586e46b
+Event sequence: 15
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-12-130395208251536170
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/b097904976a0406f99c8a169bab54832' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/b097904976a0406f99c8a169bab54832
+    Request path: /__browserLink/requestData/b097904976a0406f99c8a169bab54832
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 11
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2014/3/17 17:25:21
+Event time (UTC): 2014/3/17 9:25:21
+Event ID: 9ed9e23ad5fc41acba91e17e7a097b03
+Event sequence: 29
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130395212846208970
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Process information:
+    Process ID: 13348
+    Process name: w3wp.exe
+    Account name: NT AUTHORITY\NETWORK SERVICE
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://www.leon.com/Contents/TextContent?repositoryName=LeonEN&FolderName=Product&siteName=Leon~EN
+    Request path: /Contents/TextContent
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 26
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Leon.Extensions.Kooboo4.ManagemnetToolbarProvider.GetGroups(RequestContext requestContext) in m:\Lab\kooboo\Extensions\Kooboo4\ManagemnetToolbarProvider.cs:line 31
+   at System.Linq.Enumerable.<SelectManyIterator>d__14`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__0.MoveNext()
+   at System.Linq.Enumerable.<DistinctIterator>d__81`1.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Sites.Extension.UI.TopToolbar.ToolbarButtons.GetToolbarButtons(RequestContext requestContext)
+   at ASP._Page_Areas_Contents_Views_TextContent_Index_cshtml.<>c__DisplayClass10.<Execute>b__f() in m:\Lab\kooboo\Web\Areas\Contents\Views\TextContent\Index.cshtml:line 146
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClassb.<RenderSection>b__9(TextWriter tw)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at ASP._Page_Views_Shared_Site_cshtml.Execute() in m:\Lab\kooboo\Web\Views\Shared\Site.cshtml:line 29
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Controllers.PageControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2014/3/17 17:32:40
+Event time (UTC): 2014/3/17 9:32:40
+Event ID: c0ead6db8cad4bcca6d32b95a4d3db54
+Event sequence: 32
+Event occurrence: 2
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130395212846208970
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Process information:
+    Process ID: 13348
+    Process name: w3wp.exe
+    Account name: NT AUTHORITY\NETWORK SERVICE
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://www.leon.com/Contents/TextContent?repositoryName=LeonEN&FolderName=Product&siteName=Leon~EN
+    Request path: /Contents/TextContent
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 82
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Leon.Extensions.Kooboo4.ManagemnetToolbarProvider.GetGroups(RequestContext requestContext) in m:\Lab\kooboo\Extensions\Kooboo4\ManagemnetToolbarProvider.cs:line 31
+   at System.Linq.Enumerable.<SelectManyIterator>d__14`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__0.MoveNext()
+   at System.Linq.Enumerable.<DistinctIterator>d__81`1.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Sites.Extension.UI.TopToolbar.ToolbarButtons.GetToolbarButtons(RequestContext requestContext)
+   at ASP._Page_Areas_Contents_Views_TextContent_Index_cshtml.<>c__DisplayClass10.<Execute>b__f() in m:\Lab\kooboo\Web\Areas\Contents\Views\TextContent\Index.cshtml:line 146
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClassb.<RenderSection>b__9(TextWriter tw)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at ASP._Page_Views_Shared_Site_cshtml.Execute() in m:\Lab\kooboo\Web\Views\Shared\Site.cshtml:line 29
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Controllers.PageControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2014/3/17 17:34:27
+Event time (UTC): 2014/3/17 9:34:27
+Event ID: dffb8040cd6c4a4098290dbe37725207
+Event sequence: 7
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130395224526327035
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Process information:
+    Process ID: 15956
+    Process name: w3wp.exe
+    Account name: NT AUTHORITY\NETWORK SERVICE
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://www.leon.com/Contents/TextContent?repositoryName=LeonEN&FolderName=Product&siteName=Leon~EN
+    Request path: /Contents/TextContent
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 6
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Leon.Extensions.Kooboo4.ManagemnetToolbarProvider.GetGroups(RequestContext requestContext) in m:\Lab\kooboo\Extensions\Kooboo4\ManagemnetToolbarProvider.cs:line 31
+   at System.Linq.Enumerable.<SelectManyIterator>d__14`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__0.MoveNext()
+   at System.Linq.Enumerable.<DistinctIterator>d__81`1.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Sites.Extension.UI.TopToolbar.ToolbarButtons.GetToolbarButtons(RequestContext requestContext)
+   at ASP._Page_Areas_Contents_Views_TextContent_Index_cshtml.<>c__DisplayClass10.<Execute>b__f() in m:\Lab\kooboo\Web\Areas\Contents\Views\TextContent\Index.cshtml:line 146
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClassb.<RenderSection>b__9(TextWriter tw)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at ASP._Page_Views_Shared_Site_cshtml.Execute() in m:\Lab\kooboo\Web\Views\Shared\Site.cshtml:line 29
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Controllers.PageControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2014/3/17 17:35:46
+Event time (UTC): 2014/3/17 9:35:46
+Event ID: 23ed56d0cc4049ee83d57eb3fa1417bb
+Event sequence: 13
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-2-130395225265379306
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Process information:
+    Process ID: 15956
+    Process name: w3wp.exe
+    Account name: NT AUTHORITY\NETWORK SERVICE
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://www.leon.com/Contents/TextContent?repositoryName=LeonEN&FolderName=Product&siteName=Leon~EN
+    Request path: /Contents/TextContent
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 8
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Leon.Extensions.Kooboo4.ManagemnetToolbarProvider.GetGroups(RequestContext requestContext)
+   at System.Linq.Enumerable.<SelectManyIterator>d__14`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__0.MoveNext()
+   at System.Linq.Enumerable.<DistinctIterator>d__81`1.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Sites.Extension.UI.TopToolbar.ToolbarButtons.GetToolbarButtons(RequestContext requestContext)
+   at ASP._Page_Areas_Contents_Views_TextContent_Index_cshtml.<>c__DisplayClass10.<Execute>b__f() in m:\Lab\kooboo\Web\Areas\Contents\Views\TextContent\Index.cshtml:line 146
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClassb.<RenderSection>b__9(TextWriter tw)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at ASP._Page_Views_Shared_Site_cshtml.Execute() in m:\Lab\kooboo\Web\Views\Shared\Site.cshtml:line 29
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Controllers.PageControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2014/3/17 17:45:00
+Event time (UTC): 2014/3/17 9:45:00
+Event ID: 82c4ada839854e079ede04c373502cdb
+Event sequence: 13
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-6-130395230790375318
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Process information:
+    Process ID: 15956
+    Process name: w3wp.exe
+    Account name: NT AUTHORITY\NETWORK SERVICE
+
+Exception information:
+    Exception type: System.NullReferenceException
+    Exception message: Object reference not set to an instance of an object.
+
+Request information:
+    Request URL: http://www.leon.com/Contents/TextContent?repositoryName=LeonEN&FolderName=Product&siteName=Leon~EN
+    Request path: /Contents/TextContent
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 20
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at System.Linq.Enumerable.<SelectManyIterator>d__14`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__0.MoveNext()
+   at System.Linq.Enumerable.<DistinctIterator>d__81`1.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Sites.Extension.UI.TopToolbar.ToolbarButtons.GetToolbarButtons(RequestContext requestContext)
+   at ASP._Page_Areas_Contents_Views_TextContent_Index_cshtml.<>c__DisplayClass10.<Execute>b__f() in m:\Lab\kooboo\Web\Areas\Contents\Views\TextContent\Index.cshtml:line 146
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClassb.<RenderSection>b__9(TextWriter tw)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at ASP._Page_Views_Shared_Site_cshtml.Execute() in m:\Lab\kooboo\Web\Views\Shared\Site.cshtml:line 29
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Controllers.PageControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------

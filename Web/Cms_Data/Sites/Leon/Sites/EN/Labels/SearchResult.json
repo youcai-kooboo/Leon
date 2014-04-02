@@ -1,0 +1,20 @@
+﻿[
+  {
+    "UUID": "Y5HGGUCJXP",
+    "Name": "SearchResult.For",
+    "Value": "Zoekresultaten voor ",
+    "Category": "SearchResult",
+    "UtcCreationDate": "2014-03-20T08:48:13.81",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "ZXAPTXM5D9",
+    "Name": "SearchResult.vind",
+    "Value": "vind",
+    "Category": "SearchResult",
+    "UtcCreationDate": "2014-03-20T08:48:13.663",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  }
+]

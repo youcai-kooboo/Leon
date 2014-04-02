@@ -1,0 +1,67 @@
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:13:33
+Event time (UTC): 2014/3/18 9:13:33
+Event ID: d315ae52d00a4d62bb71759ba3c4409f
+Event sequence: 120
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-6-130396073338109433
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /Sites/Module/Include?siteName=Leon~CN~Simple&return=%2FSites%2FModule%3FsiteName%3DLeon~CN~Simple
+    Request path: /Sites/Module/Include
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 18
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.GetKeyTerm(Object o)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Search.SearchService.BatchDelete[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------

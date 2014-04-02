@@ -1,0 +1,64 @@
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/17 11:42:51
+Event time (UTC): 2014/3/17 3:42:51
+Event ID: e914cae81a8b450c9541a2c1c292d199
+Event sequence: 148
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-18-130395011186494694
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /dev~Leon~CN/
+    Request path: /dev~Leon~CN/
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 8
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------

@@ -1,2 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ArrayOfCategory xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Models" />
+<ArrayOfCategory xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Models">
+	<Category>
+		<CategoryFolder>Category</CategoryFolder>
+		<CategoryUUID>59R2AQ77PQYQTGL7</CategoryUUID>
+		<ContentUUID>YYS22JU5KNYZK6DL</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Category</CategoryFolder>
+		<CategoryUUID>59R2AQ77PQYQTGL7</CategoryUUID>
+		<ContentUUID>Q7L2QX6559G4LBT4</ContentUUID>
+	</Category>
+</ArrayOfCategory>

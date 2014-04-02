@@ -1,0 +1,3844 @@
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:23:40
+Event time (UTC): 2014/3/18 3:23:40
+Event ID: 7fefc195d6894e65ae97f5d0da69cd85
+Event sequence: 28
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130395865235376637
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 11
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:25:02
+Event time (UTC): 2014/3/18 3:25:02
+Event ID: 5c6851f049474bd6abbf3c49aef78d87
+Event sequence: 37
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130395865235376637
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 21
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:25:59
+Event time (UTC): 2014/3/18 3:25:59
+Event ID: 90f1913b35eb4d09b98070d48c0251fd
+Event sequence: 45
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130395865235376637
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 27
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:27:56
+Event time (UTC): 2014/3/18 3:27:56
+Event ID: 795b3a258f9147718fd3ecb1bf356744
+Event sequence: 29
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-2-130395868380156509
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 36
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:31:15
+Event time (UTC): 2014/3/18 3:31:15
+Event ID: 7f24ea77638a45e7b40d776341a6a17b
+Event sequence: 15
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-3-130395870530079477
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 31
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:32:02
+Event time (UTC): 2014/3/18 3:32:02
+Event ID: dab2474102fa4fa2abf7f83a2b8e6816
+Event sequence: 29
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-4-130395870928562269
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 35
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:37:46
+Event time (UTC): 2014/3/18 3:37:46
+Event ID: 67610e92272745d2ab8ea80b538bc0ca
+Event sequence: 17
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-5-130395874163377290
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 7
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:39:02
+Event time (UTC): 2014/3/18 3:39:02
+Event ID: 9800af58c46c4d2ea18d3f191da475c8
+Event sequence: 21
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-5-130395874163377290
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 25
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:45:07
+Event time (UTC): 2014/3/18 3:45:07
+Event ID: 741e9394af3e4f26ac85bcba99f80142
+Event sequence: 30
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-7-130395878482924354
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 31
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:48:43
+Event time (UTC): 2014/3/18 3:48:43
+Event ID: 3dd3bcb93f7840438eb5a6227d9f9c9e
+Event sequence: 34
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-7-130395878482924354
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 34
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:53:25
+Event time (UTC): 2014/3/18 3:53:25
+Event ID: 459c6d4cb79c474aa78c9c69f7654f81
+Event sequence: 29
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-9-130395883682951778
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 28
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:53:59
+Event time (UTC): 2014/3/18 3:53:59
+Event ID: f035ba33c3c849d7ae55d3417f3bea43
+Event sequence: 48
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-9-130395883682951778
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 17
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.GetKeyTerm(Object o)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Search.SearchService.BatchDelete[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 11:54:47
+Event time (UTC): 2014/3/18 3:54:47
+Event ID: 20d43d8a14c245f99467869af96339a6
+Event sequence: 97
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-9-130395883682951778
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 25
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 14:39:33
+Event time (UTC): 2014/3/18 6:39:33
+Event ID: d5411e8f40b64661a29d9d62c09a49f3
+Event sequence: 29
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-5-130395981922690770
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerPage&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerPage%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 19
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 14:51:25
+Event time (UTC): 2014/3/18 6:51:25
+Event ID: d8e77d7e27d3428c9a7c0ba97616083d
+Event sequence: 17
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-6-130395990591286585
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerPage&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerPage%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 44
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 14:52:00
+Event time (UTC): 2014/3/18 6:52:00
+Event ID: 0b2e497d1b6b4d499189b3172c80ca62
+Event sequence: 30
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-6-130395990591286585
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerPage&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerPage%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 28
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 14:54:54
+Event time (UTC): 2014/3/18 6:54:54
+Event ID: 75142c9396a14452908aff579b0dc194
+Event sequence: 22
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-7-130395992596211260
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerLayout&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerLayout%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 49
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 15:01:36
+Event time (UTC): 2014/3/18 7:01:36
+Event ID: d2333c0be15b48a9bcf935a2bbaae567
+Event sequence: 55
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-7-130395992596211260
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerPage&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerPage%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 13
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.GetKeyTerm(Object o)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Search.SearchService.BatchDelete[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 15:05:14
+Event time (UTC): 2014/3/18 7:05:14
+Event ID: 50df480e1be9457b8dee23794ed4b826
+Event sequence: 15
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-8-130395998894591507
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerPage&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerPage%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 41
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 15:25:27
+Event time (UTC): 2014/3/18 7:25:27
+Event ID: 98cf0ad20ec7469eb8b0d03194e32d37
+Event sequence: 20
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-9-130396010924839598
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerLayout&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerLayout%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 59
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.GetKeyTerm(Object o)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Search.SearchService.BatchDelete[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/f8b3cff1a341412781cc1fbe6d78cd49' was not found.
+Event time: 2014/3/18 15:44:40
+Event time (UTC): 2014/3/18 7:44:40
+Event ID: b27103207f14450db10c35a8638fd228
+Event sequence: 6
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-12-130396022661660906
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/f8b3cff1a341412781cc1fbe6d78cd49' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/f8b3cff1a341412781cc1fbe6d78cd49
+    Request path: /__browserLink/requestData/f8b3cff1a341412781cc1fbe6d78cd49
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 44
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:04:47
+Event time (UTC): 2014/3/18 8:04:47
+Event ID: 68ac95c3576e425cbf3847f1929d3e74
+Event sequence: 60
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130396033619097635
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 54
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:05:17
+Event time (UTC): 2014/3/18 8:05:17
+Event ID: c067bfb6151b4f66ae6c145ee7827ea4
+Event sequence: 1061
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130396033619097635
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 54
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:05:47
+Event time (UTC): 2014/3/18 8:05:47
+Event ID: 185fc32e3a75459a848394cb27a9a716
+Event sequence: 1951
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130396033619097635
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 54
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:06:17
+Event time (UTC): 2014/3/18 8:06:17
+Event ID: be5280418cd744dc9365be8a75bce34a
+Event sequence: 2756
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130396033619097635
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 54
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:06:47
+Event time (UTC): 2014/3/18 8:06:47
+Event ID: 0a57d64645ae4f36a75d5efe632b9d8b
+Event sequence: 3491
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130396033619097635
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 54
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:07:17
+Event time (UTC): 2014/3/18 8:07:17
+Event ID: d086d0e130a24b68ad0b485e1f341774
+Event sequence: 4171
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130396033619097635
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 54
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:07:47
+Event time (UTC): 2014/3/18 8:07:47
+Event ID: 056024f9cffa414fbbcf9790b167aeb3
+Event sequence: 4804
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130396033619097635
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 54
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:08:17
+Event time (UTC): 2014/3/18 8:08:17
+Event ID: a426a8cd095c4bb5b6500b5cca5a4e98
+Event sequence: 5399
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130396033619097635
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 54
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:08:48
+Event time (UTC): 2014/3/18 8:08:48
+Event ID: a00c8081946d430194c2ba441566c3d7
+Event sequence: 5965
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130396033619097635
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 54
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:09:18
+Event time (UTC): 2014/3/18 8:09:18
+Event ID: 1de1bc39680a4616894f7438e266f6fc
+Event sequence: 6489
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130396033619097635
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 54
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:14:45
+Event time (UTC): 2014/3/18 8:14:45
+Event ID: 012353a485524c9d9456fa9f17942f80
+Event sequence: 15
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130396040512851936
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 7
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:21:13
+Event time (UTC): 2014/3/18 8:21:13
+Event ID: 045cd96670c94038860c3eb26fef26a0
+Event sequence: 38
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130396040512851936
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 31
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:22:47
+Event time (UTC): 2014/3/18 8:22:47
+Event ID: 052994b521594490abdf7e5bba7af775
+Event sequence: 61
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130396040512851936
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 26
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:23:49
+Event time (UTC): 2014/3/18 8:23:49
+Event ID: 697bfba1c14047b98c195fb43609e086
+Event sequence: 64
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130396040512851936
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 26
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:25:17
+Event time (UTC): 2014/3/18 8:25:17
+Event ID: 461402a069c34d66873fdb242092de11
+Event sequence: 76
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130396040512851936
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 22
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:26:02
+Event time (UTC): 2014/3/18 8:26:02
+Event ID: ac4ae112d0bb4773b7e5abb6f489921a
+Event sequence: 85
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130396040512851936
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 22
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:27:09
+Event time (UTC): 2014/3/18 8:27:09
+Event ID: 478bf4bc88414a41bf6e2cbe3b4a11c8
+Event sequence: 100
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130396040512851936
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 15
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:28:47
+Event time (UTC): 2014/3/18 8:28:47
+Event ID: 35305ea1a9a140e4b1169034feafb8ff
+Event sequence: 115
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130396040512851936
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 27
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:31:01
+Event time (UTC): 2014/3/18 8:31:01
+Event ID: b8af781c98084ab3a1ec55e96377ccd3
+Event sequence: 132
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-1-130396040512851936
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J%2C9V52UFS3CGUCN649
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 25
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:35:39
+Event time (UTC): 2014/3/18 8:35:39
+Event ID: 226bd4a038fa4c49836261f27f214390
+Event sequence: 19
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-2-130396052817655730
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=ZL62PKRFB8DGGJ5J%2C9V52UFS3CGUCN649
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 25
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 16:37:41
+Event time (UTC): 2014/3/18 8:37:41
+Event ID: eeb8f41c739f4e6a876afb9778b5b9cb
+Event sequence: 40
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-2-130396052817655730
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=9V52UFS3CGUCN649
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 18
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:00:45
+Event time (UTC): 2014/3/18 9:00:45
+Event ID: 6699fab05c7b4d6a9f11ea0dfcbe58b1
+Event sequence: 3
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-5-130396068343093734
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=9V52UFS3CGUCN649
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 25
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.GetKeyTerm(Object o)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Search.SearchService.BatchDelete[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:01:41
+Event time (UTC): 2014/3/18 9:01:41
+Event ID: 16c4cd5f5ee44871821fae2dddcd1be2
+Event sequence: 15
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-5-130396068343093734
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=9V52UFS3CGUCN649
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 31
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.GetKeyTerm(Object o)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Search.SearchService.BatchDelete[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:02:53
+Event time (UTC): 2014/3/18 9:02:53
+Event ID: c96d746958d7475e8e2437fbb46c0cf3
+Event sequence: 26
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-5-130396068343093734
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerPage&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerPage%26siteName%3DLeon&UUID=R5K28ZW32VZ2W2H7
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 9
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:04:08
+Event time (UTC): 2014/3/18 9:04:08
+Event ID: fbbc34ee58034176a0d181fa8e6689f0
+Event sequence: 35
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-5-130396068343093734
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerPage&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerPage%26siteName%3DLeon&UUID=R5K28ZW32VZ2W2H7
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 23
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:04:44
+Event time (UTC): 2014/3/18 9:04:44
+Event ID: 1adae65141a64cc3be5f29c000253e36
+Event sequence: 42
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-5-130396068343093734
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerPage&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerPage%26siteName%3DLeon&UUID=L2X28WW3864AQQ96
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 28
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:05:42
+Event time (UTC): 2014/3/18 9:05:42
+Event ID: eb65a84b960d49729889d6d87e2fac48
+Event sequence: 53
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-5-130396068343093734
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerLayout&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerLayout%26siteName%3DLeon&UUID=JY22EMYZEXPGDAKC
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 24
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:09:20
+Event time (UTC): 2014/3/18 9:09:20
+Event ID: 300a882c6ff54ae7a8d284e6b6ed0373
+Event sequence: 17
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-6-130396073338109433
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon&UUID=9V52UFS3CGUCN649
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 33
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.GetKeyTerm(Object o)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Search.SearchService.BatchDelete[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:10:38
+Event time (UTC): 2014/3/18 9:10:38
+Event ID: c9a71e536cf14ab9b18282b593336cae
+Event sequence: 33
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-6-130396073338109433
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~Common&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Common%26siteName%3DLeon&UUID=PZ42LYWMQKSWEUVG
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 32
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:12:27
+Event time (UTC): 2014/3/18 9:12:27
+Event ID: 5c6a7fda96f642a599067858cceec4ff
+Event sequence: 88
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-6-130396073338109433
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 32
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchAdd[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:48:31
+Event time (UTC): 2014/3/18 9:48:31
+Event ID: 0bbea9c8ae6e4a068422e498cb8ab73c
+Event sequence: 69
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-7-130396095839876460
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerPage&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerPage%26siteName%3DLeon&UUID=R5K28ZW32VZ2W2H7%2CL2X28WW3864AQQ96
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 21
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 17:52:32
+Event time (UTC): 2014/3/18 9:52:32
+Event ID: 886aee5293b94381927ceda01025a0f9
+Event sequence: 79
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-7-130396095839876460
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncToChildrenSites?moduleRepositoryName=Management&folderName=Setting~Pixel~PixelPerPage&siteName=Leon&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Pixel~PixelPerPage%26siteName%3DLeon&UUID=L2X28WW3864AQQ96
+    Request path: /_Leon/Sync/SyncToChildrenSites
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 33
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 18:00:10
+Event time (UTC): 2014/3/18 10:00:10
+Event ID: 594a30a6b7e04ea0a6242e2fe450bc53
+Event sequence: 28
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-8-130396103647523032
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~Common&siteName=Leon~CN~Simple&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Common%26siteName%3DLeon~CN~Simple&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 19
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2014/3/18 18:00:10
+Event time (UTC): 2014/3/18 10:00:10
+Event ID: 489445f5b2f744dbb67826066e8158b0
+Event sequence: 31
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-8-130396103647523032
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Process information:
+    Process ID: 7852
+    Process name: w3wp.exe
+    Account name: NT AUTHORITY\NETWORK SERVICE
+
+Exception information:
+    Exception type: System.InvalidOperationException
+    Exception message: This request has been blocked because sensitive information could be disclosed to third party web sites when this is used in a GET request. To allow GET requests, set JsonRequestBehavior to AllowGet.
+
+Request information:
+    Request URL: http://www.leon.com/_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~Common&siteName=Leon~CN~Simple&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Common%26siteName%3DLeon~CN~Simple&undefined=
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 19
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at System.Web.Mvc.JsonResult.ExecuteResult(ControllerContext context)
+   at Kooboo.CMS.Sites.Controllers.PageControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/ff948e80d1a44b9dba3d0f0dcd94fe8e' was not found.
+Event time: 2014/3/18 18:00:54
+Event time (UTC): 2014/3/18 10:00:54
+Event ID: bcf553a8436d4196b88b2e31737a928a
+Event sequence: 6
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-9-130396104413796861
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/ff948e80d1a44b9dba3d0f0dcd94fe8e' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/ff948e80d1a44b9dba3d0f0dcd94fe8e
+    Request path: /__browserLink/requestData/ff948e80d1a44b9dba3d0f0dcd94fe8e
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 34
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/6cabbdfdf3fa4241beb0d1dad8c25375' was not found.
+Event time: 2014/3/18 18:03:10
+Event time (UTC): 2014/3/18 10:03:10
+Event ID: 6586cd0572b64080ad78a30b6446cdb5
+Event sequence: 6
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-10-130396105767574292
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/6cabbdfdf3fa4241beb0d1dad8c25375' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/6cabbdfdf3fa4241beb0d1dad8c25375
+    Request path: /__browserLink/requestData/6cabbdfdf3fa4241beb0d1dad8c25375
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 36
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/__browserLink/requestData/69a2e93026134ed28324786e88ca87a8' was not found.
+Event time: 2014/3/18 18:06:22
+Event time (UTC): 2014/3/18 10:06:22
+Event ID: 9dd1b0f155c845ba8a7a860b99443b51
+Event sequence: 6
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-11-130396107683373870
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/__browserLink/requestData/69a2e93026134ed28324786e88ca87a8' was not found.
+
+Request information:
+    Request URL: /__browserLink/requestData/69a2e93026134ed28324786e88ca87a8
+    Request path: /__browserLink/requestData/69a2e93026134ed28324786e88ca87a8
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 56
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.CreatePageRequestContext(ControllerContext controllerContext)
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.PageExecutionFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 18:08:19
+Event time (UTC): 2014/3/18 10:08:19
+Event ID: 36b50bc46c3149f7ac42b025c86d6413
+Event sequence: 15
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-12-130396108610596904
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~Common&siteName=Leon~CN~Simple&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~Common%26siteName%3DLeon~CN~Simple
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 54
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.ToDocument(Object o)
+   at Kooboo.CMS.Search.SearchService.BatchUpdate[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 18:08:58
+Event time (UTC): 2014/3/18 10:08:58
+Event ID: 38864c7ab1854090a3f92bb6c2dfa84c
+Event sequence: 29
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-12-130396108610596904
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN~Simple&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN~Simple
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 25
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.GetKeyTerm(Object o)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Search.SearchService.BatchDelete[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+Event time: 2014/3/18 18:11:19
+Event time (UTC): 2014/3/18 10:11:19
+Event ID: 21a30998adec4d79ae8e6f73dfd1ccac
+Event sequence: 15
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/2/ROOT-13-130396110568768905
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: M:\Lab\kooboo\Web\
+    Machine name: LYANG-PC
+
+Exception information:
+    Exception type: Ninject.ActivationException
+    Exception message: Error activating IObjectConverter
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IObjectConverter
+
+Suggestions:
+  1) Ensure that you have defined a binding for IObjectConverter.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+
+Request information:
+    Request URL: /_Leon/Sync/SyncFromParentSite?moduleRepositoryName=Management&folderName=Setting~APISetting&siteName=Leon~CN~Simple&return=%2FContents%2FTextContent%3FmoduleRepositoryName%3DManagement%26folderName%3DSetting~APISetting%26siteName%3DLeon~CN~Simple
+    Request path: /_Leon/Sync/SyncFromParentSite
+    User host address: 127.0.0.1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+
+Thread information:
+    Thread ID: 42
+    Thread account name: NT AUTHORITY\NETWORK SERVICE
+    Is impersonating: False
+    Stack trace:    at Ninject.KernelBase.Resolve(IRequest request)
+   at Kooboo.CMS.Common.Runtime.Dependency.Ninject.ContainerManager.KernelWrapper.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, String name, IParameter[] parameters)
+   at Kooboo.CMS.Search.DocumentConverter.GetKeyTerm(Object o)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Kooboo.CMS.Search.SearchService.BatchDelete[T](IEnumerable`1 list)
+   at Kooboo.CMS.Search.ContentEventsSubscriber.Receive(IEventContext context)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------

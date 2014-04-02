@@ -382,4 +382,253 @@
   <data name="Save" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="Site cluster" xml:space="preserve">
+    <value>Site cluster</value>
+  </data>
+  <data name="(Offline)" xml:space="preserve">
+    <value>(Offline)</value>
+  </data>
+  <data name="Create a subsite" xml:space="preserve">
+    <value>Create a subsite</value>
+  </data>
+  <data name="New sub site" xml:space="preserve">
+    <value>New sub site</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Import database" xml:space="preserve">
+    <value>Import database</value>
+  </data>
+  <data name="Take offline" xml:space="preserve">
+    <value>Take offline</value>
+  </data>
+  <data name="Clear cache" xml:space="preserve">
+    <value>Clear cache</value>
+  </data>
+  <data name="The site name" xml:space="preserve">
+    <value>The site name</value>
+  </data>
+  <data name="The parent website which this new website will be based on." xml:space="preserve">
+    <value>The parent website which this new website will be based on.</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>Parent</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="A new site" xml:space="preserve">
+    <value>A new site</value>
+  </data>
+  <data name="A new subsite" xml:space="preserve">
+    <value>A new subsite</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="Set as default page" xml:space="preserve">
+    <value>Set as default page</value>
+  </data>
+  <data name="Change language" xml:space="preserve">
+    <value>Change language</value>
+  </data>
+  <data name="Relation" xml:space="preserve">
+    <value>Relation</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="Memberships" xml:space="preserve">
+    <value>Memberships</value>
+  </data>
+  <data name="Site level A/B Test" xml:space="preserve">
+    <value>Site level A/B Test</value>
+  </data>
+  <data name="A/B rules" xml:space="preserve">
+    <value>A/B rules</value>
+  </data>
+  <data name="A/B site settings" xml:space="preserve">
+    <value>A/B site settings</value>
+  </data>
+  <data name="All your changes might be lost." xml:space="preserve">
+    <value>All your changes might be lost.</value>
+  </data>
+  <data name="A/B Testing" xml:space="preserve">
+    <value>A/B Testing</value>
+  </data>
+  <data name="Unsynchronized page" xml:space="preserve">
+    <value>Unsynchronized page</value>
+  </data>
+  <data name="Diagnosis" xml:space="preserve">
+    <value>Diagnosis</value>
+  </data>
+  <data name="A/B Test" xml:space="preserve">
+    <value>A/B Test</value>
+  </data>
+  <data name="A/B page settings" xml:space="preserve">
+    <value>A/B page settings</value>
+  </data>
+  <data name="A/B test reports" xml:space="preserve">
+    <value>A/B test reports</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="Submission setting" xml:space="preserve">
+    <value>Submission setting</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="Google analytics" xml:space="preserve">
+    <value>Google analytics</value>
+  </data>
+  <data name="Pixel" xml:space="preserve">
+    <value>Pixel</value>
+  </data>
+  <data name="Per page" xml:space="preserve">
+    <value>Per page</value>
+  </data>
+  <data name="Per layout" xml:space="preserve">
+    <value>Per layout</value>
+  </data>
+  <data name="Site scripts" xml:space="preserve">
+    <value>Site scripts</value>
+  </data>
+  <data name="API settings" xml:space="preserve">
+    <value>API settings</value>
+  </data>
+  <data name="Common settings" xml:space="preserve">
+    <value>Common settings</value>
+  </data>
+  <data name="Text content" xml:space="preserve">
+    <value>Text content</value>
+  </data>
+  <data name="New folder" xml:space="preserve">
+    <value>New folder</value>
+  </data>
+  <data name="Are you sure you want to delete these items?" xml:space="preserve">
+    <value>Are you sure you want to delete these items?</value>
+  </data>
+  <data name="More..." xml:space="preserve">
+    <value>More...</value>
+  </data>
+  <data name="Relations" xml:space="preserve">
+    <value>Relations</value>
+  </data>
+  <data name=" - Database" xml:space="preserve">
+    <value> - Database</value>
+  </data>
+  <data name="Display name" xml:space="preserve">
+    <value>Display name</value>
+  </data>
+  <data name="Disallowed userkey chars. Replace chars that match this regular expression into hyphens" xml:space="preserve">
+    <value>Disallowed userkey chars. Replace chars that match this regular expression into hyphens</value>
+  </data>
+  <data name="Userkey escape chars" xml:space="preserve">
+    <value>Userkey escape chars</value>
+  </data>
+  <data name="Userkey hyphens" xml:space="preserve">
+    <value>Userkey hyphens</value>
+  </data>
+  <data name="The Enable versioning field is required." xml:space="preserve">
+    <value>The Enable versioning field is required.</value>
+  </data>
+  <data name="Enable content versioning" xml:space="preserve">
+    <value>Enable content versioning</value>
+  </data>
+  <data name="The Enable workflow field is required." xml:space="preserve">
+    <value>The Enable workflow field is required.</value>
+  </data>
+  <data name="Enable workflow" xml:space="preserve">
+    <value>Enable workflow</value>
+  </data>
+  <data name="Enable workflow control on folder content adding." xml:space="preserve">
+    <value>Enable workflow control on folder content adding.</value>
+  </data>
+  <data name="The Enable broadcasting field is required." xml:space="preserve">
+    <value>The Enable broadcasting field is required.</value>
+  </data>
+  <data name="Enable broadcasting" xml:space="preserve">
+    <value>Enable broadcasting</value>
+  </data>
+  <data name="Enable content broadcasting and sharing between content repositories." xml:space="preserve">
+    <value>Enable content broadcasting and sharing between content repositories.</value>
+  </data>
+  <data name="The Strict content permission field is required." xml:space="preserve">
+    <value>The Strict content permission field is required.</value>
+  </data>
+  <data name="Strict content permission" xml:space="preserve">
+    <value>Strict content permission</value>
+  </data>
+  <data name="User can not manage the content when the folder permission is empty." xml:space="preserve">
+    <value>User can not manage the content when the folder permission is empty.</value>
+  </data>
+  <data name="The Show hidden folders field is required." xml:space="preserve">
+    <value>The Show hidden folders field is required.</value>
+  </data>
+  <data name="Show hidden folders" xml:space="preserve">
+    <value>Show hidden folders</value>
+  </data>
+  <data name="Show the all folders including the hidden folders." xml:space="preserve">
+    <value>Show the all folders including the hidden folders.</value>
+  </data>
+  <data name="Content databases" xml:space="preserve">
+    <value>Content databases</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="Are you sure you want to delete the content database?" xml:space="preserve">
+    <value>Are you sure you want to delete the content database?</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="Not avaliable" xml:space="preserve">
+    <value>Not avaliable</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="1. Database" xml:space="preserve">
+    <value>1. Database</value>
+  </data>
+  <data name="Create a database to store your content" xml:space="preserve">
+    <value>Create a database to store your content</value>
+  </data>
+  <data name="2. Setting" xml:space="preserve">
+    <value>2. Setting</value>
+  </data>
+  <data name="Create folders or content types with custom fields" xml:space="preserve">
+    <value>Create folders or content types with custom fields</value>
+  </data>
+  <data name="3. Content " xml:space="preserve">
+    <value>3. Content </value>
+  </data>
+  <data name="Create text content &lt;br /&gt; or upload media files" xml:space="preserve">
+    <value>Create text content &lt;br /&gt; or upload media files</value>
+  </data>
+  <data name="Create a database" xml:space="preserve">
+    <value>Create a database</value>
+  </data>
+  <data name="Add content type" xml:space="preserve">
+    <value>Add content type</value>
+  </data>
+  <data name="Add text folder" xml:space="preserve">
+    <value>Add text folder</value>
+  </data>
+  <data name="Add text content" xml:space="preserve">
+    <value>Add text content</value>
+  </data>
+  <data name="Add media files" xml:space="preserve">
+    <value>Add media files</value>
+  </data>
 </root>
