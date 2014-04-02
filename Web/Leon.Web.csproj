@@ -479,7 +479,6 @@
     <Content Include="Areas\Sites\Styles\images\map-item.png" />
     <Content Include="Areas\Sites\Styles\sites.css" />
     <Content Include="Bin\CookComputing.XmlRpcV2.dll" />
-    <Content Include="Bin\Couchbase.dll" />
     <Content Include="Bin\DiffPlex.dll" />
     <Content Include="Bin\dotless.Core.dll" />
     <Content Include="Bin\DotNetOpenAuth.AspNet.dll" />
@@ -564,6 +563,7 @@
     <Content Include="Images\svg-preview.png" />
     <Content Include="Images\svg-site.png" />
     <Content Include="Images\svg-view.png" />
+    <Content Include="LICENSE.txt" />
     <Content Include="Scripts\aight.js" />
     <Content Include="Scripts\codemirror\addon\comment\comment.js" />
     <Content Include="Scripts\codemirror\addon\dialog\dialog.css" />
@@ -1614,9 +1614,7 @@
     <Content Include="Cms_Data\Sites\Leon\Templates\Views\SearchResult\template.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bin\Kooboo.CMS.Sites.Persistence.EntityFramework.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Bin\Kooboo.CMS.Sites.Persistence.EntityFramework.config" />
     <Content Include="Areas\Account\Menu.config" />
     <Content Include="Areas\Account\Views\LogOn\ForgotPassword.cshtml" />
     <Content Include="Areas\Account\Views\LogOn\Index.cshtml" />
