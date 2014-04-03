@@ -1,0 +1,431 @@
+﻿@model Kooboo.CMS.ModuleArea.Monitor.Models.HealthStatistics
+@{
+    ViewBag.Title = "Health check";
+    Layout = "~/Views/Shared/Site.cshtml";
+}
+
+@section Panel{
+    <ul class="panel">
+        <li id="monitor_health_check" data-bind="visible: !ran() && !isRunning()">
+            <a>
+                @Html.IconImage("preview") @("Check".Localize())
+            </a>
+        </li>
+        <li id="checking_pop_power" data-bind="visible:isChecking">
+            <a href="javascript:;" >
+                <img class="icon" src="@Url.Content("~/Areas/Monitor/Styles/Images/running.gif")" />
+                <span data-bind="text:stateText">@("Checking...".Localize())</span>
+            </a>
+        </li>
+        <li id="visiting_pop_power" data-bind="visible:isVisiting">
+            <a href="javascript:;" >
+                <img class="icon" src="@Url.Content("~/Areas/Monitor/Styles/Images/running.gif")" />
+                <span data-bind="text:stateText">@("Visiting...".Localize())</span>
+            </a>
+        </li>
+        <li id="checking_pop_finish" data-bind="visible:ran()&&!isRunning()">
+            <a href="javascript:window.location.reload();" >
+                @Html.IconImage("loading-done") @("Finished".Localize())
+            </a>
+        </li>
+    </ul>
+}
+<div class="topbar clearfix">
+    <h1 class="title">@ViewBag.Title</h1>
+</div>
+<div class="clearfix" id="monitor-statistic">
+    <div class="field tables">
+        <h2>Last check result</h2>
+        <div class="field-content common-form">
+            <table>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Total</th>
+                        <th>Normal</th>
+                        <th>Unvisited</th>
+                        <th>Exception</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Pages</th>
+                        <td>
+                            @if(Model.TotalPage>0){
+                                @Model.TotalPage
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.PAGE })
+                            }
+                            else{
+                                @Html.DisplayTextFor(it=>it.TotalPage)
+                            }
+                        </td>
+                        <td>
+                            @if ((Model.VisitedPage - Model.ErrorPage) > 0)
+                            {
+                                @(Model.VisitedPage - Model.ErrorPage)
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "Normal", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.PAGE })
+                            }
+                            else
+                            {
+                                @(Model.VisitedPage - Model.ErrorPage)
+                            }
+                        </td>
+                        <td>
+                            @if ((Model.TotalPage - Model.VisitedPage) > 0)
+                            {
+                                @(Model.TotalPage - Model.VisitedPage)
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "UnVisit", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.PAGE })
+                            }
+                            else
+                            {
+                                @(Model.TotalPage - Model.VisitedPage)
+                            }
+                        </td>
+                        <td>
+                            @if (Model.ErrorPage > 0)
+                            {
+                                @Model.ErrorPage
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "Error", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.PAGE })
+                            }
+                            else
+                            {
+                                @Html.DisplayTextFor(it => it.ErrorPage)
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Images</th>
+                        <td>
+                            @if(Model.TotalImage>0){
+                                @Model.TotalImage.ToString()
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.IMAGE })
+                            }else{
+                                @Html.DisplayTextFor(it=>it.TotalImage)   
+                            }
+                        </td>
+                        <td>
+                            @if ((Model.VisitedImage - Model.ErrorImage) > 0)
+                            {
+                                @(Model.VisitedImage - Model.ErrorImage)
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "Normal", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.IMAGE })
+                            }
+                            else
+                            {
+                                @(Model.VisitedImage - Model.ErrorImage)
+                            }
+                        </td>
+                        <td>
+                            @if ((Model.TotalImage - Model.VisitedImage) > 0)
+                            {
+                                @(Model.TotalImage - Model.VisitedImage)
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "UnVisit", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.IMAGE })
+                            }
+                            else
+                            {
+                                @(Model.TotalImage - Model.VisitedImage)
+                            }
+                        </td>
+                        <td>
+                            @if (Model.ErrorImage > 0)
+                            {
+                                @Model.ErrorImage
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "Error", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.IMAGE })
+                            }
+                            else
+                            {
+                                @Html.DisplayTextFor(it => it.ErrorImage)
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>CSS</th>
+                        <td>
+                            @if(Model.TotalCss>0){
+                                @Model.TotalCss
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.CSS })
+                            }
+                            else{
+                                @Html.DisplayTextFor(it=>it.TotalCss)    
+                            }
+                        </td>
+                        <td>
+                            @if ((Model.VisitedCss - Model.ErrorCss) > 0)
+                            {
+                                @(Model.VisitedCss - Model.ErrorCss)
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "Normal", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.CSS })
+                            }
+                            else
+                            {
+                                @(Model.VisitedCss - Model.ErrorCss)
+                            }
+                        </td>
+                        <td>
+                            @if ((Model.TotalCss - Model.VisitedCss) > 0)
+                            {
+                                @(Model.TotalCss - Model.VisitedCss)
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "UnVisit", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.CSS })
+                            }
+                            else
+                            {
+                                @(Model.TotalCss - Model.VisitedCss)
+                            }
+                        </td>
+                        <td>
+                            @if (Model.ErrorCss > 0)
+                            {
+                                @Model.ErrorCss
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "Error", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.CSS })
+                            }
+                            else
+                            {
+                                @Html.DisplayTextFor(it => it.ErrorCss)
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Javascript</th>
+                        <td>
+                            @if(Model.TotalJs>0){
+                                @Model.TotalJs
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.JAVASCRIPT })
+                            }
+                            else{
+                                @Html.DisplayTextFor(it=>it.TotalJs)    
+                            }
+                        </td>
+                        <td>
+                            @if ((Model.VisitedJs - Model.ErrorJs) > 0)
+                            {
+                                @(Model.VisitedJs - Model.ErrorJs)
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "Normal", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.JAVASCRIPT })
+                            }
+                            else
+                            {
+                                @(Model.VisitedJs - Model.ErrorJs)
+                            }
+                        </td>
+                        <td>
+                            @if ((Model.TotalJs - Model.VisitedJs) > 0)
+                            {
+                                @(Model.TotalJs - Model.VisitedJs)
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "UnVisit", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.JAVASCRIPT })
+                            }
+                            else
+                            {
+                                @(Model.TotalJs - Model.VisitedJs)
+                            }
+                        </td>
+                        <td>
+                            @if (Model.ErrorJs > 0)
+                            {
+                                @Model.ErrorJs
+                                @:&nbsp;
+                                @Html.ActionLink("(View)", "Index", new { siteName = Site.Current.Name, @type = "Error", ResourceType = Kooboo.CMS.ModuleArea.Monitor.Models.ResourceType.JAVASCRIPT })
+                            }
+                            else
+                            {
+                                @Html.DisplayTextFor(it => it.ErrorJs)
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="4" style="border-right:none 0px">&nbsp;</th>
+                        <td style="border-left:none 0px;text-align:right">
+                            @Html.ActionLink("View all detail", "Index", new { siteName = Site.Current.Name }, new { @class = "button" })
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="field">
+        <h2>Last check exceptions</h2>
+        <div id="health_report" class="field-content"></div>
+        <script type="text/javascript">
+        
+            var categories = [], totalData = [],  total = 0, error = 0,height=100;
+
+        @foreach (var status in Model.StatusAndTotal.Keys)
+        {
+            if (status >= 400 && Model.StatusAndTotal[status]>0)
+            {
+                @:categories.push(@(status));
+                @:totalData.push({name:"@(status)",y:@(Model.StatusAndTotal[status])});
+                @:height+=20;
+            }
+        }
+            $(function () {
+                var noDataEle = $('<div class="field-content"><p class="status-tip">No data currently.</p></div>');
+                if(categories.length==0){
+                    $('#health_report').empty().append(noDataEle);
+                    return false;
+                }
+                $('#health_report').highcharts({
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        spacingTop: 0,
+                        spacingBottom: 0,
+                        spacingLeft: 0,
+                        spacingRight: 0,
+                        height:height
+                    },
+                    title: {
+                        text: null
+                    },
+                    xAxis: {
+                        categories:categories,
+                        title: {
+                            text: null
+                        },
+                        labels:{
+                            align:'right',
+                            style: {
+                                color: '#000000'
+                            }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        allowDecimals:true,
+                        title: null,
+                        labels: {
+                            overflow: 'justify'
+                        }
+                    },
+                    tooltip: {
+                        valueSuffix: ''
+                    },
+                    plotOptions: {
+                        bar: {
+                            animation:false,
+                            colorByPoint:true,
+                            colors:['#2f7ed8'],//['#8bbc21','#f28f43','#2f7ed8','#910000','#1aadce','#492970','#0d233a'],
+                            dataLabels: {
+                                enabled: true,
+                                align: 'right',
+                                color: '#FFFFFF',
+                                x: -10
+                            },
+                            pointWidth: 20,
+                            pointPadding: 0.1,
+                            groupPadding: 0
+                        }
+                    },
+                    legend: {
+                        enabled:false,
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'top',
+                        x: 10,
+                        y: 0,
+                        floating: false,
+                        borderWidth: 1,
+                        backgroundColor: '#FFFFFF',
+                        shadow: true
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    series: [{
+                        type:'bar',
+                        data:totalData
+                    }]
+                }); 
+            });
+        </script>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var reCheckUrl="@Url.Action("ReCheck", ViewContext.RequestContext.AllRouteValues())";
+    var reVisitUrl="@Url.Action("ReVisit", ViewContext.RequestContext.AllRouteValues())";
+    var getStateUrl="@Url.Action("AsyncCurrentState", ViewContext.RequestContext.AllRouteValues())";
+    var stopUrl="@Url.Action("Stop", ViewContext.RequestContext.AllRouteValues())";
+    var lastCheckUrl = "@Url.Action("LastCheckResult",ViewContext.RequestContext.AllRouteValues())";
+</script>
+<div id="checking-info" class="hide">
+    <form class="common-form">
+        <h3 id="checking_title" data-bind="text: stateText"></h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Found</th>
+                    <th data-bind="text: entry()==2?'Visited':'Checked'">Checked</th>
+                    <th data-bind="text: entry() == 2 ? 'Wait to visit' : 'Wait to check'">Wait to check</th>
+                    <th>Percents</th>
+                    <th class="short">&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="health_page_check">
+                    <th>Pages</th>
+                    <td class="health-total" data-bind="text:totalPage">0</td>
+                    <td class="health-checked" data-bind="text:visitedPage">0</td>
+                    <td class="health-uncheck" data-bind="text:unVisitPage">0</td>
+                    <td><span class="percent-bar"><b class="health-bar" data-bind="style:{width:pageRate()+'%'}"></b></span></td>
+                    <td class="health-bar-val" data-bind="text:pageRate()+'%'">0%</td>
+                </tr>
+                <tr id="health_image_check">
+                    <th>Images</th>
+                    <td class="health-total" data-bind="text:totalImage">0</td>
+                    <td class="health-checked" data-bind="text:visitedImage">0</td>
+                    <td class="health-uncheck" data-bind="text:unVisitImage">0</td>
+                    <td><span class="percent-bar"><b class="health-bar" data-bind="style:{width:imageRate()+'%'}"></b></span></td>
+                    <td class="health-bar-val" data-bind="text:imageRate()+'%'">0%</td>
+                </tr>
+                <tr id="health_css_check">
+                    <th>CSS</th>
+                    <td class="health-total" data-bind="text:totalCss">0</td>
+                    <td class="health-checked" data-bind="text:visitedCss">0</td>
+                    <td class="health-uncheck" data-bind="text:unVisitCss">0</td>
+                    <td><span class="percent-bar"><b class="health-bar" data-bind="style:{width:cssRate()+'%'}"></b></span></td>
+                    <td class="health-bar-val" data-bind="text:cssRate()+'%'">0%</td>
+                </tr>
+                <tr id="health_js_check">
+                    <th>Javascript</th>
+                    <td class="health-total" data-bind="text:totalJs">0</td>
+                    <td class="health-checked" data-bind="text:visitedJs">0</td>
+                    <td class="health-uncheck" data-bind="text:unVisitJs">0</td>
+                    <td><span class="percent-bar"><b class="health-bar" data-bind="style:{width:jsRate()+'%'}"></b></span></td>
+                    <td class="health-bar-val" data-bind="text:jsRate()+'%'">0%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><span>While the program is running at the backend, you can choose to click on "Close" button to close the dialog, and browse other pages.</span></p>
+        <p class="buttons">
+            <a id="health_pop_start" class="button gray" data-bind="visible: !ran()&&!isRunning()">@("Start".Localize())</a>
+            <a id="health_pop_stop" class="button gray" data-bind="visible:isRunning">@("Stop".Localize())</a>
+            <a id="health_pop_close" class="button" data-bind="visible:!ran()||isRunning()">@("Close".Localize())</a>
+            <a id="health_page_refresh" href="javascript:window.location.reload();" class="button" data-bind="visible:ran()&&!isRunning()">@("Finish".Localize())</a>
+        </p>
+    </form>
+</div>
+
+@section ScriptCSS{
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.communicator.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/highcharts/js/highcharts.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/main.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.Dictionary.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.EventManager.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.HealthCheck.js"))"></script>
+}

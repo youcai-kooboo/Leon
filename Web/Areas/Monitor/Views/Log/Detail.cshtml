@@ -1,0 +1,91 @@
+﻿@model Kooboo.CMS.ModuleArea.Monitor.Models.Log
+@{
+    ViewBag.Title = "Log detail".Localize();
+    Layout = "~/Views/Shared/Blank.cshtml";
+}
+@section Panel{
+    <ul class="panel">
+        <li>
+            <a href="@ViewContext.RequestContext.GetRequestValue("return")">
+                @Html.IconImage("back") @("Back".Localize())
+            </a>
+        </li>
+    </ul>
+}
+<div id="main-container" class="clearfix">
+    <!-- main start-->
+    <div class="wrap">
+        <div class="topbar">
+            <h1 class="title left">@ViewBag.Title</h1>
+        </div>
+
+
+        <div class="common-form">
+            <table class="log-detail">
+                <tbody>
+                        @Html.DisplayFor(m => m.SiteName)
+                        @Html.DisplayFor(m => m.DateTime)
+                        @Html.DisplayFor(m => m.VisitCount)
+                        @Html.DisplayFor(m => m.TimeTaken)
+                        @Html.DisplayFor(m => m.Method)
+                        @Html.DisplayFor(m => m.UriStem)
+                        @Html.DisplayFor(m => m.UriQuery)
+                        @Html.DisplayFor(m => m.ReferrerDomain)
+                        @Html.DisplayFor(m => m.Referrer)
+                        @Html.DisplayFor(m => m.SearchKey)
+                        @Html.DisplayFor(m => m.UserName)
+                        @Html.DisplayFor(m => m.ClientIP)
+                        @Html.DisplayFor(m => m.UserAgent)
+                        @Html.DisplayFor(m => m.Port)
+                        @Html.DisplayFor(m => m.Status)
+                        @Html.DisplayFor(m => m.SubStatus)
+                        @Html.DisplayFor(m => m.LastVisitDate)
+                        @Html.DisplayFor(m => m.Exception)
+                    <tr>
+                        <th>
+                            @Html.LabelFor(m=>m.StackTrace)
+                        </th>
+                        <td>
+                        @if(!string.IsNullOrWhiteSpace(Model.StackTrace)){
+                            @Html.TextAreaFor(m => m.StackTrace, new { @class="stacktrace gray"})
+                        }else{
+                            @:&nbsp;   
+                        }
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@*<div class="block common-form">
+    <fieldset>
+        <legend>@ViewBag.Title</legend>
+        <table>
+            <tr>
+            @Html.DisplayFor(m => m.SiteName)
+            <th>
+                <label for="Referer">DateTime</label>
+            </th>
+            <td>
+                <span class="gray">@Model.DateTime.ToLocalTime()</span>
+            </td>
+            @Html.DisplayFor(m => m.Method)
+            @Html.DisplayFor(m => m.UserAgent)
+            @Html.DisplayFor(m => m.UriStem)
+            @Html.DisplayFor(m => m.UriQuery)
+            @Html.DisplayFor(m => m.Referer)
+            @Html.DisplayFor(m => m.SearchKey)
+            @Html.DisplayFor(m => m.Port)
+            @Html.DisplayFor(m => m.UserName)
+            @Html.DisplayFor(m => m.ClientIP)
+            @Html.DisplayFor(m => m.Status)
+            @Html.DisplayFor(m => m.SubStatus)
+            @Html.DisplayFor(m => m.VisitCount)
+            @Html.DisplayFor(m => m.LastVisitDate)
+            @Html.DisplayFor(m => m.Exception)
+            @Html.DisplayFor(m => m.StackTrace)
+            </tr>
+        </table>
+    </fieldset>
+</div>*@

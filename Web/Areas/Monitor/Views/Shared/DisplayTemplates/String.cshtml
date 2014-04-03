@@ -1,0 +1,31 @@
+﻿@model object
+@{
+    if (string.IsNullOrWhiteSpace(ViewData.ModelMetadata.Model as string)&&ViewData.ModelMetadata.ConvertEmptyStringToNull)
+    {
+        ViewData.ModelMetadata.Model = null;
+    }
+}
+<tr>
+    <th>
+        <label for="@ViewData.ModelMetadata.PropertyName">
+            @ViewData.ModelMetadata.GetDisplayName().Localize()</label>
+        @if (!string.IsNullOrEmpty(ViewData.ModelMetadata.Description))
+        {
+            <a href="#" class="tooltip-link" title="@ViewData.ModelMetadata.Description "></a>
+        }
+    </th>
+    <td>
+        @if (ViewData.ModelMetadata.Model == null && !string.IsNullOrEmpty(ViewData.ModelMetadata.NullDisplayText))
+        {
+            <span class="gray">@ViewData.ModelMetadata.NullDisplayText</span>
+        }
+        else if (string.IsNullOrWhiteSpace(ViewData.ModelMetadata.Model as string)||ViewData.ModelMetadata.Model == null)
+        {
+            <span class="gray">&nbsp;</span>
+        }
+        else
+        {
+            <span class="gray">@ViewData.ModelMetadata.Model</span>
+        }
+    </td>
+</tr>

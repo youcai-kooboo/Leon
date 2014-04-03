@@ -1,0 +1,191 @@
+﻿@model Kooboo.Web.Mvc.Paging.PagedList<Kooboo.CMS.ModuleArea.Monitor.Models.Hyperlink>
+@{
+    ViewBag.Title = "Check result".Localize();
+    Layout = "~/Views/Shared/Site.cshtml";
+}
+@section Panel{
+    <ul class="panel">
+        <li id="monitor_health_check" data-bind="visible: !ran() && !isRunning()">
+            <a>
+                @Html.IconImage("preview") @("Check".Localize())
+            </a>
+        </li>
+
+        @*<li>
+            <a data-bind="visible:isRunning" id="monitor_health_stop">
+                @Html.IconImage("delete") @("Stop".Localize())
+            </a>
+        </li>*@
+
+        <li id="monitor_health_revisit" style="display:none" data-bind="visible: !ran() && !isRunning() && window.grid&&!_.isEmpty(window.grid.getSelecteds())" @* data-show-on-check="Any" *@ >
+            <a >
+                @Html.IconImage("reset") @("ReVisit".Localize())
+            </a>
+        </li>
+
+        <li id="checking_pop_finish" style="display:none" data-bind="visible:ran()&&!isRunning()">
+            <a href="javascript:window.location.reload();" >
+                @Html.IconImage("loading-done") @("Finished".Localize())
+            </a>
+        </li>
+
+        <li id="checking_pop_power" style="display:none" data-bind="visible:isChecking">
+            <a href="javascript:;" >
+                <img class="icon" src="@Url.Content("~/Areas/Monitor/Styles/Images/running.gif")" />
+                <span data-bind="text:stateText">@("Checking...".Localize())</span>
+            </a>
+        </li>
+
+        <li id="visiting_pop_power" style="display:none" data-bind="visible: isVisiting">
+            <a href="javascript:;" >
+                <img class="icon" src="@Url.Content("~/Areas/Monitor/Styles/Images/running.gif")" />
+                <span data-bind="text: stateText">@("Visiting...".Localize())</span>
+            </a>
+        </li>
+    </ul>
+}
+<div class="topbar clearfix">
+    <h1 class="title left">@ViewBag.Title</h1>
+    <div class="filter right">
+        <div class="filter-btn">
+            <a><span>Filter</span><img src="@Url.Content("~/Images/invis.gif")" class="icon arrow small gray-down"></a>
+        </div>
+        <div class="filter-content" style="display: none;">
+            <form class="no-stop" id="health_filter_form" action="@Url.Action("Index", ViewContext.RequestContext.AllRouteValues().Merge("page", 1))" method="get">
+                <input type="hidden" name="siteName" value="@Site.Current.FullName" />
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>@("Url".Localize())</th>
+                            <td>
+                                <input type="text" name="url" style="width:380px" maxlength="20" value="@ViewContext.RequestContext.AllRouteValues()["Url"]">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>@("ResourceType".Localize())</th>
+                            <td>
+                                @Html.DropDownList("resourceType", new SelectList(new Dictionary<string, string>(){
+                                    {"All",""},
+                                    {"Page","Page"},
+                                    {"Image","Image"},
+                                    {"Css","Css"},
+                                    {"JavaScript","JavaScript"}
+                                }, "Value", "Key", @ViewContext.RequestContext.AllRouteValues()["resourceType"]), new { style="width:180px"})
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>@("Type".Localize())</th>
+                            <td>
+                                @Html.DropDownList("type", new SelectList(new Dictionary<string, string>(){
+                                    {"All",""},
+                                    {"UnVisit","UnVisit"},
+                                    {"Error","Error"},
+                                    {"Normal","Normal"}
+                                }, "Value", "Key", @ViewContext.RequestContext.AllRouteValues()["type"]),new { style="width:180px"})
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>
+                                <input type="text" name="status" style="width:180px" maxlength="3" value="@ViewContext.RequestContext.AllRouteValues()["status"]">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <input type="submit" value="Search">
+                                <button name="clear" type="button" style="margin-left: 20px">Clear</button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+@Html.GridForModel2(m => m)
+<div class="pagination right">
+    @Html.Pager(Model, "", ViewContext.RequestContext.AllRouteValues(), null)
+</div>
+
+<script type="text/javascript">
+    var reCheckUrl="@Url.Action("ReCheck", ViewContext.RequestContext.AllRouteValues())";
+    var reVisitUrl="@Url.Action("ReVisit", ViewContext.RequestContext.AllRouteValues())";
+    var getStateUrl="@Url.Action("AsyncCurrentState", ViewContext.RequestContext.AllRouteValues())";
+    var stopUrl="@Url.Action("Stop", ViewContext.RequestContext.AllRouteValues())";
+    var lastCheckUrl = "@Url.Action("LastCheckResult",ViewContext.RequestContext.AllRouteValues())";
+    $(function () {        
+        var form = $("#health_filter_form");
+        form.find(".datepicker").datepicker();
+        form.find("button[name='clear']").on("click", function () {
+            form.find(":text").val('');
+            form.find("select").val('');
+        });
+    });
+</script>
+<div id="checking-info" class="hide">
+    <form class="common-form">
+        <h3 id="checking_title" data-bind="text: stateText"></h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Found</th>
+                    <th>Checked</th>
+                    <th>Wait to check</th>
+                    <th>Percents</th>
+                    <th class="short">&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="health_page_check">
+                    <th>Pages</th>
+                    <td class="health-total" data-bind="text:totalPage">0</td>
+                    <td class="health-checked" data-bind="text:visitedPage">0</td>
+                    <td class="health-uncheck" data-bind="text:unVisitPage">0</td>
+                    <td><span class="percent-bar"><b class="health-bar" data-bind="style:{width:pageRate()+'%'}"></b></span></td>
+                    <td class="health-bar-val" data-bind="text:pageRate()+'%'">0%</td>
+                </tr>
+                <tr id="health_image_check">
+                    <th>Images</th>
+                    <td class="health-total" data-bind="text:totalImage">0</td>
+                    <td class="health-checked" data-bind="text:visitedImage">0</td>
+                    <td class="health-uncheck" data-bind="text:unVisitImage">0</td>
+                    <td><span class="percent-bar"><b class="health-bar" data-bind="style:{width:imageRate()+'%'}"></b></span></td>
+                    <td class="health-bar-val" data-bind="text:imageRate()+'%'">0%</td>
+                </tr>
+                <tr id="health_css_check">
+                    <th>CSS</th>
+                    <td class="health-total" data-bind="text:totalCss">0</td>
+                    <td class="health-checked" data-bind="text:visitedCss">0</td>
+                    <td class="health-uncheck" data-bind="text:unVisitCss">0</td>
+                    <td><span class="percent-bar"><b class="health-bar" data-bind="style:{width:cssRate()+'%'}"></b></span></td>
+                    <td class="health-bar-val" data-bind="text:cssRate()+'%'">0%</td>
+                </tr>
+                <tr id="health_js_check">
+                    <th>Javascript</th>
+                    <td class="health-total" data-bind="text:totalJs">0</td>
+                    <td class="health-checked" data-bind="text:visitedJs">0</td>
+                    <td class="health-uncheck" data-bind="text:unVisitJs">0</td>
+                    <td><span class="percent-bar"><b class="health-bar" data-bind="style:{width:jsRate()+'%'}"></b></span></td>
+                    <td class="health-bar-val" data-bind="text:jsRate()+'%'">0%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><span>While the program is running at the backend, you can choose to click on "Close" button to close the dialog, and browse other pages.</span></p>
+        <p class="buttons">
+            <a id="health_pop_start" class="button gray" data-bind="visible: !ran()&&!isRunning()">@("Start".Localize())</a>
+            <a id="health_pop_stop" class="button gray" data-bind="visible:isRunning">@("Stop".Localize())</a>
+            <a id="health_pop_close" class="button" data-bind="visible:!ran()||isRunning()">@("Close".Localize())</a>
+            <a id="health_page_refresh" href="javascript:window.location.reload();" class="button" data-bind="visible:ran()&&!isRunning()">@("Finish".Localize())</a>
+        </p>
+    </form>
+</div>
+
+@section ScriptCSS{
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.communicator.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/main.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.Dictionary.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.EventManager.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.HealthCheck.js"))"></script>
+}

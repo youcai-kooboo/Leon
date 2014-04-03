@@ -1,0 +1,13 @@
+﻿[
+  {
+    "ModuleName": "Monitor",
+    "User": "admin",
+    "UtcDatetime": "2014-04-03T03:44:56.5318925Z",
+    "VersionRange": {
+      "SourceVersion": null,
+      "TargetVersion": "1.0.0.0",
+      "InstallationType": 0
+    },
+    "InstallationFileName": "1.0.0.0-20140403114454.zip"
+  }
+]

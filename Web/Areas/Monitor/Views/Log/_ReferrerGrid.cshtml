@@ -1,0 +1,40 @@
+﻿@model Kooboo.Web.Mvc.Grid2.GridModel
+@{
+    var items = Model.GetItems().ToArray();
+}
+
+    <table style="word-break: break-all">
+        <thead>
+            <tr>
+                @foreach (var column in Model.Columns)
+                {
+                    <th @column.RenderHeaderContainerAtts(ViewContext)>@column.RenderHeader(ViewContext)</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @if (items.Length == 0)
+            { 
+                <tr class="empty">
+                    <td colspan="@Model.Columns.Count()">
+                        @("Empty".Localize())
+                    </td>
+                </tr>
+            }
+            else
+            {
+                foreach (var item in items)
+                {
+                <tr @item.RenderItemContainerAtts()>
+                    @foreach (var itemValue in item.GetItemColumns())
+                    {
+                        <td @itemValue.RenderItemColumnContainerAtts(ViewContext)>
+                            @itemValue.RenderItemColumn(ViewContext)
+                        </td>
+                    }
+                </tr>
+                }
+            }
+
+        </tbody>
+    </table>

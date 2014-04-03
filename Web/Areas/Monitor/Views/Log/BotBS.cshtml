@@ -1,0 +1,416 @@
+﻿@{
+    ViewBag.Title = "Bot";
+    Layout = "~/Views/Shared/Site.cshtml";
+}
+
+<div class="topbar clearfix">
+    <h1 class="title">@ViewBag.Title</h1>
+</div>
+<script type="text/javascript">
+    function getDays(year,month){
+        return new Date(year,month,0).getDate();
+    }
+</script>
+<div id="monitor-statistic" class="clearfix">
+    <div id="monitor_bot" class="field">
+        <h2>Bot</h2>
+        <div class="field-tabs">
+            <a href="#bot_week" class="on">Week</a>
+            <a href="#bot_month">Month</a>
+        </div>
+        <div class="field-bodys">
+            <div id="bot_week" class="field-content"></div>
+            <div id="bot_month" class="field-content"></div>
+        </div>
+    </div>
+
+    <div id="monitor_bs" class="field">
+        <h2>Browser</h2>
+        <div class="field-tabs">
+            <a href="#bs_week">Weekly</a>
+            <a href="#bs_month">Monthly</a>
+        </div>
+        <div class="field-bodys">
+            <div id="bs_week" class="field-content"></div>
+            <div id="bs_month" class="field-content"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        var noDataEle = $('<div class="tip-outer"><p class="status-tip">No data currently.</p></div>');
+        var loadingEle = $('<div class="tip-outer"><p class="status-tip">Loading<b class="loading-img"></b></p></div>');
+        $("#monitor_bot").reportTab([function () {
+            var cont = $(this), loaded = cont.data("loaded");
+            if (loaded) {
+                return false;
+            }
+            $.ajax({
+                url: "@Url.Action("WeeklyBot", ViewContext.RequestContext.AllRouteValues())",
+                type: "POST",
+                dataType: "json",
+                beforeSend:function(){
+                    $('#bot_week').empty().append(loadingEle.clone());
+                }
+            }).done(function (data) {
+                if(data.length==0){
+                    $('#bot_week').empty().append(noDataEle.clone());
+                    return false;
+                }
+                var categories = [],totalData=[],height=100;
+                for(var i=0,j=data.length;i<j;i++){
+                    categories.push(data[i].Spider);
+                    totalData.push({
+                        name:data[i].Spider,
+                        y:data[i].Total
+                    });
+                    height += 20;
+                }
+                
+                $('#bot_week').highcharts({
+                    chart: {
+                        height:height,
+                        animation:false,
+                        spacingTop: 0,
+                        spacingBottom: 0,
+                        spacingLeft: 0,
+                        spacingRight: 5
+                    },
+                    title: {
+                        text: null
+                    },
+                    xAxis: {
+                        categories: categories,
+                        title: {
+                            text: null
+                        },
+                        labels:{
+                            //x:0,
+                            align:'right',
+                            style: {
+                                color: '#000000'
+                            }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        allowDecimals:false,
+                        title: null,
+                        labels: {
+                            overflow: 'justify'
+                        }
+                    },
+                    tooltip: {
+                        valueSuffix: ' PV'
+                    },
+                    plotOptions: {
+                        bar: {
+                            animation:false,
+                            colorByPoint:true,
+                            colors:['#2f7ed8'],//['#8bbc21','#f28f43','#2f7ed8','#910000','#1aadce','#492970','#0d233a'],
+                            dataLabels: {
+                                enabled: true,
+                                align: 'right',
+                                color: '#FFFFFF',
+                                x: -10
+                            },
+                            pointPadding: 0.1,
+                            groupPadding: 0
+                        }
+                    },
+                    legend: {
+                        enabled:false,
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'top',
+                        x: 10,
+                        y: 0,
+                        floating: false,
+                        borderWidth: 1,
+                        backgroundColor: '#FFFFFF',
+                        shadow: true
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    series: [{
+                        name:'IP ranking',
+                        type:'bar',
+                        data:totalData
+                    }]
+                });
+            }).always(function(){
+                cont.data("loaded",true);
+            });
+        },function () {
+            var cont = $(this), loaded = cont.data("loaded");
+            if (loaded) {
+                return false;
+            }
+            $.ajax({
+                url: "@Url.Action("MonthlyBot", ViewContext.RequestContext.AllRouteValues())",
+                type: "POST",
+                dataType: "json",
+                beforeSend:function(){
+                    $('#bot_month').empty().append(loadingEle.clone());
+                }
+            }).done(function (data) {
+                if(data.length==0){
+                    $('#bot_month').empty().append(noDataEle.clone());
+                    return false;
+                }
+                var categories = [],totalData=[],height=100;
+                for(var i=0,j=data.length;i<j;i++){
+                    categories.push(data[i].Spider);
+                    totalData.push({
+                        name:data[i].Spider,
+                        y:data[i].Total
+                    });
+                    height += 20;
+                }
+                $('#bot_month').highcharts({
+                    chart: {
+                        height:height,
+                        animation:false,
+                        spacingTop: 0,
+                        spacingBottom: 0,
+                        spacingLeft: 0,
+                        spacingRight: 5
+                    },
+                    title: {
+                        text: null
+                    },
+                    xAxis: {
+                        categories: categories,
+                        title: {
+                            text: null
+                        },
+                        labels:{
+                            //x:0,
+                            align:'right',
+                            style: {
+                                color: '#000000'
+                            }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        allowDecimals:false,
+                        title: null,
+                        labels: {
+                            overflow: 'justify'
+                        }
+                    },
+                    tooltip: {
+                        valueSuffix: ' PV'
+                    },
+                    plotOptions: {
+                        bar: {
+                            animation:false,
+                            colorByPoint:true,
+                            colors: ['#2f7ed8'],//['#8bbc21','#f28f43','#2f7ed8','#910000','#1aadce','#492970','#0d233a'],
+                            dataLabels: {
+                                enabled: true,
+                                align: 'right',
+                                color: '#FFFFFF',
+                                x: -10
+                            },
+                            pointPadding: 0.1,
+                            groupPadding: 0
+                        }
+                    },
+                    legend: {
+                        enabled:false,
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'top',
+                        x: 10,
+                        y: 0,
+                        floating: false,
+                        borderWidth: 1,
+                        backgroundColor: '#FFFFFF',
+                        shadow: true
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    series: [{
+                        name:'IP ranking',
+                        type:'bar',
+                        data:totalData
+                    }]
+                });
+            }).always(function(){
+                cont.data("loaded",true);
+            });
+        }]);
+        $("#monitor_bs").reportTab([function () {
+            var cont = $(this), loaded = cont.data("loaded");
+            if (loaded) {
+                return false;
+            }
+            $.ajax({
+                url: "@Url.Action("WeeklyBrowser", ViewContext.RequestContext.AllRouteValues())",
+                type: "POST",
+                dataType: "json",
+                beforeSend:function(){
+                    $('#bs_week').empty().append(loadingEle.clone());
+                }
+            }).done(function (data) {
+                if(data.length==0){
+                    $('#bs_week').empty().append(noDataEle.clone());
+                    return false;
+                }
+                var categories = [], totalData = [];
+                for (var i = 0, j = data.length; i < j; i++) {
+                    categories.push(data[i].Browser);
+                    totalData.push({
+                        name: data[i].Browser,
+                        y: data[i].Total
+                    });
+                }
+                $('#bs_week').highcharts({
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        spacingTop: 0,
+                        spacingBottom: 0,
+                        spacingLeft: 0,
+                        spacingRight: 0
+                    },
+                    title: {
+                        text: null
+                    },
+                    tooltip: {
+                        //pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+                        /*formatter:function(){
+                            return this.series.name+":<b>"+this.point.percentage.toFixed(2)+"</b>";
+                        },*/
+                        //percentageDecimals: 1
+                    },
+                    plotOptions: {
+                        pie: {
+                            animation: false,
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                color: '#000000',
+                                connectorColor: '#000000',
+                                formatter: function () {
+                                    return '<b>' + this.point.name + '</b>: ' + this.percentage.toFixed(2) + ' %';
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        type: 'pie',
+                        name: 'Browser share',
+                        data: totalData/*[
+                                ['Firefox',   45.0],
+                                ['IE',       26.8],
+                                {
+                                    name: 'Chrome',
+                                    y: 12.8,
+                                    sliced: true,
+                                    selected: true
+                                },
+                                ['Safari',    8.5],
+                                ['Opera',     6.2],
+                                ['Others',   0.7]
+                            ]*/
+                    }]
+                });
+            }).always(function(){
+                cont.data("loaded",true);
+            });
+        },function () {
+            var cont = $(this), loaded = cont.data("loaded");
+            if (loaded) {
+                return false;
+            }
+            $.ajax({
+                url: "@Url.Action("MonthlyBrowser", ViewContext.RequestContext.AllRouteValues())",
+                type: "POST",
+                dataType: "json",
+                beforeSend:function(){
+                    $('#bs_month').empty().append(loadingEle.clone());
+                }
+            }).done(function (data) {
+                if(data.length==0){
+                    $('#bs_month').empty().append(noDataEle.clone());
+                    return false;
+                }
+                var categories = [], totalData = [];
+                for (var i = 0, j = data.length; i < j; i++) {
+                    categories.push(data[i].Browser);
+                    totalData.push({
+                        name: data[i].Browser,
+                        y: data[i].Total
+                    });
+                }
+                $('#bs_month').highcharts({
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        spacingTop: 0,
+                        spacingBottom: 0,
+                        spacingLeft: 0,
+                        spacingRight: 0
+                    },
+                    title: {
+                        text: null
+                    },
+                    tooltip: {
+                        //pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+                        /*formatter:function(){
+                            return this.series.name+":<b>"+this.point.percentage.toFixed(2)+"</b>";
+                        },*/
+                        //percentageDecimals: 1
+                    },
+                    plotOptions: {
+                        pie: {
+                            animation: false,
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                color: '#000000',
+                                connectorColor: '#000000',
+                                formatter: function () {
+                                    return '<b>' + this.point.name + '</b>: ' + this.percentage.toFixed(2) + ' %';
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        type: 'pie',
+                        name: 'Browser share',
+                        data: totalData/*[
+                                ['Firefox',   45.0],
+                                ['IE',       26.8],
+                                {
+                                    name: 'Chrome',
+                                    y: 12.8,
+                                    sliced: true,
+                                    selected: true
+                                },
+                                ['Safari',    8.5],
+                                ['Opera',     6.2],
+                                ['Others',   0.7]
+                            ]*/
+                    }]
+                });
+            }).always(function(){
+                cont.data("loaded",true);
+            });
+        }]);
+    });
+</script>
+@section ScriptCSS{
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.communicator.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.module.monitor.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/highcharts/js/highcharts.js"))"></script>
+}

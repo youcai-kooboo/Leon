@@ -1,0 +1,110 @@
+﻿@model Kooboo.Web.Mvc.Paging.PagedList<Kooboo.CMS.ModuleArea.Monitor.Models.Log>
+@{
+    Layout = "~/Views/Shared/Site.cshtml";
+    ViewBag.Title = "Exceptional logs".Localize();
+}
+
+@section Panel{
+    <ul class="panel">
+        <li>
+            <a href="@Url.Action("Delete", ViewContext.RequestContext.AllRouteValues().Merge("return", ViewContext.HttpContext.Request.RawUrl))" data-show-on-check="Any" data-command-type="AjaxPost" data-confirm="@("Are you sure you want to delete these items?".Localize())">
+            @Html.IconImage("delete") @("Delete".Localize())
+            </a>
+        </li>
+    </ul>
+}
+<div class="topbar clearfix">
+    <h1 class="title">@ViewBag.Title</h1>
+    <div class="filter right">
+        <div class="filter-btn">
+            <a><span>Filter</span><img src="@Url.Content("~/Images/invis.gif")" class="icon arrow small gray-down"></a>
+        </div>
+        <div class="filter-content" style="display: none;">
+            <form class="no-stop" id="log-filter-form" action="" method="get">
+                <input type="hidden" name="siteName" value="@Site.Current.FullName" />
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>DateTime:</th>
+                            <td>
+                                <input class="datepicker" type="text" name="start" value="@ViewContext.RequestContext.AllRouteValues()["Start"]">
+                                -
+                                <input class="datepicker" type="text" name="end" value="@ViewContext.RequestContext.AllRouteValues()["End"]">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>UserName:</th>
+                            <td>
+                                <input type="text" name="userName" maxlength="20" value="@ViewContext.RequestContext.AllRouteValues()["UserName"]">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Method</th>
+                            <td>
+                                @Html.DropDownList("method", new SelectList(new Dictionary<string, string>(){
+                                    {"All",""},
+                                    {"GET","GET"},
+                                    {"POST","POST"},
+                                    {"HEAD","HEAD"},
+                                    {"DELETE","DELETE"},
+                                    {"PUT","PUT"}
+                                }, "Value", "Key", @ViewContext.RequestContext.AllRouteValues()["Method"]))
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>ClientIP:</th>
+                            <td>
+                                <input type="text" name="clientIP" maxlength="15" value="@ViewContext.RequestContext.AllRouteValues()["clientIP"]">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>
+                                <input type="text" name="status" maxlength="3" value="@ViewContext.RequestContext.AllRouteValues()["status"]">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <input type="submit" value="Search">
+                                <button name="clear" type="button" style="margin-left: 20px">Clear</button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+@Html.GridForModel2(m=>m)
+<div class="pagination right">
+    @Html.Pager(Model, "", ViewContext.RequestContext.AllRouteValues(), null)
+</div>
+<script type="text/javascript">
+    $(function () {
+        var head = $(".common-table .thead tr").clone();
+        var thead = $("<thead></thead>").append(head);
+        $(".common-table .tbody tbody").before(thead);
+        $("tr").removeClass("error-status");
+
+        var form = $("#log-filter-form");
+        form.find(".datepicker").datepicker();
+        var method = "@ViewContext.RequestContext.AllRouteValues()["Method"]";
+        if (method) {
+            var sel = form.find("select[name='method']");
+            sel.find("option").each(function (ix, obj) {
+                if (obj.value && obj.value.toLowerCase() == method.toLowerCase()) {
+                    obj.selected = "selected";
+                    return false;
+                }
+            });
+        }
+        form.find("button[name='clear']").on("click", function () {
+            form.find(":text").val('');
+            form.find("select").val('');
+        });
+    });
+</script>
+@section ScriptCSS{
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.communicator.js"))"></script>
+}

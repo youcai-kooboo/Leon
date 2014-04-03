@@ -1,0 +1,403 @@
+.common-form table.break{
+	word-break: break-all;
+}
+
+/* Status */
+tr.error-status,
+tr.error-status:hover td{
+	background: #d83131 !important;
+}
+
+tr.error-overtime,
+tr.error-overtime:hover td{
+	background: #f0ad49 !important;
+}
+
+tr.error-status td,
+tr.error-status td a,
+tr.error-overtime td,
+tr.error-overtime td a{
+	color: #fff;
+}
+
+/* Filter */
+.filter {
+	position: relative;
+	width: 80px;
+}
+.filter .filter-btn{
+	position: absolute;
+	display: block;
+	height: 28px;
+	line-height: 30px;
+	padding: 0 0 0 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+.filter .filter-btn a{
+	width: 60px;
+    display: block;
+	font-size: 14px;
+}
+
+.filter .filter-btn img.icon.arrow{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.filter .filter-btn.active{
+    border-bottom: 0;
+	height: 29px;
+    z-index: 6;
+}
+
+.filter .filter-content{
+    clear: both;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+	min-width: 500px;
+    position: absolute;
+	top: 29px;
+	right: 8px;
+    display: none;
+}
+
+.filter .filter-content table{
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.filter .filter-content table th{
+	vertical-align: top;
+	font-family: "Segoe UI", "Helvetica Neue", openSansRegular, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	padding: 5px 5px 5px 0;
+}
+
+.filter .filter-content table td{
+	padding: 5px 5px 20px 5px;
+}
+
+.filter .filter-content select,
+.filter .filter-content input[type="text"]{
+	border: 1px solid #ccc;
+	line-height: 30px;
+	height: 30px;
+}
+
+.filter .filter-content input[type="radio"]{
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.filter .filter-content label{
+	margin-right: 10px;
+}
+
+/* Sub-listmenu */
+.sub-listmenu{
+	margin: 0 15px;
+}
+
+.sub-listmenu li{
+	float: left;
+	margin: 0 10px;
+	line-height: 34px;
+	height: 30px;
+}
+
+.sub-listmenu li span.error-status{
+	color: #d83131;
+}
+
+.sub-listmenu a{
+	display: block;
+	line-height: 34px;
+	height: 30px;
+}
+
+/* Statistics */
+#monitor-statistic{
+	margin-top: 112px;
+	padding: 20px;
+}
+
+#monitor-statistic .field{
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+	width: 100%;
+	margin-right: 2%;
+	min-height: 200px;
+	position: relative;
+}
+
+#monitor-statistic .field.wide{
+	width: 99%;
+}
+
+#monitor-statistic .field.tables{
+	border: 0;
+	min-height: 0;
+}
+
+#monitor-statistic .field.tables h2{
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 0;
+}
+
+#monitor-statistic .field.tables .field-tabs a:last-child {
+    border-right: 0;
+}
+
+
+#monitor-statistic .field.tables .field-content{
+	padding: 0;
+}
+
+#monitor-statistic .field.tables .field-content table {
+    width: 100%;
+}
+
+#monitor-statistic .field .tip-outer {
+    border: 0;
+}
+
+#monitor-statistic .field.tables .tip-outer {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #fff;
+}
+
+#monitor-statistic .field.tables .pagination-outer {
+    border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+#monitor-statistic .field.tables .pagination{
+	margin: 5px;
+}
+
+#monitor-statistic .field.tables .field-tabs{
+	top: 1px;
+    right: 2px;
+}
+
+#monitor-statistic .field:last-child{
+	margin-right: 0;
+}
+
+
+#monitor-statistic .field .field-tabs{
+	position: absolute;
+	right: 0;
+	top: 0;
+	letter-spacing: 0;
+	font-size: 0;
+	word-spacing: 0;
+}
+
+#monitor-statistic .field .field-tabs a{
+	font-size: 12px;
+	display: inline-block;
+	min-width: 40px;
+	text-align: center;
+	position: relative;
+	left: 1px;
+	padding: 0 10px;
+	line-height: 50px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	color: #000;
+}
+
+#monitor-statistic .field .field-tabs a.on{
+	border-bottom-color: #fff;
+	background: #fff;
+	color: #0078d1;
+}
+
+#monitor-statistic .field .field-tabs a:first-child{
+	border-right: 0;
+}
+
+#monitor-statistic .field .field-tabs a:last-child{
+	border-left: 0;
+}
+
+#monitor-statistic .field h2{
+	font-family: "Segoe UI Light", "Helvetica Neue", openSansLight, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 50px;
+	height: 50px;
+	background: #e7e7e7;
+	border-bottom: 1px solid #ccc;
+	text-indent: 10px;
+}
+
+#monitor-statistic .field .field-content{
+	padding: 10px 30px 40px;
+}
+
+#monitor-statistic .field .field-content table{
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#monitor-statistic .field .field-content th{
+	font-size: 14px;
+	font-weight: normal;
+	padding: 5px 5px 5px 10px;
+	border: 1px solid #ccc;
+}
+
+#monitor-statistic .field .field-content th:first-child{
+	width: 50px;
+}
+
+#monitor-statistic .field .field-content td{
+	vertical-align: top;
+	padding: 5px 5px 5px 10px;
+	border: 1px solid #ccc;
+}
+
+#monitor-statistic .field .field-content p.status-tip{
+	text-align: center;
+	font-size: 18px;
+	margin: 80px 0 50px;
+	color: #333;
+}
+
+#monitor-statistic .field.tables .field-content p.status-tip{
+	margin: 90px 0;
+}
+
+#monitor-statistic .field .field-content p.status-tip .loading-img{
+	display: block;
+	width: 220px;
+	height: 20px;
+	background: url(Images/loading.gif);
+	margin: 0 auto;
+}
+
+#checking-info{
+	position: relative;
+}
+
+#checking-info h3,
+#last-check h3{
+	font-family: "Segoe UI Light", "Helvetica Neue", openSansLight, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+
+#checking-info table,
+#last-check table{
+	margin: 30px 0;
+}
+
+.field table{
+	margin: 0;
+}
+
+#checking-info table th,
+#last-check table th{
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+
+#checking-info table th.short{
+	width: 10px;
+}
+
+#checking-info table .percent-bar{
+	display: block;
+	height: 14px;
+	background: #c1c1c1;
+}
+
+#checking-info table .percent-bar b{
+	display: block;
+	height: 100%;
+	background: #1076a6;
+}
+
+.log-detail{
+	margin-top: 60px;
+}
+
+.stacktrace{
+	border: 1px solid #ccc;
+	width: 80%;
+	height: 300px;
+}
+
+#referer-all.fixed{
+	margin: 111px 0 20px;
+}
+
+#referer-all li{
+	border-bottom: 1px solid #ccc;
+}
+
+#referer-all li table{
+	display: none;
+}
+
+#referer-all li.open table{
+	display: table;
+}
+
+#referer-all li.open img.icon{
+	background-position: -49px -64px;
+}
+
+#referer-all li a{
+	display: block;
+	padding: 5px 0 5px 20px;
+	font-size: 14px;
+}
+
+#referer-all a:hover{
+	background: #3ca8d8;
+	color: #fff;
+}
+
+#referer-all img.icon{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+#referer-all b{
+	margin-right: 10px;
+	font-weight: normal;
+}
+
+#referer-all .common-table{
+	padding-left: 36px;
+}
+
+#referer-all .common-table tr:hover td{
+	background: none;
+}
+
+img.icon.report{
+	width: 26px;
+	height: 26px;
+	background: url(images/report.png) no-repeat;
+}
+
+img.icon.loading-done{
+	width: 26px;
+	height: 26px;
+	background: url(images/icons.png) no-repeat -260px -26px;
+}

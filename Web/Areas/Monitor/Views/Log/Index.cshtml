@@ -1,0 +1,104 @@
+﻿@model PagedList<Kooboo.CMS.ModuleArea.Monitor.Models.Log>
+@{
+    Layout = "~/Views/Shared/Site.cshtml";
+    ViewBag.Title = "Logs".Localize();
+}
+
+@section Panel{
+    <ul class="panel">
+        <li>
+            <a href="javascript:window.location.reload()">
+                @Html.IconImage("reset") @("Refresh".Localize())
+            </a>
+        </li>
+        <li>
+            <a href="@Url.Action("index", new { siteName = Site.Current.Name })">
+                @Html.IconImage("save") @("Logs".Localize())
+            </a>
+        </li>
+    </ul>
+}
+<div class="topbar clearfix">
+    <h1 class="title left">@ViewBag.Title</h1>
+    <div class="filter right">
+        <div class="filter-btn">
+            <a><span>Filter</span><img src="@Url.Content("~/Images/invis.gif")" class="icon arrow small gray-down"></a>
+        </div>
+        <div class="filter-content" style="display: none;">
+            <form class="no-stop" id="log-filter-form" action="@Url.Action("Index", ViewContext.RequestContext.AllRouteValues().Merge("page", 1))" method="get">
+                <input type="hidden" name="siteName" value="@Site.Current.FullName" />
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>DateTime:</th>
+                            <td>
+                                <input class="datepicker" type="text" name="start" style="width:180px" value="@ViewContext.RequestContext.AllRouteValues()["Start"]">
+                                -
+                                <input class="datepicker" type="text" name="end" style="width:180px" value="@ViewContext.RequestContext.AllRouteValues()["End"]">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>UserName:</th>
+                            <td>
+                                <input type="text" name="userName" style="width:180px" maxlength="20" value="@ViewContext.RequestContext.AllRouteValues()["UserName"]">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Method</th>
+                            <td>
+                                @Html.DropDownList("method", new SelectList(new Dictionary<string, string>(){
+                                    {"All",""},
+                                    {"GET","GET"},
+                                    {"POST","POST"},
+                                    {"HEAD","HEAD"},
+                                    {"DELETE","DELETE"},
+                                    {"PUT","PUT"}
+                                }, "Value", "Key", @ViewContext.RequestContext.AllRouteValues()["Method"]), new { style="width:180px"})
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>ClientIP:</th>
+                            <td>
+                                <input type="text" name="clientIP" style="width:180px" maxlength="15" value="@ViewContext.RequestContext.AllRouteValues()["clientIP"]">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>
+                                <input type="text" name="status" style="width:180px" maxlength="3" value="@ViewContext.RequestContext.AllRouteValues()["status"]">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <input type="submit" value="Search">
+                                <button name="clear" type="button" style="margin-left: 20px">Clear</button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+@Html.GridForModel2(m => m)
+<div class="pagination right">
+    @Html.Pager(Model, "", ViewContext.RequestContext.AllRouteValues(), null)
+</div>
+<script type="text/javascript">
+    $(function () {
+        var head = $(".common-table .thead tr").clone();
+        var thead = $("<thead></thead>").append(head);
+        $(".common-table .tbody tbody").before(thead);
+
+        var form = $("#log-filter-form");
+        form.find(".datepicker").datepicker();
+        form.find("button[name='clear']").on("click", function () {
+            form.find(":text").val('');
+            form.find("select").val('');
+        });
+    });
+</script>
+@section ScriptCSS{
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.communicator.js"))"></script>
+}

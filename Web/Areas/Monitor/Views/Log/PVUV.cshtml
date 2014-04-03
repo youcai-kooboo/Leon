@@ -1,0 +1,756 @@
+﻿@{
+    ViewBag.Title = "PV / UV";
+    Layout = "~/Views/Shared/Site.cshtml";
+}
+
+<div class="topbar clearfix">
+    <h1 class="title">@ViewBag.Title</h1>
+</div>
+<div id="monitor-statistic" class="clearfix">
+    <div id="monitor_pv" class="field">
+        <h2>Page view</h2>
+        <div class="field-tabs">
+            <a href="#pv_day" class="on">Daily</a>
+            <a href="#pv_week">Weekly</a>
+            <a href="#pv_month">Monthly</a>
+        </div>
+        <div class="field-bodys" style="width: 100%">
+            <div id="pv_day" class="field-content"></div>
+            <div id="pv_week" class="field-content"></div>
+            <div id="pv_month" class="field-content"></div>
+        </div>
+    </div>
+    <div id="monitor_uv" class="field">
+        <h2>Unique visitors</h2>
+        <div class="field-tabs">
+            <a href="#uv_day" class="on">Day</a>
+            <a href="#uv_week">Week</a>
+            <a href="#uv_month">Month</a>
+        </div>
+        <div class="field-bodys">
+            <div id="uv_day" class="field-content">d</div>
+            <div id="uv_week" class="field-content">w</div>
+            <div id="uv_month" class="field-content">m</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        var noDataEle = $('<div class="tip-outer"><p class="status-tip">No data currently.</p></div>');
+        var loadingEle = $('<div class="tip-outer"><p class="status-tip">Loading<b class="loading-img"></b></p></div>');
+        $("#monitor_pv").reportTab([function () {
+            var cont = $(this), loaded = cont.data("loaded");
+            if (loaded) {
+                return false;
+            }
+            $.ajax({
+                url: "@Url.Action("DailyPV", ViewContext.RequestContext.AllRouteValues())",
+            type: "POST",
+            dataType: "json",
+            beforeSend: function () {
+                $('#pv_day').empty().append(loadingEle.clone());
+            }
+        }).done(function (data) {
+            if (data.length == 0) {
+                $('#pv_day').empty().append(noDataEle.clone());
+                return false;
+            }
+            var categories = [], totalData = [], errorData = [], total = 0, error = 0;
+            for (var i = 1, j = 24; i <= j; i++) {
+                categories.push(i + 'H');
+                totalData.push(0);
+                errorData.push(0);
+            }
+
+            for (var i in data) {
+                var hour = data[i].Hour;
+                total += totalData[hour] = data[i].Total;
+                error += errorData[hour] = data[i].Error;
+            }
+            $('#pv_day').highcharts({
+                chart: {
+                    type: 'area',
+                    spacingTop: 30,
+                    spacingBottom: 0,
+                    spacingLeft: 20,
+                    spacingRight: 20
+                },
+                title: {
+                    text: null
+                },
+                legend: {
+                    align: 'left',
+                    verticalAlign: 'top',
+                    y: -25,
+                    floating: true,
+                    borderWidth: 0
+                },
+                tooltip: {
+                    shared: true,
+                    crosshairs: true,
+                    valueSuffix: ' PV'
+                },
+                xAxis: {
+                    labels: {
+                        step: 2
+                    },
+                    maxPadding: 0.12,
+                    minPadding: 0.12,
+                    categories: categories
+                },
+                yAxis: {
+                    min: 0,
+                    allowDecimals: false,
+                    title: null,
+                    labels: {
+                        align: 'left',
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                plotOptions: {
+                    area: {
+                        animation: false,
+                        fillOpacity: 0.4,
+                        marker: {
+                            enabled: true,
+                            symbol: 'circle',
+                            radius: 3,
+                            states: {
+                                hover: {
+                                    enabled: true
+                                }
+                            }
+                        }
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'Total',
+                    data: totalData,
+                    marker: {
+                        lineWidth: 1,
+                        radius: 3
+                    }
+                }, {
+                    name: 'Error',
+                    data: errorData
+                }]
+            });
+        }).always(function(){
+            cont.data("loaded", true);
+        });
+        }, function () {
+            var cont = $(this), loaded = $(cont).data("loaded");
+            if (loaded) {
+                return false;
+            }
+            $.ajax({
+                url: "@Url.Action("WeeklyPV", ViewContext.RequestContext.AllRouteValues())",
+                type: "POST",
+                dataType: "json",
+                beforeSend: function () {
+                    $('#pv_week').empty().append(loadingEle.clone());
+                }
+            }).done(function (responseData) {
+                if (responseData.length == 0) {
+                    $('#pv_week').empty().append(noDataEle.clone());
+                    return false;
+                }
+                var startYear = responseData.StartYear,
+                    startMonth = responseData.StartMonth,
+                    startDay = responseData.StartDay,
+                    totalData = responseData.TotalData,
+                    errorData = responseData.ErrorData;
+
+                $('#pv_week').highcharts({
+                    chart: {
+                        type: 'area',
+                        spacingTop: 30,
+                        spacingBottom: 0,
+                        spacingLeft: 0,
+                        spacingRight: 0
+                    },
+                    title: {
+                        text: null
+                    },
+                    legend: {
+                        align: 'left',
+                        verticalAlign: 'top',
+                        y: -25,
+                        floating: true,
+                        borderWidth: 0
+                    },
+                    xAxis: {
+                        type: 'datetime',
+                        maxPadding: 0.1,
+                        minPadding: 0.1
+                        //endOnTick: true,
+                        //showFirstLabel: false,
+                        //startOnTick: true
+                    },
+                    yAxis: [{ // left y axis
+                        min: 0,
+                        //allowDecimals:false,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            align: 'left',
+                            x: 3,
+                            y: 16,
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0);
+                            }
+                        },
+                        showFirstLabel: false
+                    }, { // right y axis
+                        min: 0,
+                        allowDecimals: false,
+                        linkedTo: 0,
+                        gridLineWidth: 0,
+                        opposite: true,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            align: 'right',
+                            x: -3,
+                            y: 16,
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0);
+                            }
+                        },
+                        showFirstLabel: false
+                    }],
+                    tooltip: {
+                        shared: true,
+                        crosshairs: true
+                    },
+                    plotOptions: {
+                        area: {
+                            animation: false,
+                            fillOpacity: 0.4,
+                            marker: {
+                                enabled: true,
+                                symbol: 'circle',
+                                radius: 3,
+                                states: {
+                                    hover: {
+                                        enabled: true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    series: [{
+                        name: 'Total',
+                        data: totalData,
+                        pointStart: Date.UTC(startYear, startMonth, startDay),
+                        pointInterval: 24 * 3600 * 1000
+                    }, {
+                        name: 'Error',
+                        data: errorData,
+                        pointStart: Date.UTC(startYear, startMonth, startDay),
+                        pointInterval: 24 * 3600 * 1000
+                    }]
+                });
+            })
+            .always(function () {
+                cont.data("loaded", true);
+            });
+        }, function () {
+            var cont = $(this), loaded = cont.data("loaded");
+            if (loaded) {
+                return false;
+            }
+            $.ajax({
+                url: "@Url.Action("MonthlyPV", ViewContext.RequestContext.AllRouteValues())",
+                    type: "POST",
+                    dataType: "json",
+                    beforeSend: function () {
+                        $('#pv_month').empty().append(loadingEle.clone());
+                    }
+                }).done(function (responseData) {
+                    if (responseData.length == 0) {
+                        $('#pv_month').empty().append(noDataEle.clone());
+                        return false;
+                    }
+                    var startYear = responseData.StartYear,
+                        startMonth = responseData.StartMonth,
+                        startDay = responseData.StartDay,
+                        totalData = responseData.TotalData,
+                        errorData = responseData.ErrorData;
+
+                    $('#pv_month').highcharts({
+                        chart: {
+                            zoomType: 'x',
+                            type: 'area',
+                            spacingTop: 30,
+                            spacingBottom: 0,
+                            spacingLeft: 0,
+                            spacingRight: 0
+                        },
+                        title: {
+                            text: null
+                        },
+                        legend: {
+                            align: 'left',
+                            verticalAlign: 'top',
+                            y: -25,
+                            floating: true,
+                            borderWidth: 0
+                        },
+                        xAxis: {
+                            type: 'datetime',
+                            minRange: 48 * 3600 * 1000,
+                            startOfWeek: 6,
+                            maxPadding: 0.1,
+                            minPadding: 0.1
+                        },
+                        yAxis: [{ // left y axis
+                            min: 0,
+                            allowDecimals: false,
+                            title: {
+                                text: null
+                            },
+                            labels: {
+                                align: 'left',
+                                x: 3,
+                                y: 16,
+                                formatter: function () {
+                                    return Highcharts.numberFormat(this.value, 0);
+                                }
+                            },
+                            showFirstLabel: false
+                        }, { // right y axis
+                            min: 0,
+                            allowDecimals: false,
+                            linkedTo: 0,
+                            gridLineWidth: 0,
+                            opposite: true,
+                            title: {
+                                text: null
+                            },
+                            labels: {
+                                align: 'right',
+                                x: -3,
+                                y: 16,
+                                formatter: function () {
+                                    return Highcharts.numberFormat(this.value, 0);
+                                }
+                            },
+                            showFirstLabel: false
+                        }],
+                        tooltip: {
+                            shared: true,
+                            crosshairs: true
+                        },
+                        plotOptions: {
+                            area: {
+                                animation: false,
+                                fillOpacity: 0.4,
+                                marker: {
+                                    enabled: true,
+                                    symbol: 'circle',
+                                    radius: 3,
+                                    states: {
+                                        hover: {
+                                            enabled: true
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        credits: {
+                            enabled: false
+                        },
+                        series: [{
+                            name: 'Total',
+                            data: totalData,
+                            pointStart: Date.UTC(startYear, startMonth, startDay),
+                            pointInterval: 24 * 3600 * 1000
+                        }, {
+                            name: 'Error',
+                            data: errorData,
+                            pointStart: Date.UTC(startYear, startMonth, startDay),
+                            pointInterval: 24 * 3600 * 1000
+                        }]
+                    });
+                }).always(function () {
+                    cont.data("loaded", true);
+                });
+        }]);
+        $("#monitor_uv").reportTab([function () {
+            var cont = $(this), loaded = cont.data("loaded");
+            if (loaded) {
+                return false;
+            }
+            $.ajax({
+                url: "@Url.Action("DayUV", ViewContext.RequestContext.AllRouteValues())",
+                type: "POST",
+                dataType: "json",
+                beforeSend: function () {
+                    $('#uv_day').empty().append(loadingEle.clone());
+                }
+            }).done(function (responseData) {
+                if (responseData.length == 0) {
+                    $('#uv_day').empty().append(noDataEle.clone());
+                    return false;
+                }
+                var startYear = responseData.StartYear,
+                    startMonth = responseData.StartMonth,
+                    startDay = responseData.StartDay,
+                    categories=responseData.Categories,
+                    totalData = responseData.TotalData;
+
+                $('#uv_day').highcharts({
+                    chart: {
+                        type: 'area',
+                        spacingTop: 30,
+                        spacingBottom: 0,
+                        spacingLeft: 0,
+                        spacingRight: 0
+                    },
+                    title: {
+                        text: null
+                    },
+                    legend: {
+                        align: 'left',
+                        verticalAlign: 'top',
+                        y: -25,
+                        floating: true,
+                        borderWidth: 0
+                    },
+                    xAxis: {
+                        type: 'datetime',
+                        //categories:categories,
+                        maxPadding: 0.05,
+                        minPadding: 0.05,
+                        minTickInterval: 24 * 3600 * 1000//防止出现小时的X轴刻度，让其只显示每个日期天的刻度
+                    },
+                    yAxis: [{ // left y axis
+                        min: 0,
+                        allowDecimals: false,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            align: 'left',
+                            x: 3,
+                            y: 16,
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0);
+                            }
+                        },
+                        showFirstLabel: false
+                    }, { // right y axis
+                        min: 0,
+                        allowDecimals: false,
+                        linkedTo: 0,
+                        gridLineWidth: 0,
+                        opposite: true,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            align: 'right',
+                            x: -3,
+                            y: 16,
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0);
+                            }
+                        },
+                        showFirstLabel: false
+                    }],
+                    tooltip: {
+                        shared: true,
+                        crosshairs: true
+                        //formatter: function () {
+                        //    return this.x + ' , ' + 2013 + '<br/>' +
+                        //        '<span style="color:#2f7ed8">' + this.points[0].series.name + '</span>:' +
+                        //        '<b>' + this.y + '</b>';
+                        //}
+                    },
+                    plotOptions: {
+                        area: {
+                            animation: false,
+                            fillOpacity: 0.4,
+                            marker: {
+                                enabled: true,
+                                symbol: 'circle',
+                                radius: 3,
+                                states: {
+                                    hover: {
+                                        enabled: true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    series: [{
+                        name: 'Visitors',
+                        data: totalData,
+                        pointStart: Date.UTC(startYear, startMonth, startDay),
+                        pointInterval: 24 * 3600 * 1000
+                    }]
+                });
+            }).always(function () {
+                cont.data("loaded", true);
+            });
+        }, function () {
+            var cont = $(this), loaded = cont.data("loaded");
+            if (loaded) {
+                return false;
+            }
+            $.ajax({
+                url: "@Url.Action("WeekUV", ViewContext.RequestContext.AllRouteValues())",
+                type: "POST",
+                dataType: "json",
+                beforeSend: function () {
+                    $('#uv_week').empty().append(loadingEle.clone());
+                }
+            }).done(function (responseData) {
+                if (responseData.length == 0) {
+                    $('#uv_week').empty().append(noDataEle.clone());
+                    return false;
+                }
+                var startYear = responseData.StartYear,
+                    startMonth = responseData.StartMonth,
+                    startDay = responseData.StartDay,
+                    categories = responseData.Categories,
+                    totalData = responseData.TotalData;
+
+                $('#uv_week').highcharts({
+                    chart: {
+                        //zoomType:'x',
+                        type: 'area',
+                        spacingTop: 30,
+                        spacingBottom: 5,
+                        spacingLeft: 20,
+                        spacingRight: 20
+                    },
+                    title: {
+                        text: null
+                    },
+                    legend: {
+                        align: 'left',
+                        verticalAlign: 'top',
+                        y: -25,
+                        floating: true,
+                        borderWidth: 0
+                    },
+                    xAxis: {
+                        type: 'datetime',
+                        //categories:categories,
+                        //startOnTick: true,
+                        //endOnTick:true,
+                        maxPadding: 0.1,
+                        minPadding: 0.1,
+                        //gridLineWidth:1,
+                        startOfWeek: 6,//若X轴为日期类型,设定X轴上的刻度在每逢周六
+                        minTickInterval: 7*24 * 3600 * 1000,//防止出现周一至周五的X轴刻度，让其只显示每周六的刻度
+                        labels: {
+                            align: 'right',
+                            x: -4
+                        }
+                    },
+                    yAxis: [{ // left y axis
+                        min: 0,
+                        allowDecimals: false,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            align: 'left',
+                            x: -20,
+                            y: 10,
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0);
+                            }
+                        },
+                        showFirstLabel: false
+                    }, { // right y axis
+                        min: 0,
+                        allowDecimals: false,
+                        linkedTo: 0,
+                        gridLineWidth: 0,
+                        opposite: true,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            align: 'right',
+                            x: 20,
+                            y: 10,
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0);
+                            }
+                        },
+                        showFirstLabel: false
+                    }],
+                    tooltip: {
+                        shared: true,
+                        crosshairs: true
+                    },
+                    plotOptions: {
+                        area: {
+                            animation: false,
+                            fillOpacity: 0.4,
+                            marker: {
+                                enabled: true,
+                                symbol: 'circle',
+                                radius: 3,
+                                states: {
+                                    hover: {
+                                        enabled: true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    series: [{
+                        name: 'Visitors',
+                        data:totalData,
+                        pointStart: Date.UTC(startYear, startMonth, startDay),
+                        pointInterval: 7 * 24 * 3600 * 1000
+                    }]
+                });
+            }).always(function () {
+                cont.data("loaded", true);
+            });
+        }, function () {
+            var cont = $(this), loaded = cont.data("loaded");
+            if (loaded) {
+                return false;
+            }
+            $.ajax({
+                url: "@Url.Action("MonthUV", ViewContext.RequestContext.AllRouteValues())",
+                type: "POST",
+                dataType: "json",
+                beforeSend: function () {
+                    $('#uv_month').empty().append(loadingEle.clone());
+                }
+            }).done(function (responseData) {
+                if (responseData.length == 0) {
+                    $('#uv_month').empty().append(noDataEle.clone());
+                    return false;
+                }
+                var year = responseData.Year;
+                var totalData = responseData.TotalData;
+                var categories = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                $('#uv_month').highcharts({
+                    chart: {
+                        zoomType: 'x',
+                        type: 'area',
+                        spacingTop: 30,
+                        spacingBottom: 0,
+                        spacingLeft: 20,
+                        spacingRight: 20
+                    },
+                    title: {
+                        text: null
+                    },
+                    legend: {
+                        align: 'left',
+                        verticalAlign: 'top',
+                        y: -25,
+                        floating: true,
+                        borderWidth: 0
+                    },
+                    xAxis: {
+                        categories:categories,
+                        maxPadding: 0.05,
+                        minPadding: 0.05
+                    },
+                    yAxis: [{ // left y axis
+                        min: 0,
+                        allowDecimals: false,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            align: 'left',
+                            x: 3,
+                            y: 16,
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0);
+                            }
+                        },
+                        showFirstLabel: false
+                    }, { // right y axis
+                        min: 0,
+                        allowDecimals: false,
+                        linkedTo: 0,
+                        gridLineWidth: 0,
+                        opposite: true,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            align: 'right',
+                            x: -3,
+                            y: 16,
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0);
+                            }
+                        },
+                        showFirstLabel: false
+                    }],
+                    tooltip: {
+                        shared: true,
+                        crosshairs: true,
+                        formatter: function () {
+                            console.log(this);
+                            return this.x + ' ' + year + '<br/>' +
+                                '<span style="color:#2f7ed8">' + this.points[0].series.name + '</span>:' +
+                                '<b>' + this.y + '</b>';
+                        }
+                    },
+                    plotOptions: {
+                        area: {
+                            animation: false,
+                            fillOpacity: 0.4,
+                            marker: {
+                                enabled: true,
+                                symbol: 'circle',
+                                radius: 3,
+                                states: {
+                                    hover: {
+                                        enabled: true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    series: [{
+                        name: 'Visitors',
+                        data: totalData
+                    }]
+                });
+            }).always(function () {
+                cont.data("loaded", true);
+            });
+        }]);
+    });
+</script>
+@section ScriptCSS{
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.communicator.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/kooboo.module.monitor.js"))"></script>
+    <script type="text/javascript" src="@Html.Raw(Url.Content("~/Areas/Monitor/Scripts/highcharts/js/highcharts.js"))"></script>
+}
