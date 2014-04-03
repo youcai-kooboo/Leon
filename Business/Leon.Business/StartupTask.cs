@@ -11,7 +11,7 @@ namespace Leon.Business
             new LeonJob().AttachJob(1*60*1000, true);
 
             //Scan the page search
-            new PageSearchJob().Execute(true);
+            new PageSearchJob().AttachJob(1 * 60 * 1000, true);
         }
 
         public int Order {

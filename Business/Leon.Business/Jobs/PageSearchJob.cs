@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using Kooboo.CMS.Common.Persistence.Non_Relational;
 using Kooboo.CMS.Content.Models;
 using Kooboo.CMS.Search;
@@ -15,6 +16,7 @@ namespace Leon.Business.Jobs
     {
         public override void Execute(object executionState)
         {
+            Thread.Sleep(1000*60*5);
             var rootSites = ServiceFactory.SiteManager.AllRootSites();
             foreach (var rootSite in rootSites)
             {
