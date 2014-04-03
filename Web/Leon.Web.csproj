@@ -1981,16 +1981,6 @@
     <Content Include="Cms_Data\Contents\LeonCNSimple\Schemas\Product\Selectable.cshtml" />
     <Content Include="Cms_Data\Contents\LeonCNSimple\Schemas\Product\setting.config" />
     <Content Include="Cms_Data\Contents\LeonCNSimple\Schemas\Product\Update.cshtml" />
-    <Content Include="Cms_Data\Contents\LeonCNSimple\Search\Index\segments.gen" />
-    <Content Include="Cms_Data\Contents\LeonCNSimple\Search\Index\segments_3d" />
-    <Content Include="Cms_Data\Contents\LeonCNSimple\Search\Index\_6m.fdt" />
-    <Content Include="Cms_Data\Contents\LeonCNSimple\Search\Index\_6m.fdx" />
-    <Content Include="Cms_Data\Contents\LeonCNSimple\Search\Index\_6m.fnm" />
-    <Content Include="Cms_Data\Contents\LeonCNSimple\Search\Index\_6m.frq" />
-    <Content Include="Cms_Data\Contents\LeonCNSimple\Search\Index\_6m.nrm" />
-    <Content Include="Cms_Data\Contents\LeonCNSimple\Search\Index\_6m.prx" />
-    <Content Include="Cms_Data\Contents\LeonCNSimple\Search\Index\_6m.tii" />
-    <Content Include="Cms_Data\Contents\LeonCNSimple\Search\Index\_6m.tis" />
     <Content Include="Cms_Data\Contents\LeonCNSimple\setting.config" />
     <Content Include="Cms_Data\Contents\LeonCNTraditional\Broadcasting\ReceivingSettings\Leon-Category-Category.config" />
     <Content Include="Cms_Data\Contents\LeonCNTraditional\Broadcasting\ReceivingSettings\Leon-Comment-Comment.config" />
@@ -2022,16 +2012,6 @@
     <Content Include="Cms_Data\Contents\LeonCNTraditional\Schemas\Product\Selectable.cshtml" />
     <Content Include="Cms_Data\Contents\LeonCNTraditional\Schemas\Product\setting.config" />
     <Content Include="Cms_Data\Contents\LeonCNTraditional\Schemas\Product\Update.cshtml" />
-    <Content Include="Cms_Data\Contents\LeonCNTraditional\Search\Index\segments.gen" />
-    <Content Include="Cms_Data\Contents\LeonCNTraditional\Search\Index\segments_3d" />
-    <Content Include="Cms_Data\Contents\LeonCNTraditional\Search\Index\_6m.fdt" />
-    <Content Include="Cms_Data\Contents\LeonCNTraditional\Search\Index\_6m.fdx" />
-    <Content Include="Cms_Data\Contents\LeonCNTraditional\Search\Index\_6m.fnm" />
-    <Content Include="Cms_Data\Contents\LeonCNTraditional\Search\Index\_6m.frq" />
-    <Content Include="Cms_Data\Contents\LeonCNTraditional\Search\Index\_6m.nrm" />
-    <Content Include="Cms_Data\Contents\LeonCNTraditional\Search\Index\_6m.prx" />
-    <Content Include="Cms_Data\Contents\LeonCNTraditional\Search\Index\_6m.tii" />
-    <Content Include="Cms_Data\Contents\LeonCNTraditional\Search\Index\_6m.tis" />
     <Content Include="Cms_Data\Contents\LeonCNTraditional\setting.config" />
     <Content Include="Cms_Data\Contents\LeonCN\Broadcasting\ReceivingSettings\Leon-Category-Category.config" />
     <Content Include="Cms_Data\Contents\LeonCN\Broadcasting\ReceivingSettings\Leon-Comment-Comment.config" />
@@ -2063,16 +2043,6 @@
     <Content Include="Cms_Data\Contents\LeonCN\Schemas\Product\Selectable.cshtml" />
     <Content Include="Cms_Data\Contents\LeonCN\Schemas\Product\setting.config" />
     <Content Include="Cms_Data\Contents\LeonCN\Schemas\Product\Update.cshtml" />
-    <Content Include="Cms_Data\Contents\LeonCN\Search\Index\segments.gen" />
-    <Content Include="Cms_Data\Contents\LeonCN\Search\Index\segments_3d" />
-    <Content Include="Cms_Data\Contents\LeonCN\Search\Index\_6m.fdt" />
-    <Content Include="Cms_Data\Contents\LeonCN\Search\Index\_6m.fdx" />
-    <Content Include="Cms_Data\Contents\LeonCN\Search\Index\_6m.fnm" />
-    <Content Include="Cms_Data\Contents\LeonCN\Search\Index\_6m.frq" />
-    <Content Include="Cms_Data\Contents\LeonCN\Search\Index\_6m.nrm" />
-    <Content Include="Cms_Data\Contents\LeonCN\Search\Index\_6m.prx" />
-    <Content Include="Cms_Data\Contents\LeonCN\Search\Index\_6m.tii" />
-    <Content Include="Cms_Data\Contents\LeonCN\Search\Index\_6m.tis" />
     <Content Include="Cms_Data\Contents\LeonCN\setting.config" />
     <Content Include="Cms_Data\Contents\LeonEN\Broadcasting\ReceivingSettings\Leon-Category-Category.config" />
     <Content Include="Cms_Data\Contents\LeonEN\Broadcasting\ReceivingSettings\Leon-Comment-Comment.config" />
@@ -2102,16 +2072,6 @@
     <Content Include="Cms_Data\Contents\LeonEN\Schemas\Product\Selectable.cshtml" />
     <Content Include="Cms_Data\Contents\LeonEN\Schemas\Product\setting.config" />
     <Content Include="Cms_Data\Contents\LeonEN\Schemas\Product\Update.cshtml" />
-    <Content Include="Cms_Data\Contents\LeonEN\Search\Index\segments.gen" />
-    <Content Include="Cms_Data\Contents\LeonEN\Search\Index\segments_4k" />
-    <Content Include="Cms_Data\Contents\LeonEN\Search\Index\_90.fdt" />
-    <Content Include="Cms_Data\Contents\LeonEN\Search\Index\_90.fdx" />
-    <Content Include="Cms_Data\Contents\LeonEN\Search\Index\_90.fnm" />
-    <Content Include="Cms_Data\Contents\LeonEN\Search\Index\_90.frq" />
-    <Content Include="Cms_Data\Contents\LeonEN\Search\Index\_90.nrm" />
-    <Content Include="Cms_Data\Contents\LeonEN\Search\Index\_90.prx" />
-    <Content Include="Cms_Data\Contents\LeonEN\Search\Index\_90.tii" />
-    <Content Include="Cms_Data\Contents\LeonEN\Search\Index\_90.tis" />
     <Content Include="Cms_Data\Contents\LeonEN\setting.config" />
     <Content Include="Cms_Data\Contents\Leon\Broadcasting\SendingSettings\Category.config" />
     <Content Include="Cms_Data\Contents\Leon\Broadcasting\SendingSettings\Comment.config" />
@@ -2140,16 +2100,6 @@
     <Content Include="Cms_Data\Contents\Leon\Schemas\Product\Selectable.cshtml" />
     <Content Include="Cms_Data\Contents\Leon\Schemas\Product\setting.config" />
     <Content Include="Cms_Data\Contents\Leon\Schemas\Product\Update.cshtml" />
-    <Content Include="Cms_Data\Contents\Leon\Search\Index\segments.gen" />
-    <Content Include="Cms_Data\Contents\Leon\Search\Index\segments_31" />
-    <Content Include="Cms_Data\Contents\Leon\Search\Index\_5y.fdt" />
-    <Content Include="Cms_Data\Contents\Leon\Search\Index\_5y.fdx" />
-    <Content Include="Cms_Data\Contents\Leon\Search\Index\_5y.fnm" />
-    <Content Include="Cms_Data\Contents\Leon\Search\Index\_5y.frq" />
-    <Content Include="Cms_Data\Contents\Leon\Search\Index\_5y.nrm" />
-    <Content Include="Cms_Data\Contents\Leon\Search\Index\_5y.prx" />
-    <Content Include="Cms_Data\Contents\Leon\Search\Index\_5y.tii" />
-    <Content Include="Cms_Data\Contents\Leon\Search\Index\_5y.tis" />
     <Content Include="Cms_Data\Contents\Leon\setting.config" />
     <Content Include="Cms_Data\ModuleInstallations\Management\4.3.0.0-20140314172125.zip" />
     <Content Include="Cms_Data\Sites\Leon\CustomErrors.config" />
@@ -2221,8 +2171,6 @@
     <Content Include="Cms_Data\Contents\Management\Folders\Setting\TopBanner\setting.config" />
     <Content Include="Cms_Data\Contents\Management\Folders\Setting\Trustpilot\setting.config" />
     <Content Include="Cms_Data\Contents\Management\Folders\Setting\TurbobytesCDN\setting.config" />
-    <Content Include="Cms_Data\Contents\Management\Search\Index\segments.gen" />
-    <Content Include="Cms_Data\Contents\Management\Search\Index\segments_1" />
     <Content Include="Cms_Data\Contents\Management\setting.config" />
     <Content Include="Cms_Data\Contents\Management\Schemas\HtmlBanner\Create.cshtml" />
     <Content Include="Cms_Data\Contents\Management\Schemas\HtmlBanner\CustomTemplates\Create.cshtml" />
@@ -2441,14 +2389,20 @@
     <EmbeddedResource Include="I18N\zh-TW.resx" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Cms_Data\Contents\LeonCNSimple\Search\Index\" />
     <Folder Include="Cms_Data\Contents\LeonCNSimple\Workflows\" />
     <Folder Include="Cms_Data\Contents\LeonCNTraditional\Broadcasting\SendingSettings\" />
+    <Folder Include="Cms_Data\Contents\LeonCNTraditional\Search\Index\" />
     <Folder Include="Cms_Data\Contents\LeonCNTraditional\Workflows\" />
+    <Folder Include="Cms_Data\Contents\LeonCN\Search\Index\" />
     <Folder Include="Cms_Data\Contents\LeonCN\Workflows\" />
     <Folder Include="Cms_Data\Contents\LeonEN\Broadcasting\SendingSettings\" />
+    <Folder Include="Cms_Data\Contents\LeonEN\Search\Index\" />
     <Folder Include="Cms_Data\Contents\LeonEN\Workflows\" />
     <Folder Include="Cms_Data\Contents\Leon\Broadcasting\ReceivingSettings\" />
+    <Folder Include="Cms_Data\Contents\Leon\Search\Index\" />
     <Folder Include="Cms_Data\Contents\Leon\Workflows\" />
+    <Folder Include="Cms_Data\Contents\Management\Search\Index\" />
     <Folder Include="Cms_Data\Contents\Management\Workflows\" />
   </ItemGroup>
   <PropertyGroup>
