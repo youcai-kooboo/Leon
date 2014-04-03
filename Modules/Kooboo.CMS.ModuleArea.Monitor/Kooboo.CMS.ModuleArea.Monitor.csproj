@@ -24,7 +24,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -32,17 +32,17 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\EntityFramework.dll</HintPath>
+      <HintPath>..\..\Lib\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\..\Lib\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\HtmlAgilityPack.dll</HintPath>
+      <HintPath>..\..\Lib\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo">
-      <HintPath>..\lib\Kooboo.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Account">
       <HintPath>..\..\Lib\Kooboo.CMS.Account.dll</HintPath>
@@ -51,25 +51,25 @@
       <HintPath>..\..\Lib\Kooboo.CMS.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Common">
-      <HintPath>..\lib\Kooboo.CMS.Common.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.CMS.Common.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Content">
-      <HintPath>..\lib\Kooboo.CMS.Content.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.CMS.Content.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Content.Persistence.SQLServer">
       <HintPath>..\..\Lib\Kooboo.CMS.Content.Persistence.SQLServer.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Form">
-      <HintPath>..\lib\Kooboo.CMS.Form.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.CMS.Form.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Sites">
-      <HintPath>..\lib\Kooboo.CMS.Sites.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.CMS.Sites.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Sites.Persistence.EntityFramework">
       <HintPath>..\..\Lib\Kooboo.CMS.Sites.Persistence.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Web">
-      <HintPath>..\lib\Kooboo.CMS.Web.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.CMS.Web.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
