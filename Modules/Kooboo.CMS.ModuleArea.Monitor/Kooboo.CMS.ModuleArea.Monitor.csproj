@@ -34,6 +34,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\Lib\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\HtmlAgilityPack.dll</HintPath>
@@ -41,17 +44,29 @@
     <Reference Include="Kooboo">
       <HintPath>..\lib\Kooboo.dll</HintPath>
     </Reference>
+    <Reference Include="Kooboo.CMS.Account">
+      <HintPath>..\..\Lib\Kooboo.CMS.Account.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Caching">
+      <HintPath>..\..\Lib\Kooboo.CMS.Caching.dll</HintPath>
+    </Reference>
     <Reference Include="Kooboo.CMS.Common">
       <HintPath>..\lib\Kooboo.CMS.Common.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Content">
       <HintPath>..\lib\Kooboo.CMS.Content.dll</HintPath>
     </Reference>
+    <Reference Include="Kooboo.CMS.Content.Persistence.SQLServer">
+      <HintPath>..\..\Lib\Kooboo.CMS.Content.Persistence.SQLServer.dll</HintPath>
+    </Reference>
     <Reference Include="Kooboo.CMS.Form">
       <HintPath>..\lib\Kooboo.CMS.Form.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Sites">
       <HintPath>..\lib\Kooboo.CMS.Sites.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Sites.Persistence.EntityFramework">
+      <HintPath>..\..\Lib\Kooboo.CMS.Sites.Persistence.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Web">
       <HintPath>..\lib\Kooboo.CMS.Web.dll</HintPath>
@@ -60,7 +75,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
@@ -71,56 +85,146 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminControllerBase.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\LogController.cs" />
-    <Compile Include="Controllers\HealthController.cs" />
-    <Compile Include="Filters\ErrorFilterAttribute.cs" />
-    <Compile Include="Gird\ReferrerJumpGridActionItemColumn.cs" />
-    <Compile Include="Gird\GridItemBase.cs" />
-    <Compile Include="Gird\Hyperlink\HighlightGridItem.cs" />
-    <Compile Include="Gird\Log\HighlightGridItem.cs" />
-    <Compile Include="Gird\Log\UserNameGridActionItemColumn.cs" />
-    <Compile Include="Gird\Log\ClientIPGridActionItemColumn.cs" />
-    <Compile Include="Gird\DetailGridActionItemColumn.cs" />
-    <Compile Include="Gird\DoubleGridItemColumn.cs" />
-    <Compile Include="Models\HourPv.cs" />
-    <Compile Include="Models\HyperlinkQuery.cs" />
-    <Compile Include="Models\Hyperlink_Metadata.cs" />
-    <Compile Include="Models\IEntity.cs" />
-    <Compile Include="Models\Keys.cs" />
-    <Compile Include="Models\Log.cs" />
-    <Compile Include="Models\LogQuery.cs" />
-    <Compile Include="Models\Log_Metadata.cs" />
-    <Compile Include="Models\ModelExtension.cs" />
-    <Compile Include="Models\ModuleInfo_Metadata.cs" />
-    <Compile Include="Models\Hyperlink.cs" />
-    <Compile Include="Models\DayPV.cs" />
-    <Compile Include="Models\HealthStatistics.cs" />
-    <Compile Include="Models\ReferrerGroup.cs" />
-    <Compile Include="Models\ReferrerGroup_Metadata.cs" />
-    <Compile Include="Models\RegexPatterns.cs" />
-    <Compile Include="Gird\Log\VisitCountGridItemColumn.cs" />
-    <Compile Include="Gird\Log\VisitDateGridItemColumn.cs" />
-    <Compile Include="Models\DayUV.cs" />
-    <Compile Include="Models\SearchKeyGroup.cs" />
-    <Compile Include="Models\SearchKeyGroup_Metadata.cs" />
+    <Compile Include="Controllers\AdminController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\HealthController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\LogController.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DefaultModuleAction.cs" />
+    <Compile Include="Filters\ErrorFilterAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gird\DetailGridActionItemColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gird\DoubleGridItemColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gird\GridItemBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gird\Hyperlink\HighlightGridItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gird\Log\ClientIPGridActionItemColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gird\Log\HighlightGridItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gird\Log\UserNameGridActionItemColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gird\Log\VisitCountGridItemColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gird\Log\VisitDateGridItemColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gird\ReferrerJumpGridActionItemColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\DayPV.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\DayUV.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\HealthStatistics.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\HourPv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Hyperlink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\HyperlinkQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Hyperlink_Metadata.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\IEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Keys.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Log.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\LogQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Log_Metadata.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\ModelExtension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\ModuleInfo_Metadata.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\ReferrerGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\ReferrerGroup_Metadata.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\RegexPatterns.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\SearchKeyGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\SearchKeyGroup_Metadata.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="MonitorAreaRegistration.cs" />
     <Compile Include="MonitorHttpApplicationEvents.cs" />
     <Compile Include="MonitorMenuItemInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\Default\DatabaseFactory.cs" />
-    <Compile Include="Repositories\Default\HyperlinkMap.cs" />
-    <Compile Include="Repositories\Default\HyperlinkProvider.cs" />
-    <Compile Include="Repositories\Default\LogMap.cs" />
-    <Compile Include="Repositories\Default\MonitorDbContext.cs" />
-    <Compile Include="Repositories\Default\RepositoryFactory.cs" />
-    <Compile Include="Repositories\ILogProvider.cs" />
-    <Compile Include="Repositories\IHyperlinkProvider.cs" />
-    <Compile Include="Repositories\Default\LogProvider.cs" />
-    <Compile Include="Services\HealthService.cs" />
-    <Compile Include="Services\HyperlinkService.cs" />
-    <Compile Include="Services\LogService.cs" />
+    <Compile Include="Repositories\Default\DatabaseFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repositories\Default\HyperlinkMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repositories\Default\HyperlinkProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repositories\Default\LogMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repositories\Default\LogProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repositories\Default\MonitorDbContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repositories\Default\RepositoryFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repositories\IHyperlinkProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repositories\ILogProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\HealthService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\HyperlinkService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\LogService.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SpiderHelper.cs" />
   </ItemGroup>
   <ItemGroup />
