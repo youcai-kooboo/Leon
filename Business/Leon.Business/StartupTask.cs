@@ -8,7 +8,7 @@ namespace Leon.Business
         public void Execute() {
 
             //Do jobs
-            new LeonJob().AttachJob(1*60*1000, true);
+            new LeonJob().AttachJob(1 * 60 * 1000, true);
 
             //Scan the page search
             new PageSearchJob().AttachJob(1 * 60 * 1000, true);

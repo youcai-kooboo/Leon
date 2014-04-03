@@ -2323,6 +2323,12 @@
     <Content Include="Cms_Data\Contents\Management\Schemas\TopBanner\Selectable.cshtml" />
     <Content Include="Cms_Data\Contents\Management\Schemas\TopBanner\setting.config" />
     <Content Include="Cms_Data\Contents\Management\Schemas\TopBanner\Update.cshtml" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Layouts\One_Column\setting.config" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Layouts\One_Column\template.cshtml" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Layouts\Two_Columns\setting.config" />
+    <Content Include="Cms_Data\Sites\Leon\Templates\Layouts\Two_Columns\template.cshtml" />
+    <None Include="Properties\PublishProfiles\leon - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\leon - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Leon-Local.pubxml" />
     <Content Include="routes.config" />
     <Content Include="Scripts\tiny_mce\skins\lightgray\fonts\icomoon-small.eot" />

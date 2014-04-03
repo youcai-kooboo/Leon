@@ -16,7 +16,6 @@ namespace Leon.Business.Jobs
     {
         public override void Execute(object executionState)
         {
-            Thread.Sleep(1000*60*5);
             var rootSites = ServiceFactory.SiteManager.AllRootSites();
             foreach (var rootSite in rootSites)
             {
