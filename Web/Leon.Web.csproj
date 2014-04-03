@@ -47,46 +47,58 @@
     </Reference>
     <Reference Include="Kooboo, Version=4.4.0.317, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Lib\Kooboo.dll</HintPath>
+      <HintPath>..\Lib\Kooboo.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Account">
+      <HintPath>..\Lib\Kooboo.CMS.Account.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Common, Version=4.4.0.317, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Lib\Kooboo.CMS.Common.dll</HintPath>
+      <HintPath>..\Lib\Kooboo.CMS.Common.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Content, Version=4.4.0.317, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Lib\Kooboo.CMS.Content.dll</HintPath>
+      <HintPath>..\Lib\Kooboo.CMS.Content.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Content.Persistence.SQLServer, Version=4.3.10.225, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Lib\Kooboo.CMS.Content.Persistence.SQLServer.dll</HintPath>
+      <HintPath>..\Lib\Kooboo.CMS.Content.Persistence.SQLServer.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Form, Version=4.4.0.317, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Lib\Kooboo.CMS.Form.dll</HintPath>
+      <HintPath>..\Lib\Kooboo.CMS.Form.dll</HintPath>
+    </Reference>
+    <Reference Include="Kooboo.CMS.Membership">
+      <HintPath>..\Lib\Kooboo.CMS.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Search, Version=4.4.0.317, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Lib\Kooboo.CMS.Search.dll</HintPath>
+      <HintPath>..\Lib\Kooboo.CMS.Search.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Sites, Version=4.4.0.317, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Lib\Kooboo.CMS.Sites.dll</HintPath>
+      <HintPath>..\Lib\Kooboo.CMS.Sites.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Web, Version=4.4.0.317, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Lib\Kooboo.CMS.Web.dll</HintPath>
+      <HintPath>..\Lib\Kooboo.CMS.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\Lib\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Highlighter">
+      <HintPath>..\Lib\Lucene.Net.Contrib.Highlighter.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\Lib\System.Web.WebPages.dll</HintPath>
-    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"/>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
@@ -478,69 +490,6 @@
     <Content Include="Areas\Sites\Styles\images\map-item-hover.png" />
     <Content Include="Areas\Sites\Styles\images\map-item.png" />
     <Content Include="Areas\Sites\Styles\sites.css" />
-    <Content Include="Bin\CookComputing.XmlRpcV2.dll" />
-    <Content Include="Bin\DiffPlex.dll" />
-    <Content Include="Bin\dotless.Core.dll" />
-    <Content Include="Bin\DotNetOpenAuth.AspNet.dll" />
-    <Content Include="Bin\DotNetOpenAuth.Core.dll" />
-    <Content Include="Bin\DotNetOpenAuth.OAuth.Consumer.dll" />
-    <Content Include="Bin\DotNetOpenAuth.OAuth.dll" />
-    <Content Include="Bin\DotNetOpenAuth.OpenId.dll" />
-    <Content Include="Bin\DotNetOpenAuth.OpenId.RelyingParty.dll" />
-    <Content Include="Bin\EntityFramework.dll" />
-    <Content Include="Bin\EntityFramework.SqlServer.dll" />
-    <Content Include="Bin\Enyim.Caching.dll" />
-    <Content Include="Bin\ephtmltopdf.dll" />
-    <Content Include="Bin\HtmlAgilityPack.dll" />
-    <Content Include="Bin\Ionic.Zip.Reduced.dll" />
-    <Content Include="Bin\Kooboo.CMS.Account.dll" />
-    <Content Include="Bin\Kooboo.CMS.Caching.dll" />
-    <Content Include="Bin\Kooboo.CMS.Common.dll" />
-    <Content Include="Bin\Kooboo.CMS.Common.Runtime.Dependency.Ninject.dll" />
-    <Content Include="Bin\Kooboo.CMS.Content.dll" />
-    <Content Include="Bin\Kooboo.CMS.Content.Persistence.SQLServer.dll" />
-    <Content Include="Bin\Kooboo.CMS.Form.dll" />
-    <Content Include="Bin\Kooboo.CMS.MediaSyncWrapper.dll" />
-    <Content Include="Bin\Kooboo.CMS.Membership.dll" />
-    <Content Include="Bin\Kooboo.CMS.SchemaSyncWrapper.dll" />
-    <Content Include="Bin\Kooboo.CMS.Search.dll" />
-    <Content Include="Bin\Kooboo.CMS.Sites.dll" />
-    <Content Include="Bin\Kooboo.CMS.Sites.Persistence.EntityFramework.dll" />
-    <Content Include="Bin\Kooboo.CMS.Sites.TemplateEngines.Razor.dll" />
-    <Content Include="Bin\Kooboo.CMS.Toolkit.Controls.dll" />
-    <Content Include="Bin\Kooboo.CMS.Toolkit.dll" />
-    <Content Include="Bin\Kooboo.CMS.Toolkit.SyncFolder.dll" />
-    <Content Include="Bin\Kooboo.CMS.Web.dll" />
-    <Content Include="Bin\Kooboo.dll" />
-    <Content Include="Bin\Leon.Business.dll" />
-    <Content Include="Bin\Leon.Business.pdb" />
-    <Content Include="Bin\Leon.KB.Extensions.dll" />
-    <Content Include="Bin\Leon.KB.Extensions.pdb" />
-    <Content Include="Bin\Leon.Modules.Management.dll" />
-    <Content Include="Bin\Leon.Modules.Management.pdb" />
-    <Content Include="Bin\Leon.Plugins.Business.dll" />
-    <Content Include="Bin\Leon.Plugins.dll" />
-    <Content Include="Bin\Leon.Plugins.pdb" />
-    <Content Include="Bin\Leon.Web.dll" />
-    <Content Include="Bin\Leon.Web.pdb" />
-    <Content Include="Bin\log4net.dll" />
-    <Content Include="Bin\Lucene.Net.Contrib.Highlighter.dll" />
-    <Content Include="Bin\Lucene.Net.dll" />
-    <Content Include="Bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="Bin\Mono.Math.dll" />
-    <Content Include="Bin\Newtonsoft.Json.dll" />
-    <Content Include="Bin\Ninject.dll" />
-    <Content Include="Bin\NuGet.Core.dll" />
-    <Content Include="Bin\Org.Mentalis.Security.Cryptography.dll" />
-    <Content Include="Bin\SqlServer.config" />
-    <Content Include="Bin\System.Net.Http.dll" />
-    <Content Include="Bin\System.Web.Helpers.dll" />
-    <Content Include="Bin\System.Web.Mvc.dll" />
-    <Content Include="Bin\System.Web.Razor.dll" />
-    <Content Include="Bin\System.Web.WebPages.Administration.dll" />
-    <Content Include="Bin\System.Web.WebPages.Deployment.dll" />
-    <Content Include="Bin\System.Web.WebPages.dll" />
-    <Content Include="Bin\System.Web.WebPages.Razor.dll" />
     <Content Include="Cms_Data\Contents\LeonCNSimple\Data\Category.xml" />
     <Content Include="Cms_Data\Contents\LeonCNSimple\Data\Comment.xml" />
     <Content Include="Cms_Data\Contents\LeonCNSimple\Data\Product.xml" />
@@ -1619,6 +1568,10 @@
       <Project>{dfec4b63-e156-444c-982e-b52a27dbe15f}</Project>
       <Name>Leon.KB.Extensions</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Modules\Kooboo.CMS.ModuleArea.Monitor\Kooboo.CMS.ModuleArea.Monitor.csproj">
+      <Project>{aaacbccd-9b66-4e20-a206-a2e241d5ce59}</Project>
+      <Name>Kooboo.CMS.ModuleArea.Monitor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Modules\Management\Leon.Modules.Management.csproj">
       <Project>{c5878d2d-e856-41e5-9b51-32499de72931}</Project>
       <Name>Leon.Modules.Management</Name>
@@ -1655,7 +1608,6 @@
     <Content Include="Cms_Data\Sites\Leon\Templates\Views\SearchResult\template.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bin\Kooboo.CMS.Sites.Persistence.EntityFramework.config" />
     <Content Include="Areas\Account\Menu.config" />
     <Content Include="Areas\Account\Views\LogOn\ForgotPassword.cshtml" />
     <Content Include="Areas\Account\Views\LogOn\Index.cshtml" />
@@ -1952,7 +1904,6 @@
     <Content Include="Areas\Sites\Views\View\_Grid2.cshtml" />
     <Content Include="Areas\Sites\Views\Web.config" />
     <Content Include="Areas\Sites\WebResources.config" />
-    <None Include="Bin\Leon.Web.dll.config" />
     <Content Include="Menu.config" />
     <Content Include="Cms_Data\Contents\LeonCNSimple\Broadcasting\ReceivingSettings\LeonCN-Category-Category.config" />
     <Content Include="Cms_Data\Contents\LeonCNSimple\Broadcasting\ReceivingSettings\LeonCN-Comment-Comment.config" />
@@ -2275,6 +2226,8 @@
     <Content Include="Cms_Data\Sites\Leon\Templates\Layouts\One_Column\template.cshtml" />
     <Content Include="Cms_Data\Sites\Leon\Templates\Layouts\Two_Columns\setting.config" />
     <Content Include="Cms_Data\Sites\Leon\Templates\Layouts\Two_Columns\template.cshtml" />
+    <Content Include="bin\Kooboo.CMS.Sites.Persistence.EntityFramework.config" />
+    <Content Include="bin\SqlServer.config" />
     <None Include="Properties\PublishProfiles\leon - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\leon - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Leon-Local.pubxml" />

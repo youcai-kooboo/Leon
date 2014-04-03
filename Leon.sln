@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kooboo.CMS.Toolkit", "Exten
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leon.KB.Extensions", "Extensions\Leon.KB.Extensions\Leon.KB.Extensions.csproj", "{DFEC4B63-E156-444C-982E-B52A27DBE15F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kooboo.CMS.ModuleArea.Monitor", "Modules\Kooboo.CMS.ModuleArea.Monitor\Kooboo.CMS.ModuleArea.Monitor.csproj", "{AAACBCCD-9B66-4E20-A206-A2E241D5CE59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,12 +59,17 @@ Global
 		{DFEC4B63-E156-444C-982E-B52A27DBE15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFEC4B63-E156-444C-982E-B52A27DBE15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFEC4B63-E156-444C-982E-B52A27DBE15F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAACBCCD-9B66-4E20-A206-A2E241D5CE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAACBCCD-9B66-4E20-A206-A2E241D5CE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAACBCCD-9B66-4E20-A206-A2E241D5CE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAACBCCD-9B66-4E20-A206-A2E241D5CE59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C5878D2D-E856-41E5-9B51-32499DE72931} = {4897E857-1F3C-474B-AC61-4D89EEE92606}
+		{AAACBCCD-9B66-4E20-A206-A2E241D5CE59} = {4897E857-1F3C-474B-AC61-4D89EEE92606}
 		{3BAE0F65-BEDF-4057-BAA8-CD479FD637A7} = {93A290C0-F5B6-49EC-919D-0D6F0EE4318D}
 		{DFEC4B63-E156-444C-982E-B52A27DBE15F} = {93A290C0-F5B6-49EC-919D-0D6F0EE4318D}
 		{603BE49C-B909-40EB-8C9A-2D87629546E0} = {85D5C1B0-1D3C-48E8-8870-784E05A5161C}
