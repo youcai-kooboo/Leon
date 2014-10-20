@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
 	<LastAction>
-		<FolderName>Product</FolderName>
-		<ContentSummary>Banana</ContentSummary>
-		<Action>Add</Action>
-		<UtcActionDate>2014-03-20T06:58:06.6777764Z</UtcActionDate>
+		<FolderName>IPList</FolderName>
+		<ContentSummary>192.168.1.216</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2014-10-20T08:37:21.3789471Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Product</FolderName>
-		<ContentSummary>Apple</ContentSummary>
-		<Action>Add</Action>
-		<UtcActionDate>2014-03-20T06:58:06.4857654Z</UtcActionDate>
+		<FolderName>IPList</FolderName>
+		<ContentSummary>192.168.1.216</ContentSummary>
+		<Action>Delete</Action>
+		<UtcActionDate>2014-10-20T08:36:51.4082329Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Comment</FolderName>
-		<ContentSummary>Nice fruit</ContentSummary>
+		<FolderName>IPList</FolderName>
+		<ContentSummary>192.168.1.216</ContentSummary>
 		<Action>Add</Action>
-		<UtcActionDate>2014-03-20T06:57:57.5692555Z</UtcActionDate>
+		<UtcActionDate>2014-10-20T08:36:43.1147585Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Category</FolderName>
-		<ContentSummary>Vegetable</ContentSummary>
+		<FolderName>IPSetting</FolderName>
+		<ContentSummary>0</ContentSummary>
 		<Action>Add</Action>
-		<UtcActionDate>2014-03-20T06:57:45.7545797Z</UtcActionDate>
+		<UtcActionDate>2014-10-20T08:36:29.2359647Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Category</FolderName>
-		<ContentSummary>Fruit</ContentSummary>
-		<Action>Add</Action>
-		<UtcActionDate>2014-03-20T06:57:45.2415503Z</UtcActionDate>
+		<FolderName>IPSetting</FolderName>
+		<ContentSummary>0</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2014-10-20T08:08:30.8609672Z</UtcActionDate>
 	</LastAction>
 </ArrayOfLastAction>

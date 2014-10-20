@@ -1,0 +1,13 @@
+﻿[
+  {
+    "ModuleName": "IPFilter",
+    "User": "admin",
+    "UtcDatetime": "2014-10-20T08:33:42.1424075Z",
+    "VersionRange": {
+      "SourceVersion": null,
+      "TargetVersion": "4.2.1.0",
+      "InstallationType": 0
+    },
+    "InstallationFileName": "4.2.1.0-20141020163341.zip"
+  }
+]

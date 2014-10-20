@@ -16,11 +16,20 @@
 {
     <table><tr>
             <th>
-            <label for="Name">Name</label>
+            <label for="ProductName">ProductName</label>
             </th>
             <td>
-            <input class='long' id="Name" name="Name" type="text" value="@(Model.Name ?? "")" />            
-            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Name"], null)
+            <input class='long' id="ProductName" name="ProductName" type="text" value="@(Model.ProductName ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ProductName"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="ProductDetail">ProductDetail</label>
+            </th>
+            <td>
+            <textarea name="ProductDetail" id="ProductDetail" class="ProductDetail tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.ProductDetail ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ProductDetail"], null)
             
             </td>          
             </tr>

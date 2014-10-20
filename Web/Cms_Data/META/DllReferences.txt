@@ -395,7 +395,63 @@
       "site:leon",
       "site:leon",
       "site:leon",
+      "site:leon",
+      "site:leon",
+      "site:leon",
       "site:leon"
+    ]
+  },
+  {
+    "AssemblyName": "EntityFramework.dll",
+    "Version": "6.0.0.0",
+    "IsSystemAssembly": false,
+    "UserList": [
+      "BlogModule",
+      "ProductModule"
+    ]
+  },
+  {
+    "AssemblyName": "EntityFramework.SqlServer.dll",
+    "Version": "6.0.0.0",
+    "IsSystemAssembly": false,
+    "UserList": [
+      "BlogModule",
+      "ProductModule"
+    ]
+  },
+  {
+    "AssemblyName": "EntityFramework.SqlServerCompact.dll",
+    "Version": "6.0.0.0",
+    "IsSystemAssembly": false,
+    "UserList": [
+      "BlogModule",
+      "ProductModule"
+    ]
+  },
+  {
+    "AssemblyName": "Kooboo_CMS.dll",
+    "Version": "4.4.0.307",
+    "IsSystemAssembly": false,
+    "UserList": [
+      "BlogModule",
+      "ProductModule"
+    ]
+  },
+  {
+    "AssemblyName": "System.Data.SqlServerCe.dll",
+    "Version": "4.0.0.0",
+    "IsSystemAssembly": false,
+    "UserList": [
+      "BlogModule",
+      "ProductModule"
+    ]
+  },
+  {
+    "AssemblyName": "Leon.Modules.IPFilter.dll",
+    "Version": "1.0.0.0",
+    "IsSystemAssembly": false,
+    "UserList": [
+      "IPFilter"
     ]
   }
 ]

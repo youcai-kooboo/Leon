@@ -227,6 +227,7 @@
     <Content Include="Areas\Contents\Styles\images\map-item-done.png" />
     <Content Include="Areas\Contents\Styles\images\map-item-hover.png" />
     <Content Include="Areas\Contents\Styles\images\map-item.png" />
+    <Content Include="Areas\IPFilter\Bin\Leon.Modules.IPFilter.dll" />
     <Content Include="Areas\Management\bin\Leon.Modules.Management.dll" />
     <Content Include="Areas\Management\Themes\Default\Order.txt" />
     <Content Include="Areas\Monitor\bin\Kooboo.CMS.ModuleArea.Monitor.dll" />
@@ -680,9 +681,11 @@
     <Content Include="Cms_Data\Contents\Management\Data\_category_.xml" />
     <Content Include="Cms_Data\Contents\Management\Search\LastActions.xml" />
     <Content Include="Cms_Data\META\DllReferences.txt" />
+    <Content Include="Cms_Data\ModuleData\IPFilter\Sites.txt" />
     <Content Include="Cms_Data\ModuleData\Management\logs.txt" />
     <Content Include="Cms_Data\ModuleData\Management\Sites.txt" />
     <Content Include="Cms_Data\ModuleData\Monitor\Sites.txt" />
+    <Content Include="Cms_Data\ModuleInstallations\IPFilter\InstallationLogs.txt" />
     <Content Include="Cms_Data\ModuleInstallations\Management\InstallationLogs.txt" />
     <Content Include="Cms_Data\ModuleInstallations\Monitor\InstallationLogs.txt" />
     <Content Include="Cms_Data\Sites\Leon\Assemblies\Leon.Plugins.Business.dll" />
@@ -1725,6 +1728,10 @@
       <Project>{aaacbccd-9b66-4e20-a206-a2e241d5ce59}</Project>
       <Name>Kooboo.CMS.ModuleArea.Monitor</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Modules\Leon.Modules.IPFilter\Leon.Modules.IPFilter.csproj">
+      <Project>{62fcd3fd-949b-4dca-b429-da88d90ebda3}</Project>
+      <Name>Leon.Modules.IPFilter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Modules\Management\Leon.Modules.Management.csproj">
       <Project>{c5878d2d-e856-41e5-9b51-32499de72931}</Project>
       <Name>Leon.Modules.Management</Name>
@@ -2204,7 +2211,9 @@
     <Content Include="Cms_Data\Contents\Leon\Schemas\Product\Selectable.cshtml" />
     <Content Include="Cms_Data\Contents\Leon\Schemas\Product\setting.config" />
     <Content Include="Cms_Data\Contents\Leon\Schemas\Product\Update.cshtml" />
-    <Content Include="Cms_Data\Contents\Leon\setting.config" />
+    <Content Include="Cms_Data\Contents\Leon\setting.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Cms_Data\ModuleInstallations\Management\4.3.0.0-20140314172125.zip" />
     <Content Include="Cms_Data\Sites\Leon\CustomErrors.config" />
     <Content Include="Cms_Data\Sites\Leon\Pages\aaa\setting.config" />
@@ -2412,6 +2421,32 @@
     <Content Include="Areas\Monitor\Views\Web.config" />
     <Content Include="Areas\Monitor\WebResources.config" />
     <Content Include="Cms_Data\ModuleInstallations\Monitor\1.0.0.0-20140403114454.zip" />
+    <Content Include="Areas\IPFilter\CMSMenu.config" />
+    <Content Include="Areas\IPFilter\module.config" />
+    <Content Include="Areas\IPFilter\routes.config" />
+    <Content Include="Areas\IPFilter\Sites.config" />
+    <Content Include="Areas\IPFilter\Views\Shared\Front.cshtml" />
+    <Content Include="Areas\IPFilter\Views\Shared\_OnInstalling.cshtml" />
+    <Content Include="Areas\IPFilter\Views\Shared\_OnUninstalling.cshtml" />
+    <Content Include="Areas\IPFilter\Views\Web.config" />
+    <Content Include="Areas\IPFilter\WebResources.config" />
+    <Content Include="Cms_Data\ModuleInstallations\IPFilter\4.2.1.0-20141020163341.zip" />
+    <Content Include="Cms_Data\Contents\Leon\Folders\IPList\setting.config" />
+    <Content Include="Cms_Data\Contents\Leon\Folders\IPSetting\setting.config" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPList\Create.cshtml" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPList\Detail.cshtml" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPList\Grid.cshtml" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPList\List.cshtml" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPList\Selectable.cshtml" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPList\setting.config" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPList\Update.cshtml" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\Create.cshtml" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\Detail.cshtml" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\Grid.cshtml" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\List.cshtml" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\Selectable.cshtml" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\setting.config" />
+    <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\Update.cshtml" />
     <None Include="Properties\PublishProfiles\leon - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\leon - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Leon-Local.pubxml" />

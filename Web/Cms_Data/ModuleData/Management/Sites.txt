@@ -1,5 +1,4 @@
 ﻿[
-  "Leon",
   "Leon~CN",
   "Leon~EN",
   "Leon~CN~Simple"

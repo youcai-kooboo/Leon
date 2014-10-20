@@ -1,0 +1,10 @@
+﻿@if (Model != null)
+{ 
+<div>
+	<h3 class="title" @ViewHelper.Edit(Model,"FilterScope")>@Html.Raw(Model.FilterScope ?? "")</h3>
+	<div class="content">
+		<div @ViewHelper.Edit(Model,"FilterType")>@Html.Raw(Model.FilterType ?? "")</div>
+		<div @ViewHelper.Edit(Model,"ForbiddenHtml")>@Html.Raw(Model.ForbiddenHtml ?? "")</div>
+	</div>
+</div>
+}

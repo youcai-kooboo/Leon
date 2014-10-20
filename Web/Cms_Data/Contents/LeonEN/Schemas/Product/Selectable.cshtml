@@ -38,7 +38,7 @@
                 <th class="checkbox">
                     <input type="checkbox" class="select-all" />
                 </th>
-                		<th class="Name @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Name",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Name", "Name", -1)</th>
+                		<th class="ProductName @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "ProductName",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "ProductName", "ProductName", -1)</th>
 		<th class="UtcCreationDate @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "UtcCreationDate",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Creation date", "UtcCreationDate", -1)</th>
 		<th class="Published @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Published",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Published", "Published", -1)</th>
 
@@ -53,7 +53,7 @@
                 <th class="checkbox">
                     <input type="checkbox" class="select-all" />
                 </th>
-                		<th class="Name @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Name",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Name", "Name", -1)</th>
+                		<th class="ProductName @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "ProductName",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "ProductName", "ProductName", -1)</th>
 		<th class="UtcCreationDate @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "UtcCreationDate",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Creation date", "UtcCreationDate", -1)</th>
 		<th class="Published @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Published",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Published", "Published", -1)</th>
 
@@ -125,7 +125,7 @@
         </td>
         		<td>@if(Model.ShowTreeStyle){
 		<span class="expander">@Html.IconImage("arrow")</span>}
- @Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.Name)</td>
+ @Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.ProductName)</td>
 		<td class="date">@(DateTime.Parse(item["UtcCreationDate"].ToString()).ToLocalTime().ToShortDateString())</td>
 		<td>@Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.Published)</td>
     </tr>     
@@ -149,7 +149,7 @@
         </td>
 		<td class="treeStyle">
 		<span class="expander">@Html.IconImage("arrow")</span>
-		@Html.IconImage("file document")<span data-bind="html:item.Name"></span></td>
+		@Html.IconImage("file document")<span data-bind="html:item.ProductName"></span></td>
         <td class="date" data-bind="html:item._LocalCreationDate_"></td>
         <td><span data-bind="text : (item.Published == true?'YES': '-')"></span></td>
     </tr>     

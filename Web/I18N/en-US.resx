@@ -808,4 +808,526 @@
   <data name="Back" xml:space="preserve">
     <value>Back</value>
   </data>
+  <data name="Version:" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="Sites in use:" xml:space="preserve">
+    <value>Sites in use:</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Install</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Uninstall</value>
+  </data>
+  <data name="Reinstall" xml:space="preserve">
+    <value>Reinstall</value>
+  </data>
+  <data name="Module installation" xml:space="preserve">
+    <value>Module installation</value>
+  </data>
+  <data name="Module selection" xml:space="preserve">
+    <value>Module selection</value>
+  </data>
+  <data name="Installation" xml:space="preserve">
+    <value>Installation</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="Upload module installation file" xml:space="preserve">
+    <value>Upload module installation file</value>
+  </data>
+  <data name="Select file" xml:space="preserve">
+    <value>Select file</value>
+  </data>
+  <data name="You have uploaded below module installation file. If this is not the module file you want, " xml:space="preserve">
+    <value>You have uploaded below module installation file. If this is not the module file you want, </value>
+  </data>
+  <data name="Click to select file" xml:space="preserve">
+    <value>Click to select file</value>
+  </data>
+  <data name="click here" xml:space="preserve">
+    <value>click here</value>
+  </data>
+  <data name="to select a new module file." xml:space="preserve">
+    <value>to select a new module file.</value>
+  </data>
+  <data name="Module name" xml:space="preserve">
+    <value>Module name</value>
+  </data>
+  <data name="Module version" xml:space="preserve">
+    <value>Module version</value>
+  </data>
+  <data name="Target CMS version" xml:space="preserve">
+    <value>Target CMS version</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="We are about to install your module. In this step, we will perform the following actions:" xml:space="preserve">
+    <value>We are about to install your module. In this step, we will perform the following actions:</value>
+  </data>
+  <data name="Copy the module files into Kooboo CMS system." xml:space="preserve">
+    <value>Copy the module files into Kooboo CMS system.</value>
+  </data>
+  <data name="Run the 'Installation' events defined by module developers" xml:space="preserve">
+    <value>Run the 'Installation' events defined by module developers</value>
+  </data>
+  <data name="When you are ready, click the &lt;strong&gt;Next&lt;/strong&gt; button to start the installation." xml:space="preserve">
+    <value>When you are ready, click the &lt;strong&gt;Next&lt;/strong&gt; button to start the installation.</value>
+  </data>
+  <data name="The Connection string field is required." xml:space="preserve">
+    <value>The Connection string field is required.</value>
+  </data>
+  <data name="The module has been installed in your system." xml:space="preserve">
+    <value>The module has been installed in your system.</value>
+  </data>
+  <data name="To use the module in one site, go to the Extension\Module under that website and include this module" xml:space="preserve">
+    <value>To use the module in one site, go to the Extension\Module under that website and include this module</value>
+  </data>
+  <data name="To add one module to a page, go to page visual designer, and add a module into the right layout position" xml:space="preserve">
+    <value>To add one module to a page, go to page visual designer, and add a module into the right layout position</value>
+  </data>
+  <data name="Monitor" xml:space="preserve">
+    <value>Monitor</value>
+  </data>
+  <data name="Logs" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="Exceptional logs" xml:space="preserve">
+    <value>Exceptional logs</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="PV / UV" xml:space="preserve">
+    <value>PV / UV</value>
+  </data>
+  <data name="Referrals" xml:space="preserve">
+    <value>Referrals</value>
+  </data>
+  <data name="Search engine" xml:space="preserve">
+    <value>Search engine</value>
+  </data>
+  <data name="Bot / BS" xml:space="preserve">
+    <value>Bot / BS</value>
+  </data>
+  <data name="Health check" xml:space="preserve">
+    <value>Health check</value>
+  </data>
+  <data name="Check result" xml:space="preserve">
+    <value>Check result</value>
+  </data>
+  <data name="Included" xml:space="preserve">
+    <value>Included</value>
+  </data>
+  <data name="Include" xml:space="preserve">
+    <value>Include</value>
+  </data>
+  <data name="Exclude" xml:space="preserve">
+    <value>Exclude</value>
+  </data>
+  <data name="Blog" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="Are you sure you want to localize this item?" xml:space="preserve">
+    <value>Are you sure you want to localize this item?</value>
+  </data>
+  <data name="Save &amp; Localize" xml:space="preserve">
+    <value>Save &amp; Localize</value>
+  </data>
+  <data name="Selected Files" xml:space="preserve">
+    <value>Selected Files</value>
+  </data>
+  <data name="Module unistallation" xml:space="preserve">
+    <value>Module unistallation</value>
+  </data>
+  <data name="Module info" xml:space="preserve">
+    <value>Module info</value>
+  </data>
+  <data name="Uninstallation" xml:space="preserve">
+    <value>Uninstallation</value>
+  </data>
+  <data name="You are about to uninstall the following modules, click &lt;strong&gt;Next&lt;/strong&gt; to continue." xml:space="preserve">
+    <value>You are about to uninstall the following modules, click &lt;strong&gt;Next&lt;/strong&gt; to continue.</value>
+  </data>
+  <data name="Kooboo CMS version" xml:space="preserve">
+    <value>Kooboo CMS version</value>
+  </data>
+  <data name="We are about to uninstall your module. In this step, we will perform the following actions:" xml:space="preserve">
+    <value>We are about to uninstall your module. In this step, we will perform the following actions:</value>
+  </data>
+  <data name="Run the 'Uninstallation' events defined by module developers" xml:space="preserve">
+    <value>Run the 'Uninstallation' events defined by module developers</value>
+  </data>
+  <data name="Remove the module files from Kooboo CMS system." xml:space="preserve">
+    <value>Remove the module files from Kooboo CMS system.</value>
+  </data>
+  <data name="When you are ready, click the &lt;strong&gt;Next&lt;/strong&gt; button to start the uninstallation." xml:space="preserve">
+    <value>When you are ready, click the &lt;strong&gt;Next&lt;/strong&gt; button to start the uninstallation.</value>
+  </data>
+  <data name="Your module has been removed from the Kooboo CMS system." xml:space="preserve">
+    <value>Your module has been removed from the Kooboo CMS system.</value>
+  </data>
+  <data name="Module reinstallation" xml:space="preserve">
+    <value>Module reinstallation</value>
+  </data>
+  <data name="Upload new module file" xml:space="preserve">
+    <value>Upload new module file</value>
+  </data>
+  <data name="You have uploaded below new module installation file. If this is not the module file you want," xml:space="preserve">
+    <value>You have uploaded below new module installation file. If this is not the module file you want,</value>
+  </data>
+  <data name="clike here" xml:space="preserve">
+    <value>clike here</value>
+  </data>
+  <data name="Current version:" xml:space="preserve">
+    <value>Current version:</value>
+  </data>
+  <data name="New version:" xml:space="preserve">
+    <value>New version:</value>
+  </data>
+  <data name="We are about to reinstall your module. In this step, we will perform the following actions:" xml:space="preserve">
+    <value>We are about to reinstall your module. In this step, we will perform the following actions:</value>
+  </data>
+  <data name="Run the 'Reinstallation' events defined by module developers" xml:space="preserve">
+    <value>Run the 'Reinstallation' events defined by module developers</value>
+  </data>
+  <data name="Your module has been updated" xml:space="preserve">
+    <value>Your module has been updated</value>
+  </data>
+  <data name="The temporary installation directory has been deleted." xml:space="preserve">
+    <value>The temporary installation directory has been deleted.</value>
+  </data>
+  <data name="Module is use in sites" xml:space="preserve">
+    <value>Module is use in sites</value>
+  </data>
+  <data name="Are you sure you want to exclude the module from these sites?" xml:space="preserve">
+    <value>Are you sure you want to exclude the module from these sites?</value>
+  </data>
+  <data name="IPRestrictionModule" xml:space="preserve">
+    <value>IPRestrictionModule</value>
+  </data>
+  <data name="IPRestriction" xml:space="preserve">
+    <value>IPRestriction</value>
+  </data>
+  <data name="Folder settings" xml:space="preserve">
+    <value>Folder settings</value>
+  </data>
+  <data name="Basic info" xml:space="preserve">
+    <value>Basic info</value>
+  </data>
+  <data name="Permission Setting" xml:space="preserve">
+    <value>Permission Setting</value>
+  </data>
+  <data name="Relation folders" xml:space="preserve">
+    <value>Relation folders</value>
+  </data>
+  <data name="Content management" xml:space="preserve">
+    <value>Content management</value>
+  </data>
+  <data name="Role base" xml:space="preserve">
+    <value>Role base</value>
+  </data>
+  <data name="Workflow" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="Workflow name" xml:space="preserve">
+    <value>Workflow name</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="Single choice" xml:space="preserve">
+    <value>Single choice</value>
+  </data>
+  <data name="Category folders" xml:space="preserve">
+    <value>Category folders</value>
+  </data>
+  <data name="Embed content from another content folder. For example an &lt;b&gt;article&lt;/b&gt; embeds &lt;b&gt;comments&lt;/b&gt;" xml:space="preserve">
+    <value>Embed content from another content folder. For example an &lt;b&gt;article&lt;/b&gt; embeds &lt;b&gt;comments&lt;/b&gt;</value>
+  </data>
+  <data name="Embedded folders" xml:space="preserve">
+    <value>Embedded folders</value>
+  </data>
+  <data name="Sortable" xml:space="preserve">
+    <value>Sortable</value>
+  </data>
+  <data name="Hide the folder" xml:space="preserve">
+    <value>Hide the folder</value>
+  </data>
+  <data name="Hide the folder from the menu in the left slide bar when it was checked." xml:space="preserve">
+    <value>Hide the folder from the menu in the left slide bar when it was checked.</value>
+  </data>
+  <data name="Enable paging" xml:space="preserve">
+    <value>Enable paging</value>
+  </data>
+  <data name="The Page size field is required." xml:space="preserve">
+    <value>The Page size field is required.</value>
+  </data>
+  <data name="The item numbers on management grid page." xml:space="preserve">
+    <value>The item numbers on management grid page.</value>
+  </data>
+  <data name="Page size" xml:space="preserve">
+    <value>Page size</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="Are you sure you want to reset these templates?" xml:space="preserve">
+    <value>Are you sure you want to reset these templates?</value>
+  </data>
+  <data name="Reset templates" xml:space="preserve">
+    <value>Reset templates</value>
+  </data>
+  <data name="Grid" xml:space="preserve">
+    <value>Grid</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Selectable" xml:space="preserve">
+    <value>Selectable</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="Copy content type" xml:space="preserve">
+    <value>Copy content type</value>
+  </data>
+  <data name="Folder name" xml:space="preserve">
+    <value>Folder name</value>
+  </data>
+  <data name="Send received" xml:space="preserve">
+    <value>Send received</value>
+  </data>
+  <data name="Send to sub sites" xml:space="preserve">
+    <value>Send to sub sites</value>
+  </data>
+  <data name="Sending repository" xml:space="preserve">
+    <value>Sending repository</value>
+  </data>
+  <data name="Sending folder" xml:space="preserve">
+    <value>Sending folder</value>
+  </data>
+  <data name="Receiving folder" xml:space="preserve">
+    <value>Receiving folder</value>
+  </data>
+  <data name="Keep content status" xml:space="preserve">
+    <value>Keep content status</value>
+  </data>
+  <data name="New sending setting" xml:space="preserve">
+    <value>New sending setting</value>
+  </data>
+  <data name="Send received content" xml:space="preserve">
+    <value>Send received content</value>
+  </data>
+  <data name="Broadcasting contents that received from other websites.s" xml:space="preserve">
+    <value>Broadcasting contents that received from other websites.s</value>
+  </data>
+  <data name="Configure the receiving settings for subsites automatically." xml:space="preserve">
+    <value>Configure the receiving settings for subsites automatically.</value>
+  </data>
+  <data name="The Child level field is required." xml:space="preserve">
+    <value>The Child level field is required.</value>
+  </data>
+  <data name="Only send to first level child sites or all level child sites." xml:space="preserve">
+    <value>Only send to first level child sites or all level child sites.</value>
+  </data>
+  <data name="The Keep content status field is required." xml:space="preserve">
+    <value>The Keep content status field is required.</value>
+  </data>
+  <data name="Show content type relations" xml:space="preserve">
+    <value>Show content type relations</value>
+  </data>
+  <data name="Used in" xml:space="preserve">
+    <value>Used in</value>
+  </data>
+  <data name="Usage" xml:space="preserve">
+    <value>Usage</value>
+  </data>
+  <data name="Edit content type" xml:space="preserve">
+    <value>Edit content type</value>
+  </data>
+  <data name="The Tree style data field is required." xml:space="preserve">
+    <value>The Tree style data field is required.</value>
+  </data>
+  <data name="Tree style data" xml:space="preserve">
+    <value>Tree style data</value>
+  </data>
+  <data name="Create the tree style data and management interface." xml:space="preserve">
+    <value>Create the tree style data and management interface.</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="Control type" xml:space="preserve">
+    <value>Control type</value>
+  </data>
+  <data name="Summary field" xml:space="preserve">
+    <value>Summary field</value>
+  </data>
+  <data name="Content list page" xml:space="preserve">
+    <value>Content list page</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="Validation" xml:space="preserve">
+    <value>Validation</value>
+  </data>
+  <data name="Selection value" xml:space="preserve">
+    <value>Selection value</value>
+  </data>
+  <data name="This name is being used by other columns." xml:space="preserve">
+    <value>This name is being used by other columns.</value>
+  </data>
+  <data name="Invalid column name." xml:space="preserve">
+    <value>Invalid column name.</value>
+  </data>
+  <data name="Name of your field, it uses the same naming rule as C# veriable name." xml:space="preserve">
+    <value>Name of your field, it uses the same naming rule as C# veriable name.</value>
+  </data>
+  <data name="Descriptive label of your field on the content editing page." xml:space="preserve">
+    <value>Descriptive label of your field on the content editing page.</value>
+  </data>
+  <data name="The way that you would like to input your content." xml:space="preserve">
+    <value>The way that you would like to input your content.</value>
+  </data>
+  <data name="Data type" xml:space="preserve">
+    <value>Data type</value>
+  </data>
+  <data name="Default value" xml:space="preserve">
+    <value>Default value</value>
+  </data>
+  <data name="The Summary field will be used as a title or summary to describe your content item." xml:space="preserve">
+    <value>The Summary field will be used as a title or summary to describe your content item.</value>
+  </data>
+  <data name="Show this field in the CMS content list page." xml:space="preserve">
+    <value>Show this field in the CMS content list page.</value>
+  </data>
+  <data name="Input tip while users are editing content." xml:space="preserve">
+    <value>Input tip while users are editing content.</value>
+  </data>
+  <data name="Tooltip" xml:space="preserve">
+    <value>Tooltip</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Length</value>
+  </data>
+  <data name="Allow null" xml:space="preserve">
+    <value>Allow null</value>
+  </data>
+  <data name="Allows null value in this field" xml:space="preserve">
+    <value>Allows null value in this field</value>
+  </data>
+  <data name="Modifiable" xml:space="preserve">
+    <value>Modifiable</value>
+  </data>
+  <data name="Enable the modification of this field in the content editing page." xml:space="preserve">
+    <value>Enable the modification of this field in the content editing page.</value>
+  </data>
+  <data name="Custom settings" xml:space="preserve">
+    <value>Custom settings</value>
+  </data>
+  <data name="Error message" xml:space="preserve">
+    <value>Error message</value>
+  </data>
+  <data name="Min" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="The field Length must be a number." xml:space="preserve">
+    <value>The field Length must be a number.</value>
+  </data>
+  <data name="Max" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="Pattern" xml:space="preserve">
+    <value>Pattern</value>
+  </data>
+  <data name="Manual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="From folder" xml:space="preserve">
+    <value>From folder</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="Are you sure you want to delete this item?" xml:space="preserve">
+    <value>Are you sure you want to delete this item?</value>
+  </data>
+  <data name="Details view" xml:space="preserve">
+    <value>Details view</value>
+  </data>
+  <data name="Thumbnails view" xml:space="preserve">
+    <value>Thumbnails view</value>
+  </data>
+  <data name="All Elements" xml:space="preserve">
+    <value>All Elements</value>
+  </data>
+  <data name="Only Documents" xml:space="preserve">
+    <value>Only Documents</value>
+  </data>
+  <data name="Only Folders" xml:space="preserve">
+    <value>Only Folders</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>FileType</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="Invalid folder name." xml:space="preserve">
+    <value>Invalid folder name.</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="Edit sending setting" xml:space="preserve">
+    <value>Edit sending setting</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>FileName</value>
+  </data>
+  <data name="View types" xml:space="preserve">
+    <value>View types</value>
+  </data>
+  <data name="IPFilter" xml:space="preserve">
+    <value>IPFilter</value>
+  </data>
+  <data name="IPList" xml:space="preserve">
+    <value>IPList</value>
+  </data>
+  <data name="The module already exists, please use 'Reinstall' option to upgrade the module." xml:space="preserve">
+    <value>The module already exists, please use 'Reinstall' option to upgrade the module.</value>
+  </data>
+  <data name="IPSetting" xml:space="preserve">
+    <value>IPSetting</value>
+  </data>
 </root>

@@ -1,0 +1,8 @@
+﻿<h3>IPList</h3>
+<ul class="list">
+    @foreach (var item in Model)
+      {
+        <li>@Html.FrontHtml().PageLink(item["IP"], "IPList/detail", new { userKey = item["UserKey"] }, new { @class="title" })
+        </li>
+      }
+</ul>
