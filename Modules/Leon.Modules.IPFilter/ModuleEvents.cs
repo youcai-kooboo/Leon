@@ -124,7 +124,8 @@ namespace Leon.Modules.IPFilter
 
                 var ipSettingfolder = new TextFolder(repository, "IPSetting")
                 {
-                    SchemaName = "IPSetting"
+                    SchemaName = "IPSetting",
+                    Hidden = true
                 };
                 if (ipSettingfolder.AsActual() == null)
                 {
@@ -143,7 +144,8 @@ namespace Leon.Modules.IPFilter
 
                 var ipListfolder = new TextFolder(repository, "IPList")
                 {
-                    SchemaName = "IPList"
+                    SchemaName = "IPList",
+                    Hidden = true
                 };
                 if (ipListfolder.AsActual() == null)
                 {
