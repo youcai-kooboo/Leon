@@ -31,22 +31,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Kooboo">
-      <HintPath>..\..\..\Lib\Kooboo.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Common">
-      <HintPath>..\..\..\Lib\Kooboo.CMS.Common.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.CMS.Common.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Content">
-      <HintPath>..\..\..\Lib\Kooboo.CMS.Content.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.CMS.Content.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Form">
-      <HintPath>..\..\..\Lib\Kooboo.CMS.Form.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.CMS.Form.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Sites">
-      <HintPath>..\..\..\Lib\Kooboo.CMS.Sites.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.CMS.Sites.dll</HintPath>
     </Reference>
     <Reference Include="Kooboo.CMS.Web">
-      <HintPath>..\..\..\Lib\Kooboo.CMS.Web.dll</HintPath>
+      <HintPath>..\..\Lib\Kooboo.CMS.Web.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
