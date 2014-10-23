@@ -2423,13 +2423,10 @@
     <Content Include="Cms_Data\ModuleInstallations\Monitor\1.0.0.0-20140403114454.zip" />
     <Content Include="Areas\IPFilter\CMSMenu.config" />
     <Content Include="Areas\IPFilter\module.config" />
-    <Content Include="Areas\IPFilter\routes.config" />
-    <Content Include="Areas\IPFilter\Sites.config" />
     <Content Include="Areas\IPFilter\Views\Shared\Front.cshtml" />
     <Content Include="Areas\IPFilter\Views\Shared\_OnInstalling.cshtml" />
     <Content Include="Areas\IPFilter\Views\Shared\_OnUninstalling.cshtml" />
     <Content Include="Areas\IPFilter\Views\Web.config" />
-    <Content Include="Areas\IPFilter\WebResources.config" />
     <Content Include="Cms_Data\ModuleInstallations\IPFilter\4.2.1.0-20141020163341.zip" />
     <Content Include="Cms_Data\Contents\Leon\Folders\IPList\setting.config" />
     <Content Include="Cms_Data\Contents\Leon\Folders\IPSetting\setting.config" />
@@ -2448,6 +2445,8 @@
     <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\setting.config" />
     <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\Update.cshtml" />
     <Content Include="Areas\IPFilter\Views\Settings\Index.cshtml" />
+    <Content Include="Areas\IPFilter\WebResources.config" />
+    <Content Include="Areas\IPFilter\routes.config" />
     <None Include="Properties\PublishProfiles\leon - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\leon - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Leon-Local.pubxml" />
