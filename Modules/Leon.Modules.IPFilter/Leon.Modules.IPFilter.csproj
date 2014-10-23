@@ -81,7 +81,6 @@
     <None Include="module.config" />
     <None Include="PackModule.bat" />
     <None Include="routes.config" />
-    <None Include="Sites.config" />
     <None Include="Views\Shared\Front.cshtml" />
     <None Include="Views\Shared\_OnInstalling.cshtml" />
     <None Include="Views\Shared\_OnUninstalling.cshtml" />
