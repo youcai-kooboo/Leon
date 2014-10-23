@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Settings.cs" />
     <Compile Include="Filters\IPFilter.cs" />
     <Compile Include="Filters\IPFilterAttribute.cs" />
     <Compile Include="FolderNames.cs" />
@@ -67,8 +68,10 @@
     <Compile Include="Models\FilterType.cs" />
     <Compile Include="Models\IPList.cs" />
     <Compile Include="Models\IPSetting.cs" />
+    <Compile Include="Models\SettingModel.cs" />
     <Compile Include="ModuleAreaRegistration.cs" />
     <Compile Include="ModuleEvents.cs" />
+    <Compile Include="ModuleMenuItemInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IPListService.cs" />
     <Compile Include="Services\IPSettingService.cs" />
@@ -94,6 +97,7 @@
       <Name>Kooboo.CMS.Toolkit</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

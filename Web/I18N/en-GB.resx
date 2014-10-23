@@ -109,4 +109,226 @@
   <data name="Kooboo team" xml:space="preserve">
     <value>Kooboo team</value>
   </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="The Enable field is required." xml:space="preserve">
+    <value>The Enable field is required.</value>
+  </data>
+  <data name="FilterType" xml:space="preserve">
+    <value>FilterType</value>
+  </data>
+  <data name="The FilterType field is required." xml:space="preserve">
+    <value>The FilterType field is required.</value>
+  </data>
+  <data name="FilterScope" xml:space="preserve">
+    <value>FilterScope</value>
+  </data>
+  <data name="The FilterScope field is required." xml:space="preserve">
+    <value>The FilterScope field is required.</value>
+  </data>
+  <data name="ForbiddenHtml" xml:space="preserve">
+    <value>ForbiddenHtml</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="Back to site manager" xml:space="preserve">
+    <value>Back to site manager</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="Set as default page" xml:space="preserve">
+    <value>Set as default page</value>
+  </data>
+  <data name="Change language" xml:space="preserve">
+    <value>Change language</value>
+  </data>
+  <data name="Change password" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="Sign out" xml:space="preserve">
+    <value>Sign out</value>
+  </data>
+  <data name="Go to site cluster" xml:space="preserve">
+    <value>Go to site cluster</value>
+  </data>
+  <data name="Site manager" xml:space="preserve">
+    <value>Site manager</value>
+  </data>
+  <data name="New sub site" xml:space="preserve">
+    <value>New sub site</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Site users" xml:space="preserve">
+    <value>Site users</value>
+  </data>
+  <data name="Custom errors" xml:space="preserve">
+    <value>Custom errors</value>
+  </data>
+  <data name="Url redirects" xml:space="preserve">
+    <value>Url redirects</value>
+  </data>
+  <data name="Robots.txt" xml:space="preserve">
+    <value>Robots.txt</value>
+  </data>
+  <data name="Diagnosis" xml:space="preserve">
+    <value>Diagnosis</value>
+  </data>
+  <data name="A/B Test" xml:space="preserve">
+    <value>A/B Test</value>
+  </data>
+  <data name="A/B rules" xml:space="preserve">
+    <value>A/B rules</value>
+  </data>
+  <data name="A/B page settings" xml:space="preserve">
+    <value>A/B page settings</value>
+  </data>
+  <data name="A/B test reports" xml:space="preserve">
+    <value>A/B test reports</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Development</value>
+  </data>
+  <data name="Layouts" xml:space="preserve">
+    <value>Layouts</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>Views</value>
+  </data>
+  <data name="Labels" xml:space="preserve">
+    <value>Labels</value>
+  </data>
+  <data name="Scripts" xml:space="preserve">
+    <value>Scripts</value>
+  </data>
+  <data name="Themes" xml:space="preserve">
+    <value>Themes</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="Page mapping" xml:space="preserve">
+    <value>Page mapping</value>
+  </data>
+  <data name="Submission setting" xml:space="preserve">
+    <value>Submission setting</value>
+  </data>
+  <data name="Extension" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="Plug-ins" xml:space="preserve">
+    <value>Plug-ins</value>
+  </data>
+  <data name="Modules" xml:space="preserve">
+    <value>Modules</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Indexed data" xml:space="preserve">
+    <value>Indexed data</value>
+  </data>
+  <data name="Content type" xml:space="preserve">
+    <value>Content type</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="Media Library" xml:space="preserve">
+    <value>Media Library</value>
+  </data>
+  <data name="Html block" xml:space="preserve">
+    <value>Html block</value>
+  </data>
+  <data name="IPFilter" xml:space="preserve">
+    <value>IPFilter</value>
+  </data>
+  <data name="Manage IP" xml:space="preserve">
+    <value>Manage IP</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="Google analytics" xml:space="preserve">
+    <value>Google analytics</value>
+  </data>
+  <data name="Pixel" xml:space="preserve">
+    <value>Pixel</value>
+  </data>
+  <data name="Per page" xml:space="preserve">
+    <value>Per page</value>
+  </data>
+  <data name="Per layout" xml:space="preserve">
+    <value>Per layout</value>
+  </data>
+  <data name="Site scripts" xml:space="preserve">
+    <value>Site scripts</value>
+  </data>
+  <data name="API settings" xml:space="preserve">
+    <value>API settings</value>
+  </data>
+  <data name="Common settings" xml:space="preserve">
+    <value>Common settings</value>
+  </data>
+  <data name="All your changes might be lost." xml:space="preserve">
+    <value>All your changes might be lost.</value>
+  </data>
+  <data name="Monitor" xml:space="preserve">
+    <value>Monitor</value>
+  </data>
+  <data name="Logs" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="Exceptional logs" xml:space="preserve">
+    <value>Exceptional logs</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="PV / UV" xml:space="preserve">
+    <value>PV / UV</value>
+  </data>
+  <data name="Referrals" xml:space="preserve">
+    <value>Referrals</value>
+  </data>
+  <data name="Search engine" xml:space="preserve">
+    <value>Search engine</value>
+  </data>
+  <data name="Bot / BS" xml:space="preserve">
+    <value>Bot / BS</value>
+  </data>
+  <data name="Health check" xml:space="preserve">
+    <value>Health check</value>
+  </data>
+  <data name="Check result" xml:space="preserve">
+    <value>Check result</value>
+  </data>
+  <data name="Health2 check2" xml:space="preserve">
+    <value>Health2 check2</value>
+  </data>
+  <data name="Setting has been changed." xml:space="preserve">
+    <value>Setting has been changed.</value>
+  </data>
 </root>

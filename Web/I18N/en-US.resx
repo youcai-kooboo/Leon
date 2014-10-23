@@ -1330,4 +1330,211 @@
   <data name="IPSetting" xml:space="preserve">
     <value>IPSetting</value>
   </data>
+  <data name="Sync datas" xml:space="preserve">
+    <value>Sync datas</value>
+  </data>
+  <data name="To Children Sites Recursively" xml:space="preserve">
+    <value>To Children Sites Recursively</value>
+  </data>
+  <data name="'Content database' is invalid." xml:space="preserve">
+    <value>'Content database' is invalid.</value>
+  </data>
+  <data name="Switch" xml:space="preserve">
+    <value>Switch</value>
+  </data>
+  <data name="Create a new database or select the database where &lt;br/&gt; your content is stored." xml:space="preserve">
+    <value>Create a new database or select the database where &lt;br/&gt; your content is stored.</value>
+  </data>
+  <data name="Your front site culture, this is used to display currency,&lt;br/&gt;  date, number or other culture related content" xml:space="preserve">
+    <value>Your front site culture, this is used to display currency,&lt;br/&gt;  date, number or other culture related content</value>
+  </data>
+  <data name="The site cache has been cleared." xml:space="preserve">
+    <value>The site cache has been cleared.</value>
+  </data>
+  <data name="ModuleName" xml:space="preserve">
+    <value>ModuleName</value>
+  </data>
+  <data name="KoobooCMSVersion" xml:space="preserve">
+    <value>KoobooCMSVersion</value>
+  </data>
+  <data name="ThemeName" xml:space="preserve">
+    <value>ThemeName</value>
+  </data>
+  <data name="Crawl entry url, within &quot;http://&quot; or &quot;https://&quot;." xml:space="preserve">
+    <value>Crawl entry url, within "http://" or "https://".</value>
+  </data>
+  <data name="Crawl Entry Url" xml:space="preserve">
+    <value>Crawl Entry Url</value>
+  </data>
+  <data name="The Crawl Max Depth field is required." xml:space="preserve">
+    <value>The Crawl Max Depth field is required.</value>
+  </data>
+  <data name="Crawl Max Depth" xml:space="preserve">
+    <value>Crawl Max Depth</value>
+  </data>
+  <data name="The Max time-taken field is required." xml:space="preserve">
+    <value>The Max time-taken field is required.</value>
+  </data>
+  <data name="Set a value, when the Http request time exceeds this value, the record will be highlighted.(Unit:second)" xml:space="preserve">
+    <value>Set a value, when the Http request time exceeds this value, the record will be highlighted.(Unit:second)</value>
+  </data>
+  <data name="Max time-taken" xml:space="preserve">
+    <value>Max time-taken</value>
+  </data>
+  <data name="The Check image field is required." xml:space="preserve">
+    <value>The Check image field is required.</value>
+  </data>
+  <data name="Check image" xml:space="preserve">
+    <value>Check image</value>
+  </data>
+  <data name="Enable Check image." xml:space="preserve">
+    <value>Enable Check image.</value>
+  </data>
+  <data name="The Check Css field is required." xml:space="preserve">
+    <value>The Check Css field is required.</value>
+  </data>
+  <data name="Check Css" xml:space="preserve">
+    <value>Check Css</value>
+  </data>
+  <data name="Enable Check Css." xml:space="preserve">
+    <value>Enable Check Css.</value>
+  </data>
+  <data name="The Check javascript field is required." xml:space="preserve">
+    <value>The Check javascript field is required.</value>
+  </data>
+  <data name="Check javascript" xml:space="preserve">
+    <value>Check javascript</value>
+  </data>
+  <data name="Enable Check javascript." xml:space="preserve">
+    <value>Enable Check javascript.</value>
+  </data>
+  <data name="Initialize" xml:space="preserve">
+    <value>Initialize</value>
+  </data>
+  <data name="Module setting has been changed." xml:space="preserve">
+    <value>Module setting has been changed.</value>
+  </data>
+  <data name="Visit count" xml:space="preserve">
+    <value>Visit count</value>
+  </data>
+  <data name="Uri stem" xml:space="preserve">
+    <value>Uri stem</value>
+  </data>
+  <data name="Uri query" xml:space="preserve">
+    <value>Uri query</value>
+  </data>
+  <data name="Visit date" xml:space="preserve">
+    <value>Visit date</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="Client ip" xml:space="preserve">
+    <value>Client ip</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Time taken(s)" xml:space="preserve">
+    <value>Time taken(s)</value>
+  </data>
+  <data name="Last visit date" xml:space="preserve">
+    <value>Last visit date</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="Keyword" xml:space="preserve">
+    <value>Keyword</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="Checking..." xml:space="preserve">
+    <value>Checking...</value>
+  </data>
+  <data name="Visiting..." xml:space="preserve">
+    <value>Visiting...</value>
+  </data>
+  <data name="Finished" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="ResourceType" xml:space="preserve">
+    <value>ResourceType</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Parent url" xml:space="preserve">
+    <value>Parent url</value>
+  </data>
+  <data name="Inner text" xml:space="preserve">
+    <value>Inner text</value>
+  </data>
+  <data name="Depth" xml:space="preserve">
+    <value>Depth</value>
+  </data>
+  <data name="Extract qty" xml:space="preserve">
+    <value>Extract qty</value>
+  </data>
+  <data name="Visit time(s)" xml:space="preserve">
+    <value>Visit time(s)</value>
+  </data>
+  <data name="Extract time(s)" xml:space="preserve">
+    <value>Extract time(s)</value>
+  </data>
+  <data name="Resource type" xml:space="preserve">
+    <value>Resource type</value>
+  </data>
+  <data name="ReVisit" xml:space="preserve">
+    <value>ReVisit</value>
+  </data>
+  <data name="Health check2" xml:space="preserve">
+    <value>Health check2</value>
+  </data>
+  <data name="Health2 check2" xml:space="preserve">
+    <value>Health2 check2</value>
+  </data>
+  <data name="Manage IP" xml:space="preserve">
+    <value>Manage IP</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="FilterType" xml:space="preserve">
+    <value>FilterType</value>
+  </data>
+  <data name="The FilterType field is required." xml:space="preserve">
+    <value>The FilterType field is required.</value>
+  </data>
+  <data name="FilterScope" xml:space="preserve">
+    <value>FilterScope</value>
+  </data>
+  <data name="The FilterScope field is required." xml:space="preserve">
+    <value>The FilterScope field is required.</value>
+  </data>
+  <data name="ForbiddenHtml" xml:space="preserve">
+    <value>ForbiddenHtml</value>
+  </data>
+  <data name="The Value field is required." xml:space="preserve">
+    <value>The Value field is required.</value>
+  </data>
+  <data name="The Enable field is required." xml:space="preserve">
+    <value>The Enable field is required.</value>
+  </data>
+  <data name="Setting has been changed." xml:space="preserve">
+    <value>Setting has been changed.</value>
+  </data>
 </root>

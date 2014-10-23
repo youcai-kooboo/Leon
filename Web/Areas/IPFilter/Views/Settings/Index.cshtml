@@ -1,0 +1,56 @@
+﻿@model  Leon.Modules.IPFilter.Models.SettingModel
+@{
+    Layout = "~/Views/Shared/Site.cshtml";
+    ViewBag.Title = "Settings".Localize();
+}
+
+@section Panel{
+    <ul class="panel">
+        <li>
+            <a data-ajaxform="Setting">
+                @Html.IconImage("save") @("Save".Localize())
+            </a>
+        </li>
+    </ul>
+}
+
+<div class="block common-form">
+    <h1 class="title">@ViewBag.Title</h1>
+    <form id="Setting" method="post" action="" novalidate="novalidate">
+        <div class="tabs">
+            <ul class="tab-index clearfix">
+                <li class="active"><a href="#basicInfo">@("Basic".Localize())</a>@Html.IconImage("arrow blue-down")</li>
+                <li style="display:none"><a href="#settingsInfo">@("Settings".Localize())</a>@Html.IconImage("arrow blue-down")</li>
+            </ul>
+            <div class="tab-content active" id="basicInfo">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>@("Enable".Localize())</th>
+                            <td>@Html.CheckBoxFor(m => m.Enable)</td>
+                        </tr>
+                        <tr>
+                            <th>@("FilterType".Localize())</th>
+                            <td>@Html.DropDownListFor(m => m.FilterType, Model.FilterTypeList, new { @class = "long" })</td>
+                        </tr>
+                        <tr>
+                            <th>@("FilterScope".Localize())</th>
+                            <td>@Html.DropDownListFor(m => m.FilterScope, Model.FilterScopeList, new { @class = "long" })</td>
+                        </tr>
+                        <tr>
+                            <th>@("ForbiddenHtml".Localize())</th>
+                            <td>
+                                @Html.TextAreaFor(m => m.ForbiddenHtml,new { @class="tinymce" })
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('.tabs').koobooTab();
+    });
+</script>

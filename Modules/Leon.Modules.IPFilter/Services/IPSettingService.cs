@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Kooboo.CMS.Content.Models;
 using Kooboo.CMS.Toolkit;
 using Kooboo.CMS.Toolkit.Services;
 using Leon.Modules.IPFilter.Models;
@@ -23,7 +24,6 @@ namespace Leon.Modules.IPFilter.Services
             try
             {
                 _ipSetting = base.CreateQuery()
-                    .Where(m => m.Published == true)
                     .FirstOrDefault()
                     .MapTo<IPSetting>();
             }
@@ -33,6 +33,25 @@ namespace Leon.Modules.IPFilter.Services
             }
 
             return _ipSetting;
+        }
+
+        public void Save(IPSetting settings)
+        {
+            var _ipSetting = GetSettings();
+
+            if (_ipSetting != null)
+            {
+                _ipSetting.Published = settings.Published;
+                _ipSetting.FilterType = settings.FilterType;
+                _ipSetting.FilterScope = settings.FilterScope;
+                _ipSetting.ForbiddenHtml = settings.ForbiddenHtml;
+
+                Update(_ipSetting);
+            }
+            else
+            {
+                Add(settings);  
+            }
         }
 
     }

@@ -4,10 +4,8 @@ using System.Linq;
 using System.Web;
 using Kooboo.CMS.Common.Persistence.Non_Relational;
 using Kooboo.CMS.Content.Models;
-using Leon.Modules.IPFilter;
 using Kooboo.CMS.Sites.Models;
 using Kooboo.CMS.Sites.Persistence;
-using Kooboo.CMS.Toolkit;
 using Leon.Modules.IPFilter.Models;
 
 namespace Leon.Modules.IPFilter.Filters

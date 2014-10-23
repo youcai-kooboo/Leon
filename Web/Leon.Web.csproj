@@ -2447,6 +2447,7 @@
     <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\Selectable.cshtml" />
     <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\setting.config" />
     <Content Include="Cms_Data\Contents\Leon\Schemas\IPSetting\Update.cshtml" />
+    <Content Include="Areas\IPFilter\Views\Settings\Index.cshtml" />
     <None Include="Properties\PublishProfiles\leon - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\leon - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Leon-Local.pubxml" />

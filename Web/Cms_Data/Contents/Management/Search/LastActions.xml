@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
 	<LastAction>
+		<FolderName>Setting~SiteScript</FolderName>
+		<ContentSummary>SiteScript_Head</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2014-10-22T04:00:37.0793328Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Setting~SiteScript</FolderName>
+		<ContentSummary>SiteScript_Head</ContentSummary>
+		<Action>Add</Action>
+		<UtcActionDate>2014-10-22T04:00:36.7343131Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Setting~SiteScript</FolderName>
+		<ContentSummary>SiteScript_Head</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2014-10-22T04:00:36.3122889Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Setting~SiteScript</FolderName>
+		<ContentSummary>SiteScript_Head</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2014-10-22T04:00:35.9032655Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
 		<FolderName>Setting~Common</FolderName>
 		<ContentSummary>xxx</ContentSummary>
 		<Action>Delete</Action>
 		<UtcActionDate>2014-03-19T09:04:42.3620657Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>Setting~Common</FolderName>
-		<ContentSummary>yyy</ContentSummary>
-		<Action>Delete</Action>
-		<UtcActionDate>2014-03-19T09:04:42.350065Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>Setting~Common</FolderName>
-		<ContentSummary>zzzz</ContentSummary>
-		<Action>Delete</Action>
-		<UtcActionDate>2014-03-19T09:04:42.3400644Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>Setting~Common</FolderName>
-		<ContentSummary>leonTest</ContentSummary>
-		<Action>Delete</Action>
-		<UtcActionDate>2014-03-19T09:04:30.9644138Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>Setting~Common</FolderName>
-		<ContentSummary>xxx</ContentSummary>
-		<Action>Delete</Action>
-		<UtcActionDate>2014-03-19T08:58:40.35436Z</UtcActionDate>
 	</LastAction>
 </ArrayOfLastAction>

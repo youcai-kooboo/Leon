@@ -1,5 +1,6 @@
 ﻿[
   "Leon~CN",
   "Leon~EN",
-  "Leon~CN~Simple"
+  "Leon~CN~Simple",
+  "Leon"
 ]

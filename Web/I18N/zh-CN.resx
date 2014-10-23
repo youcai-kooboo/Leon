@@ -2850,4 +2850,58 @@
   <data name="Not support to parse absolute url path." xml:space="preserve">
     <value>不支持解析绝对路径.</value>
   </data>
+  <data name="Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="Enable 字段是必需的。" xml:space="preserve">
+    <value>Enable 字段是必需的。</value>
+  </data>
+  <data name="FilterType" xml:space="preserve">
+    <value>FilterType</value>
+  </data>
+  <data name="FilterType 字段是必需的。" xml:space="preserve">
+    <value>FilterType 字段是必需的。</value>
+  </data>
+  <data name="FilterScope" xml:space="preserve">
+    <value>FilterScope</value>
+  </data>
+  <data name="FilterScope 字段是必需的。" xml:space="preserve">
+    <value>FilterScope 字段是必需的。</value>
+  </data>
+  <data name="ForbiddenHtml" xml:space="preserve">
+    <value>ForbiddenHtml</value>
+  </data>
+  <data name="Set as default page" xml:space="preserve">
+    <value>Set as default page</value>
+  </data>
+  <data name="IPFilter" xml:space="preserve">
+    <value>IPFilter</value>
+  </data>
+  <data name="Manage IP" xml:space="preserve">
+    <value>Manage IP</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="Google analytics" xml:space="preserve">
+    <value>Google analytics</value>
+  </data>
+  <data name="Pixel" xml:space="preserve">
+    <value>Pixel</value>
+  </data>
+  <data name="Per page" xml:space="preserve">
+    <value>Per page</value>
+  </data>
+  <data name="Per layout" xml:space="preserve">
+    <value>Per layout</value>
+  </data>
+  <data name="Site scripts" xml:space="preserve">
+    <value>Site scripts</value>
+  </data>
+  <data name="API settings" xml:space="preserve">
+    <value>API settings</value>
+  </data>
+  <data name="Common settings" xml:space="preserve">
+    <value>Common settings</value>
+  </data>
 </root>
