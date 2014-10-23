@@ -34,6 +34,11 @@ namespace Leon.Modules.IPFilter.Filters
 
         public void Do()
         {
+            //if (AccessStaticFiles())
+            //{
+            //    return;
+            //}
+
             if (_ipSetting != null)
             {
                 bool filterFrontend = _ipSetting.FilterScope != (int) FilterScope.Backend;
@@ -41,8 +46,7 @@ namespace Leon.Modules.IPFilter.Filters
 
                 if (filterFrontend || filterBackend)
                 {
-                    //if (!AccessStaticFiles())
-                    //{
+                    
                     var clientIp = GetClientIP();
                     var context = HttpContext.Current;
                     var path = context.Request.Path.ToLower();
@@ -61,7 +65,7 @@ namespace Leon.Modules.IPFilter.Filters
                             DealWithIP(context, clientIp);
                         }
                     }
-                    //}
+
                 }
             }
         }
