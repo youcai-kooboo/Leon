@@ -113,6 +113,7 @@ namespace Leon.Modules.IPFilter.Filters
                 }
 
                 context.Response.Clear();
+                context.Response.Headers["IPValidation"] = "Forbidden";
                 context.Response.ContentType = "text/html";
                 context.Response.Write(forbiddenHtml);
                 context.Response.End();
