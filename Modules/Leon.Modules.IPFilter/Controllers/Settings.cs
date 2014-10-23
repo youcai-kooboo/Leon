@@ -17,6 +17,7 @@ namespace Leon.Modules.IPFilter.Controllers
     public class SettingsController : AreaControllerBase
     {
         private IPSettingService _settingService;
+
         public SettingsController()
         {
             var request = System.Web.HttpContext.Current.Request;
@@ -50,7 +51,7 @@ namespace Leon.Modules.IPFilter.Controllers
             model.Enable = settings.Published ?? false;
             model.ForbiddenHtml = settings.ForbiddenHtml;
             model.FilterType = filterType;
-            model.FilterScope = filterScope; 
+            model.FilterScope = filterScope;
             model.FilterTypeList = GetFilterTypeList(filterType);
             model.FilterScopeList = GetFilterScopeList(filterScope);
 
@@ -58,7 +59,7 @@ namespace Leon.Modules.IPFilter.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(SettingModel settingModel,string @return)
+        public ActionResult Index(SettingModel settingModel, string @return)
         {
             var result = new JsonResultData();
 
@@ -97,9 +98,19 @@ namespace Leon.Modules.IPFilter.Controllers
         private IEnumerable<SelectListItem> GetFilterTypeList(int filterType = -1)
         {
             var items = new List<SelectListItem>();
-            items.Add(new SelectListItem() { Text = FilterType.Whitelist.ToString(), Value = ((int)FilterType.Whitelist).ToString(), Selected = (int)FilterType.Whitelist == filterType });
-            items.Add(new SelectListItem() { Text = FilterType.Blacklist.ToString(), Value = ((int)FilterType.Blacklist).ToString(), Selected = (int)FilterType.Blacklist == filterType });
-            
+            items.Add(new SelectListItem()
+            {
+                Text = FilterType.Whitelist.ToString(),
+                Value = ((int) FilterType.Whitelist).ToString(),
+                Selected = (int) FilterType.Whitelist == filterType
+            });
+            items.Add(new SelectListItem()
+            {
+                Text = FilterType.Blacklist.ToString(),
+                Value = ((int) FilterType.Blacklist).ToString(),
+                Selected = (int) FilterType.Blacklist == filterType
+            });
+
             return items;
         }
 
