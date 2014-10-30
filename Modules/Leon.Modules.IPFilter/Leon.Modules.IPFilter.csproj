@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CMSMenu.config" />
+    <None Include="IPFilter.zip" />
     <None Include="module.config" />
     <None Include="PackModule.bat" />
     <None Include="routes.config" />
