@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using Kooboo.CMS.Common.Persistence.Non_Relational;
 using Kooboo.CMS.Content.Models;
@@ -109,11 +110,11 @@ namespace Leon.Modules.IPFilter.Filters
                 var forbiddenHtml = _ipSetting.ForbiddenHtml;;
                 if (String.IsNullOrWhiteSpace(forbiddenHtml))
                 {
-                    forbiddenHtml = "<h1>Forbidden. </h1>";
+                    forbiddenHtml = "<h1>Forbidden</h1>";
                 }
 
                 context.Response.Clear();
-                context.Response.Headers["IPValidation"] = "Forbidden";
+                context.Response.StatusCode = (int)HttpStatusCode.Forbidden;
                 context.Response.ContentType = "text/html";
                 context.Response.Write(forbiddenHtml);
                 context.Response.End();
